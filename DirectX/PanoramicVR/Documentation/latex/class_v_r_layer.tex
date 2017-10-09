@@ -1,0 +1,424 @@
+\hypertarget{class_v_r_layer}{}\section{V\+R\+Layer Class Reference}
+\label{class_v_r_layer}\index{V\+R\+Layer@{V\+R\+Layer}}
+
+
+{\ttfamily \#include $<$V\+R\+Layer.\+h$>$}
+
+Inheritance diagram for V\+R\+Layer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_v_r_layer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_layer_a16cea0d400080518b73a30c2ac38d2d6}{V\+R\+Layer} (ovr\+Hmd hmd, const ovr\+Fov\+Port $\ast$fovs=N\+U\+LL, float pixels\+Per\+Display\+Pixel=1.\+0f)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_v_r_layer_a673f6e38b025c92bb4397d223b1b30fa}{$\sim$\+V\+R\+Layer} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+ovr\+Tracking\+State \hyperlink{class_v_r_layer_ab942320f67671f92e2e0c15c6a68ee78}{Calculate\+Eye\+Poses} ()
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+void \hyperlink{class_v_r_layer_adc020df4324c1a9fd3eb4b87ea7b2b16}{Initialize\+Layer\+Header} ()
+\item 
+void \hyperlink{class_v_r_layer_a37225d61e04354b44647bf7e895da76b}{Make\+Eye\+Buffers} (float pixels\+Per\+Display\+Pixel=1.\+0f)
+\item 
+void \hyperlink{class_v_r_layer_a8941a91820ed1e6cac2a3fc3bbb9529d}{Modify\+F\+O\+VS} (const ovr\+Fov\+Port $\ast$fovs=N\+U\+LL)
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{class_v_r_layer_a3e9bfdfff5a069783b084e0a12b1d292}{Render\+Scene\+To\+Eye\+Buffer} (\hyperlink{class_camera}{Camera} $\ast$player\+Camera, \hyperlink{class_scene}{Scene} $\ast$scene\+To\+Render, int eye\+Index, I\+D3\+D11\+Render\+Target\+View $\ast$render\+Target=N\+U\+LL, ovr\+Posef $\ast$eye\+Render\+Pose=N\+U\+LL, int times\+To\+Render\+Room=1, float alpha=1.\+0f, float red=1.\+0f, float green=1.\+0f, float blue=1.\+0f, float near\+Z=0.\+2f, float far\+Z=1000.\+0f, bool do\+We\+Setup\+Render=true, Depth\+Buffer $\ast$depth\+Buffer=\+N\+U\+L\+L, float back\+Red=0.\+0f, float back\+Green=0.\+0f, float back\+Blue=0.\+0f)
+\item 
+\hyperlink{class_depth_buffer}{Depth\+Buffer} $\ast$$\ast$ \hyperlink{class_v_r_layer_a1dd1511b144b8d3ec95248c9c3bb5ce0}{Get\+Eye\+Depth\+Buffers} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+ovr\+Eye\+Render\+Desc $\ast$ \hyperlink{class_v_r_layer_af0f7b3a0aec2d5175ae334ffa60bcdfd}{Get\+Eye\+Render\+Descriptions} ()
+\item 
+ovr\+Posef $\ast$ \hyperlink{class_v_r_layer_a9e90f858498e244c77482906bfefbd62}{Get\+Eye\+Render\+Poses} ()
+\item 
+\hyperlink{class_oculus_texture}{Oculus\+Texture} $\ast$$\ast$ \hyperlink{class_v_r_layer_a4c4ec79e724a3f179f15a64d5e1287f0}{Get\+Eye\+Render\+Textures} ()
+\item 
+ovr\+Recti $\ast$ \hyperlink{class_v_r_layer_abdb1657fca98fe38f25ac5806af70a0d}{Get\+Eye\+Render\+Viewports} ()
+\item 
+ovr\+Hmd \hyperlink{class_v_r_layer_ad7d68fc8325f5d8588dda33edd8b63f0}{Get\+H\+MD} ()
+\item 
+ovr\+Layer\+Eye\+Fov \& \hyperlink{class_v_r_layer_a338e5d2fd9c1f38c0757eeb735d5fe41}{Get\+Ovr\+Layer} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_depth_buffer}{Depth\+Buffer} $\ast$ \hyperlink{class_v_r_layer_a158518a0d3b7437032bb8b9dd513830f}{my\+Eye\+Depth\+Buffers} \mbox{[}2\mbox{]}
+\item 
+ovr\+Eye\+Render\+Desc \hyperlink{class_v_r_layer_a61e147e1041337a9849d3618aa782a82}{my\+Eye\+Render\+Descriptions} \mbox{[}2\mbox{]}
+\item 
+ovr\+Posef \hyperlink{class_v_r_layer_a0429a4b04ab3c5e51f5bd638519acfa3}{my\+Eye\+Render\+Poses} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{class_oculus_texture}{Oculus\+Texture} $\ast$ \hyperlink{class_v_r_layer_a47a680aacb39848eff2148445cbba172}{my\+Eye\+Render\+Textures} \mbox{[}2\mbox{]}
+\item 
+ovr\+Recti \hyperlink{class_v_r_layer_ab79ac408b474f49eb0ec4fb5603752ff}{my\+Eye\+Render\+Viewports} \mbox{[}2\mbox{]}
+\item 
+ovr\+Hmd \hyperlink{class_v_r_layer_ab7dbb8c74485a7546bd77f6817e76da2}{my\+H\+MD}
+\item 
+ovr\+Layer\+Eye\+Fov \hyperlink{class_v_r_layer_a427baf6b2cb1ef51254fd83d0c9179f8}{my\+Ovr\+Layer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{V\+R\+Layer@{V\+R\+Layer}!V\+R\+Layer@{V\+R\+Layer}}
+\index{V\+R\+Layer@{V\+R\+Layer}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{V\+R\+Layer(ovr\+Hmd hmd, const ovr\+Fov\+Port $\ast$fovs=\+N\+U\+L\+L, float pixels\+Per\+Display\+Pixel=1.\+0f)}{VRLayer(ovrHmd hmd, const ovrFovPort *fovs=NULL, float pixelsPerDisplayPixel=1.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}V\+R\+Layer\+::\+V\+R\+Layer (
+\begin{DoxyParamCaption}
+\item[{ovr\+Hmd}]{hmd, }
+\item[{const ovr\+Fov\+Port $\ast$}]{fovs = {\ttfamily NULL}, }
+\item[{float}]{pixels\+Per\+Display\+Pixel = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_a16cea0d400080518b73a30c2ac38d2d6}{}\label{class_v_r_layer_a16cea0d400080518b73a30c2ac38d2d6}
+
+
+Constructor. 
+
+Constructor. Initialize O\+VR Field of View and other things such as buffer initialization. Each eye has a VR Layer, so for us there are two V\+R\+Layers.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em hmd} & The H\+MD object. \\
+\hline
+{\em fovs} & Custom F\+OV for the H\+MD. \\
+\hline
+{\em pixels\+Per\+Display\+Pixel} & Default is 1.\+0, lower is better performance, higher is better quality. \\
+\hline
+\end{DoxyParams}
+\index{V\+R\+Layer@{V\+R\+Layer}!````~V\+R\+Layer@{$\sim$\+V\+R\+Layer}}
+\index{````~V\+R\+Layer@{$\sim$\+V\+R\+Layer}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{$\sim$\+V\+R\+Layer()}{~VRLayer()}}]{\setlength{\rightskip}{0pt plus 5cm}V\+R\+Layer\+::$\sim$\+V\+R\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_v_r_layer_a673f6e38b025c92bb4397d223b1b30fa}{}\label{class_v_r_layer_a673f6e38b025c92bb4397d223b1b30fa}
+
+
+Destructor. 
+
+Destructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{V\+R\+Layer@{V\+R\+Layer}!Calculate\+Eye\+Poses@{Calculate\+Eye\+Poses}}
+\index{Calculate\+Eye\+Poses@{Calculate\+Eye\+Poses}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Calculate\+Eye\+Poses()}{CalculateEyePoses()}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Tracking\+State V\+R\+Layer\+::\+Calculate\+Eye\+Poses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_ab942320f67671f92e2e0c15c6a68ee78}{}\label{class_v_r_layer_ab942320f67671f92e2e0c15c6a68ee78}
+
+
+Functions. 
+
+Calculates the current eye poses. This needs to be updated constantly so we know the current position and orientation of the H\+MD.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A struct containing the calculated eye poses. 
+\end{DoxyReturn}
+\index{V\+R\+Layer@{V\+R\+Layer}!Get\+Eye\+Depth\+Buffers@{Get\+Eye\+Depth\+Buffers}}
+\index{Get\+Eye\+Depth\+Buffers@{Get\+Eye\+Depth\+Buffers}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Get\+Eye\+Depth\+Buffers()}{GetEyeDepthBuffers()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Depth\+Buffer} $\ast$$\ast$ V\+R\+Layer\+::\+Get\+Eye\+Depth\+Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_a1dd1511b144b8d3ec95248c9c3bb5ce0}{}\label{class_v_r_layer_a1dd1511b144b8d3ec95248c9c3bb5ce0}
+
+
+Getters. 
+
+Gets the array of Eye Depth buffers which are responsible for storing Z-\/\+Buffer data for each eye.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/5/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The array of Eye Depth buffers. 
+\end{DoxyReturn}
+\index{V\+R\+Layer@{V\+R\+Layer}!Get\+Eye\+Render\+Descriptions@{Get\+Eye\+Render\+Descriptions}}
+\index{Get\+Eye\+Render\+Descriptions@{Get\+Eye\+Render\+Descriptions}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Get\+Eye\+Render\+Descriptions()}{GetEyeRenderDescriptions()}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Eye\+Render\+Desc $\ast$ V\+R\+Layer\+::\+Get\+Eye\+Render\+Descriptions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_af0f7b3a0aec2d5175ae334ffa60bcdfd}{}\label{class_v_r_layer_af0f7b3a0aec2d5175ae334ffa60bcdfd}
+Gets the array of Eye Render Descriptions which are rendering information for each eye.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/5/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The array of Eye Render Descriptions. 
+\end{DoxyReturn}
+\index{V\+R\+Layer@{V\+R\+Layer}!Get\+Eye\+Render\+Poses@{Get\+Eye\+Render\+Poses}}
+\index{Get\+Eye\+Render\+Poses@{Get\+Eye\+Render\+Poses}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Get\+Eye\+Render\+Poses()}{GetEyeRenderPoses()}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Posef $\ast$ V\+R\+Layer\+::\+Get\+Eye\+Render\+Poses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_a9e90f858498e244c77482906bfefbd62}{}\label{class_v_r_layer_a9e90f858498e244c77482906bfefbd62}
+Gets the array of Eye Render Poses which contain orientation and positioning information about the H\+MD.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/5/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The array of Eye Render Poses. 
+\end{DoxyReturn}
+\index{V\+R\+Layer@{V\+R\+Layer}!Get\+Eye\+Render\+Textures@{Get\+Eye\+Render\+Textures}}
+\index{Get\+Eye\+Render\+Textures@{Get\+Eye\+Render\+Textures}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Get\+Eye\+Render\+Textures()}{GetEyeRenderTextures()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Oculus\+Texture} $\ast$$\ast$ V\+R\+Layer\+::\+Get\+Eye\+Render\+Textures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_a4c4ec79e724a3f179f15a64d5e1287f0}{}\label{class_v_r_layer_a4c4ec79e724a3f179f15a64d5e1287f0}
+Gets the array of Eye Render Textures which are the textures that get directly rendered to each eye in the H\+MD.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/5/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+null if it fails, else the eye render textures. 
+\end{DoxyReturn}
+\index{V\+R\+Layer@{V\+R\+Layer}!Get\+Eye\+Render\+Viewports@{Get\+Eye\+Render\+Viewports}}
+\index{Get\+Eye\+Render\+Viewports@{Get\+Eye\+Render\+Viewports}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Get\+Eye\+Render\+Viewports()}{GetEyeRenderViewports()}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Recti $\ast$ V\+R\+Layer\+::\+Get\+Eye\+Render\+Viewports (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_abdb1657fca98fe38f25ac5806af70a0d}{}\label{class_v_r_layer_abdb1657fca98fe38f25ac5806af70a0d}
+Gets eye render viewports.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+null if it fails, else the eye render viewports. 
+\end{DoxyReturn}
+\index{V\+R\+Layer@{V\+R\+Layer}!Get\+H\+MD@{Get\+H\+MD}}
+\index{Get\+H\+MD@{Get\+H\+MD}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Get\+H\+M\+D()}{GetHMD()}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Hmd V\+R\+Layer\+::\+Get\+H\+MD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_ad7d68fc8325f5d8588dda33edd8b63f0}{}\label{class_v_r_layer_ad7d68fc8325f5d8588dda33edd8b63f0}
+Gets the H\+MD.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The H\+MD. 
+\end{DoxyReturn}
+\index{V\+R\+Layer@{V\+R\+Layer}!Get\+Ovr\+Layer@{Get\+Ovr\+Layer}}
+\index{Get\+Ovr\+Layer@{Get\+Ovr\+Layer}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Get\+Ovr\+Layer()}{GetOvrLayer()}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Layer\+Eye\+Fov \& V\+R\+Layer\+::\+Get\+Ovr\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_a338e5d2fd9c1f38c0757eeb735d5fe41}{}\label{class_v_r_layer_a338e5d2fd9c1f38c0757eeb735d5fe41}
+Gets O\+VR layer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The O\+VR layer. 
+\end{DoxyReturn}
+\index{V\+R\+Layer@{V\+R\+Layer}!Initialize\+Layer\+Header@{Initialize\+Layer\+Header}}
+\index{Initialize\+Layer\+Header@{Initialize\+Layer\+Header}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Initialize\+Layer\+Header()}{InitializeLayerHeader()}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+R\+Layer\+::\+Initialize\+Layer\+Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_adc020df4324c1a9fd3eb4b87ea7b2b16}{}\label{class_v_r_layer_adc020df4324c1a9fd3eb4b87ea7b2b16}
+Initialize layer header. Pass our data over to the O\+VR layer struct.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{V\+R\+Layer@{V\+R\+Layer}!Make\+Eye\+Buffers@{Make\+Eye\+Buffers}}
+\index{Make\+Eye\+Buffers@{Make\+Eye\+Buffers}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Make\+Eye\+Buffers(float pixels\+Per\+Display\+Pixel=1.\+0f)}{MakeEyeBuffers(float pixelsPerDisplayPixel=1.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+R\+Layer\+::\+Make\+Eye\+Buffers (
+\begin{DoxyParamCaption}
+\item[{float}]{pixels\+Per\+Display\+Pixel = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_a37225d61e04354b44647bf7e895da76b}{}\label{class_v_r_layer_a37225d61e04354b44647bf7e895da76b}
+Makes the texture and data buffers for the eye render textures.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em pixels\+Per\+Display\+Pixel} & Default is 1.\+0, lower is better performance, higher is better quality. \\
+\hline
+\end{DoxyParams}
+\index{V\+R\+Layer@{V\+R\+Layer}!Modify\+F\+O\+VS@{Modify\+F\+O\+VS}}
+\index{Modify\+F\+O\+VS@{Modify\+F\+O\+VS}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Modify\+F\+O\+V\+S(const ovr\+Fov\+Port $\ast$fovs=\+N\+U\+L\+L)}{ModifyFOVS(const ovrFovPort *fovs=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+R\+Layer\+::\+Modify\+F\+O\+VS (
+\begin{DoxyParamCaption}
+\item[{const ovr\+Fov\+Port $\ast$}]{fovs = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_a8941a91820ed1e6cac2a3fc3bbb9529d}{}\label{class_v_r_layer_a8941a91820ed1e6cac2a3fc3bbb9529d}
+Modify the F\+O\+Vs for each eye.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em fovs} & The custom F\+O\+Vs for each eye. \\
+\hline
+\end{DoxyParams}
+\index{V\+R\+Layer@{V\+R\+Layer}!Render\+Scene\+To\+Eye\+Buffer@{Render\+Scene\+To\+Eye\+Buffer}}
+\index{Render\+Scene\+To\+Eye\+Buffer@{Render\+Scene\+To\+Eye\+Buffer}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{Render\+Scene\+To\+Eye\+Buffer(\+Camera $\ast$player\+Camera, Scene $\ast$scene\+To\+Render, int eye\+Index, I\+D3\+D11\+Render\+Target\+View $\ast$render\+Target=\+N\+U\+L\+L, ovr\+Posef $\ast$eye\+Render\+Pose=\+N\+U\+L\+L, int times\+To\+Render\+Room=1, float alpha=1.\+0f, float red=1.\+0f, float green=1.\+0f, float blue=1.\+0f, float near\+Z=0.\+2f, float far\+Z=1000.\+0f, bool do\+We\+Setup\+Render=true, Depth\+Buffer $\ast$depth\+Buffer=\+N\+U\+L\+L, float back\+Red=0.\+0f, float back\+Green=0.\+0f, float back\+Blue=0.\+0f)}{RenderSceneToEyeBuffer(Camera *playerCamera, Scene *sceneToRender, int eyeIndex, ID3D11RenderTargetView *renderTarget=NULL, ovrPosef *eyeRenderPose=NULL, int timesToRenderRoom=1, float alpha=1.0f, float red=1.0f, float green=1.0f, float blue=1.0f, float nearZ=0.2f, float farZ=1000.0f, bool doWeSetupRender=true, DepthBuffer *depthBuffer=NULL, float backRed=0.0f, float backGreen=0.0f, float backBlue=0.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+M\+A\+T\+R\+IX V\+R\+Layer\+::\+Render\+Scene\+To\+Eye\+Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} $\ast$}]{player\+Camera, }
+\item[{{\bf Scene} $\ast$}]{scene\+To\+Render, }
+\item[{int}]{eye\+Index, }
+\item[{I\+D3\+D11\+Render\+Target\+View $\ast$}]{render\+Target = {\ttfamily NULL}, }
+\item[{ovr\+Posef $\ast$}]{eye\+Render\+Pose = {\ttfamily NULL}, }
+\item[{int}]{times\+To\+Render\+Room = {\ttfamily 1}, }
+\item[{float}]{alpha = {\ttfamily 1.0f}, }
+\item[{float}]{red = {\ttfamily 1.0f}, }
+\item[{float}]{green = {\ttfamily 1.0f}, }
+\item[{float}]{blue = {\ttfamily 1.0f}, }
+\item[{float}]{nearZ = {\ttfamily 0.2f}, }
+\item[{float}]{farZ = {\ttfamily 1000.0f}, }
+\item[{bool}]{do\+We\+Setup\+Render = {\ttfamily true}, }
+\item[{{\bf Depth\+Buffer} $\ast$}]{depth\+Buffer = {\ttfamily NULL}, }
+\item[{float}]{back\+Red = {\ttfamily 0.0f}, }
+\item[{float}]{back\+Green = {\ttfamily 0.0f}, }
+\item[{float}]{back\+Blue = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_r_layer_a3e9bfdfff5a069783b084e0a12b1d292}{}\label{class_v_r_layer_a3e9bfdfff5a069783b084e0a12b1d292}
+Reads in the current H\+MD pose and data, then renders the scene to both eyes.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/5/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em player\+Camera} & If non-\/null, the Player\textquotesingle{}s \hyperlink{class_camera}{Camera}. \\
+\hline
+\mbox{\tt in}  & {\em scene\+To\+Render} & If non-\/null, the \hyperlink{class_scene}{Scene} to render. \\
+\hline
+ & {\em eye\+Index} & Zero-\/based index of the eye. \\
+\hline
+\mbox{\tt in}  & {\em render\+Target} & If non-\/null, the render target. \\
+\hline
+\mbox{\tt in}  & {\em eye\+Render\+Pose} & If non-\/null, the eye render pose. \\
+\hline
+ & {\em times\+To\+Render\+Room} & The number of times to render room. \\
+\hline
+ & {\em alpha} & The alpha. \\
+\hline
+ & {\em red} & The red. \\
+\hline
+ & {\em green} & The green. \\
+\hline
+ & {\em blue} & The blue. \\
+\hline
+ & {\em nearZ} & The near z coordinate. \\
+\hline
+ & {\em farZ} & The far z coordinate. \\
+\hline
+ & {\em do\+We\+Setup\+Render} & true to do we setup render. \\
+\hline
+\mbox{\tt in}  & {\em depth\+Buffer} & If non-\/null, buffer for depth data. \\
+\hline
+ & {\em back\+Red} & The red value of the back buffer clear color. \\
+\hline
+ & {\em back\+Green} & The green value of the back buffer clear color. \\
+\hline
+ & {\em back\+Blue} & The blue value of the back buffer clear color.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{class_model}{Model} View Projection matrix of the rendered scene. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{V\+R\+Layer@{V\+R\+Layer}!my\+Eye\+Depth\+Buffers@{my\+Eye\+Depth\+Buffers}}
+\index{my\+Eye\+Depth\+Buffers@{my\+Eye\+Depth\+Buffers}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{my\+Eye\+Depth\+Buffers}{myEyeDepthBuffers}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Depth\+Buffer}$\ast$ V\+R\+Layer\+::my\+Eye\+Depth\+Buffers\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_v_r_layer_a158518a0d3b7437032bb8b9dd513830f}{}\label{class_v_r_layer_a158518a0d3b7437032bb8b9dd513830f}
+\index{V\+R\+Layer@{V\+R\+Layer}!my\+Eye\+Render\+Descriptions@{my\+Eye\+Render\+Descriptions}}
+\index{my\+Eye\+Render\+Descriptions@{my\+Eye\+Render\+Descriptions}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{my\+Eye\+Render\+Descriptions}{myEyeRenderDescriptions}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Eye\+Render\+Desc V\+R\+Layer\+::my\+Eye\+Render\+Descriptions\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_v_r_layer_a61e147e1041337a9849d3618aa782a82}{}\label{class_v_r_layer_a61e147e1041337a9849d3618aa782a82}
+\index{V\+R\+Layer@{V\+R\+Layer}!my\+Eye\+Render\+Poses@{my\+Eye\+Render\+Poses}}
+\index{my\+Eye\+Render\+Poses@{my\+Eye\+Render\+Poses}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{my\+Eye\+Render\+Poses}{myEyeRenderPoses}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Posef V\+R\+Layer\+::my\+Eye\+Render\+Poses\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_v_r_layer_a0429a4b04ab3c5e51f5bd638519acfa3}{}\label{class_v_r_layer_a0429a4b04ab3c5e51f5bd638519acfa3}
+\index{V\+R\+Layer@{V\+R\+Layer}!my\+Eye\+Render\+Textures@{my\+Eye\+Render\+Textures}}
+\index{my\+Eye\+Render\+Textures@{my\+Eye\+Render\+Textures}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{my\+Eye\+Render\+Textures}{myEyeRenderTextures}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Oculus\+Texture}$\ast$ V\+R\+Layer\+::my\+Eye\+Render\+Textures\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_v_r_layer_a47a680aacb39848eff2148445cbba172}{}\label{class_v_r_layer_a47a680aacb39848eff2148445cbba172}
+\index{V\+R\+Layer@{V\+R\+Layer}!my\+Eye\+Render\+Viewports@{my\+Eye\+Render\+Viewports}}
+\index{my\+Eye\+Render\+Viewports@{my\+Eye\+Render\+Viewports}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{my\+Eye\+Render\+Viewports}{myEyeRenderViewports}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Recti V\+R\+Layer\+::my\+Eye\+Render\+Viewports\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_v_r_layer_ab79ac408b474f49eb0ec4fb5603752ff}{}\label{class_v_r_layer_ab79ac408b474f49eb0ec4fb5603752ff}
+\index{V\+R\+Layer@{V\+R\+Layer}!my\+H\+MD@{my\+H\+MD}}
+\index{my\+H\+MD@{my\+H\+MD}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{my\+H\+MD}{myHMD}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Hmd V\+R\+Layer\+::my\+H\+MD\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_v_r_layer_ab7dbb8c74485a7546bd77f6817e76da2}{}\label{class_v_r_layer_ab7dbb8c74485a7546bd77f6817e76da2}
+\index{V\+R\+Layer@{V\+R\+Layer}!my\+Ovr\+Layer@{my\+Ovr\+Layer}}
+\index{my\+Ovr\+Layer@{my\+Ovr\+Layer}!V\+R\+Layer@{V\+R\+Layer}}
+\subsubsection[{\texorpdfstring{my\+Ovr\+Layer}{myOvrLayer}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Layer\+Eye\+Fov V\+R\+Layer\+::my\+Ovr\+Layer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_v_r_layer_a427baf6b2cb1ef51254fd83d0c9179f8}{}\label{class_v_r_layer_a427baf6b2cb1ef51254fd83d0c9179f8}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_v_r_layer_8h}{V\+R\+Layer.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_v_r_layer_8cpp}{V\+R\+Layer.\+cpp}\end{DoxyCompactItemize}

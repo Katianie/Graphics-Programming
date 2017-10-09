@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Common\Implementations\BasicVR.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\Camera.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\DataBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\DepthBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\DirectXManager.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\Material.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\Model.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\Object.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\OculusTexture.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\Scene.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\stdafx.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\Texture.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\TriangleSet.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\AceDX.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\Vertex.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\VRLayer.cpp" />
+    <ClCompile Include="..\..\..\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Common\Headers\BasicVR.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\Camera.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\DataBuffer.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\DepthBuffer.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\DirectXManager.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\Material.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\Model.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\Object.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\OculusTexture.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\Scene.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\stdafx.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\Texture.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\TriangleSet.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\AceDX.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\Vertex.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\VRLayer.h" />
+    <ClInclude Include="..\..\..\main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\LibOVRKernel\Projects\Windows\VS2015\LibOVRKernel.vcxproj">
+      <Project>{29fa0962-ddc6-4f72-9d12-e150df29e279}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\LibOVR\Projects\Windows\VS2015\LibOVR.vcxproj">
+      <Project>{ea50e705-5113-49e5-b105-2512edc8ddc6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3EE2D7FD-3812-4C2F-A0EE-2A07EC1629DD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OculusRoomTiny</RootNamespace>
+    <ProjectName>PanoramicVR</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\OVRRootPath.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\OVRRootPath.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\OVRRootPath.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\OVRRootPath.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)..\..\..\Obj\Windows\$(Platform)\$(Configuration)\VS2015\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\Bin\Windows\$(Platform)\$(Configuration)\VS2015\</OutDir>
+    <IncludePath>$(SolutionDir)3rdParty/AceLibrary/include;$(SolutionDir)3rdParty/DirectXTK/Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)3rdParty/AceLibrary/lib/;$(SolutionDir)3rdParty/DirectXTK/Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)..\..\..\Obj\Windows\$(Platform)\$(Configuration)\VS2015\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\Bin\Windows\$(Platform)\$(Configuration)\VS2015\</OutDir>
+    <IncludePath>C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\AceLibrary\include;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\DirectXTK\Inc;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\LibOVRKernel\Src;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\AceLibrary\lib;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\LibOVRKernel\Lib;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\AceLibrary\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)..\..\..\Obj\Windows\$(Platform)\$(Configuration)\VS2015\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\Bin\Windows\$(Platform)\$(Configuration)\VS2015\</OutDir>
+    <IncludePath>$(SolutionDir)3rdParty/AceLibrary/include;$(SolutionDir)3rdParty/DirectXTK/Inc;$(SolutionDir)3rdParty/dirent/include;$(SolutionDir)LibOVR/Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)3rdParty/AceLibrary/lib/;$(SolutionDir)3rdParty/DirectXTK/Bin/;$(SolutionDir)LibOVR/Lib;$(SolutionDir)LibOVRKernel/Lib;$(SolutionDir)Samples/OculusRoomTiny_Advanced/ORT %28Using BasicVR%29/Bin;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)..\..\..\Obj\Windows\$(Platform)\$(Configuration)\VS2015\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\Bin\Windows\$(Platform)\$(Configuration)\VS2015\</OutDir>
+    <IncludePath>C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\AceLibrary\include;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\DirectXTK\Inc;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\LibOVRKernel\Src;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\AceLibrary\lib;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\LibOVRKernel\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OVR_BUILD_DEBUG;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <BuildLog>
+      <Path>$(ProjectName)\$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OVR_BUILD_DEBUG;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <BuildLog>
+      <Path>$(ProjectName)\$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>OVR_BUILD_DEBUG;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OVRSDKROOT)LibOVR/Include/;$(OVRSDKROOT)LibOVRKernel/Src/;$(SolutionDir)/3rdParty/DirectXTK/Inc;$(OVRSDKROOT)Samples/OculusRoomTiny_Advanced/ORT %28Using BasicVR%29/Projects/Win/VS2015;$(SolutionDir)\3rdParty\AceLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalDependencies>$(OVRSDKROOT)LibOVR/Lib/Windows/$(Platform)/$(Configuration)/VS2015/LibOVR.lib;$(SolutionDir)3rdParty/AceLibrary/lib/AceLibrary.lib;$(SolutionDir)3rdParty/DirectXTK/Bin/Desktop_2015/Win32/Debug/DirectXTK.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Eddie\Desktop\KatianieWorkspace\PanoramicVR\Samples\OculusRoomTiny_Advanced\ORT %28Using BasicVR%29\Bin\Windows\Win32\Release\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <OmitFramePointers>false</OmitFramePointers>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OVRSDKROOT)LibOVR/Include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalDependencies>$(OVRSDKROOT)LibOVR/Lib/Windows/$(Platform)/$(Configuration)/VS2015/LibOVR.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <BuildLog>
+      <Path>$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path>$(ProjectName)\$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <BuildLog>
+      <Path>$(ProjectName)\$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path>$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <ClCompile>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>$(OVRSDKROOT)LibOVR/Include/;$(OVRSDKROOT)LibOVRKernel/Src/;$(SolutionDir)/3rdParty/DirectXTK/Inc;$(OVRSDKROOT)Samples/OculusRoomTiny_Advanced/ORT %28Using BasicVR%29/Projects/Win/VS2015;$(SolutionDir)\3rdParty\AceLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <Link>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalDependencies>$(OVRSDKROOT)LibOVR/Lib/Windows/$(Platform)/$(Configuration)/VS2015/LibOVR.lib;$(SolutionDir)3rdParty/AceLibrary/lib/AceLibrary.lib;$(SolutionDir)3rdParty/DirectXTK/Bin/Desktop_2015/Win32/Debug/DirectXTK.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>AceLibrary.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <BuildLog>
+      <Path>$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <ClCompile>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <OmitFramePointers>false</OmitFramePointers>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>$(OVRSDKROOT)LibOVR/Include/;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\AceLibrary\include;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\DirectXTK\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <Link>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalDependencies>$(OVRSDKROOT)LibOVR/Lib/Windows/$(Platform)/$(Configuration)/VS2015/LibOVR.lib;C:\Users\Eddie\Desktop\KatianieWorkspace\DreamVR\3rdParty\AceLibrary\lib\x64\AceLibrary.lib;%(AdditionalLibraryDirectories);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

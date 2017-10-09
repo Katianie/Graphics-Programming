@@ -1,0 +1,248 @@
+\hypertarget{class_camera}{}\section{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+Inheritance diagram for Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_a01f94c3543f56ede7af49dc778f19331}{Camera} ()
+\begin{DoxyCompactList}\small\item\em Constructors. \end{DoxyCompactList}\item 
+\hyperlink{class_camera_a029be94b2307a3ffeb0de58769dc6d6e}{Camera} (X\+M\+V\+E\+C\+T\+OR $\ast$position, X\+M\+V\+E\+C\+T\+OR $\ast$rotation)
+\item 
+void \hyperlink{class_camera_a2cb449dfd69fc002ab6117d71c6af1ff}{Init} (X\+M\+V\+E\+C\+T\+OR position, X\+M\+V\+E\+C\+T\+OR rotation)
+\item 
+virtual \hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{class_camera_a0ba4b24f3f39dedb32715dc787d1a75d}{Get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{class_camera_a374cad6c4aef593974bc96d5186dbcb2}{Get\+Rotation} ()
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{class_camera_a2e6a80af72c230fafd8f5ec9f32db15b}{Get\+View\+Matrix} ()
+\item 
+void \hyperlink{class_camera_a6cdb52b1f4b0ebc7b2f581a02a761e10}{Set\+Position} (X\+M\+V\+E\+C\+T\+OR pos)
+\begin{DoxyCompactList}\small\item\em Setters. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a66bf632272852abc17b5dc15cceb3591}{Set\+Rotation} (X\+M\+V\+E\+C\+T\+OR rot)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{class_camera_ae90a13af9d2b2f18b19e430a3b301ae9}{my\+Position}
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{class_camera_a922f81f1d51693f48310a49d94c9a66e}{my\+Rotation}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Camera()}{Camera()}}]{\setlength{\rightskip}{0pt plus 5cm}Camera\+::\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a01f94c3543f56ede7af49dc778f19331}{}\label{class_camera_a01f94c3543f56ede7af49dc778f19331}
+
+
+Constructors. 
+
+Default Constructor
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Camera(\+X\+M\+V\+E\+C\+T\+O\+R $\ast$position, X\+M\+V\+E\+C\+T\+O\+R $\ast$rotation)}{Camera(XMVECTOR *position, XMVECTOR *rotation)}}]{\setlength{\rightskip}{0pt plus 5cm}Camera\+::\+Camera (
+\begin{DoxyParamCaption}
+\item[{X\+M\+V\+E\+C\+T\+OR $\ast$}]{position, }
+\item[{X\+M\+V\+E\+C\+T\+OR $\ast$}]{rotation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a029be94b2307a3ffeb0de58769dc6d6e}{}\label{class_camera_a029be94b2307a3ffeb0de58769dc6d6e}
+Parameterized Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & If non-\/null, the position. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & If non-\/null, the rotation. \\
+\hline
+\end{DoxyParams}
+\index{Camera@{Camera}!````~Camera@{$\sim$\+Camera}}
+\index{````~Camera@{$\sim$\+Camera}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{$\sim$\+Camera()}{~Camera()}}]{\setlength{\rightskip}{0pt plus 5cm}Camera\+::$\sim$\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_camera_ad1897942d0ccf91052386388a497349f}{}\label{class_camera_ad1897942d0ccf91052386388a497349f}
+
+
+Destructor. 
+
+Destructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Camera@{Camera}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Get\+Position()}{GetPosition()}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+V\+E\+C\+T\+OR Camera\+::\+Get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a0ba4b24f3f39dedb32715dc787d1a75d}{}\label{class_camera_a0ba4b24f3f39dedb32715dc787d1a75d}
+
+
+Getters. 
+
+Gets the X,Y,Z Position of the \hyperlink{class_camera}{Camera}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The X,Y,Z Position of the \hyperlink{class_camera}{Camera}. 
+\end{DoxyReturn}
+\index{Camera@{Camera}!Get\+Rotation@{Get\+Rotation}}
+\index{Get\+Rotation@{Get\+Rotation}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Get\+Rotation()}{GetRotation()}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+V\+E\+C\+T\+OR Camera\+::\+Get\+Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a374cad6c4aef593974bc96d5186dbcb2}{}\label{class_camera_a374cad6c4aef593974bc96d5186dbcb2}
+Gets the rotation vector of the camera.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The rotation vector of the camera. 
+\end{DoxyReturn}
+\index{Camera@{Camera}!Get\+View\+Matrix@{Get\+View\+Matrix}}
+\index{Get\+View\+Matrix@{Get\+View\+Matrix}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Get\+View\+Matrix()}{GetViewMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+M\+A\+T\+R\+IX Camera\+::\+Get\+View\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a2e6a80af72c230fafd8f5ec9f32db15b}{}\label{class_camera_a2e6a80af72c230fafd8f5ec9f32db15b}
+Gets view matrix.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The view matrix. 
+\end{DoxyReturn}
+\index{Camera@{Camera}!Init@{Init}}
+\index{Init@{Init}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Init(\+X\+M\+V\+E\+C\+T\+O\+R position, X\+M\+V\+E\+C\+T\+O\+R rotation)}{Init(XMVECTOR position, XMVECTOR rotation)}}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{X\+M\+V\+E\+C\+T\+OR}]{position, }
+\item[{X\+M\+V\+E\+C\+T\+OR}]{rotation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a2cb449dfd69fc002ab6117d71c6af1ff}{}\label{class_camera_a2cb449dfd69fc002ab6117d71c6af1ff}
+Initialized the instance variables of the \hyperlink{class_camera}{Camera}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position. \\
+\hline
+{\em rotation} & The rotation. \\
+\hline
+\end{DoxyParams}
+\index{Camera@{Camera}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Set\+Position(\+X\+M\+V\+E\+C\+T\+O\+R pos)}{SetPosition(XMVECTOR pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::\+Set\+Position (
+\begin{DoxyParamCaption}
+\item[{X\+M\+V\+E\+C\+T\+OR}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a6cdb52b1f4b0ebc7b2f581a02a761e10}{}\label{class_camera_a6cdb52b1f4b0ebc7b2f581a02a761e10}
+
+
+Setters. 
+
+Sets the X,Y,Z Position of the \hyperlink{class_camera}{Camera}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The the X,Y,Z Position of the \hyperlink{class_camera}{Camera}. \\
+\hline
+\end{DoxyParams}
+\index{Camera@{Camera}!Set\+Rotation@{Set\+Rotation}}
+\index{Set\+Rotation@{Set\+Rotation}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Set\+Rotation(\+X\+M\+V\+E\+C\+T\+O\+R rot)}{SetRotation(XMVECTOR rot)}}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::\+Set\+Rotation (
+\begin{DoxyParamCaption}
+\item[{X\+M\+V\+E\+C\+T\+OR}]{rot}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a66bf632272852abc17b5dc15cceb3591}{}\label{class_camera_a66bf632272852abc17b5dc15cceb3591}
+Sets the rotation vector of the camera.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em rot} & The rotation vector of the camera. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Camera@{Camera}!my\+Position@{my\+Position}}
+\index{my\+Position@{my\+Position}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{my\+Position}{myPosition}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+V\+E\+C\+T\+OR Camera\+::my\+Position\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_camera_ae90a13af9d2b2f18b19e430a3b301ae9}{}\label{class_camera_ae90a13af9d2b2f18b19e430a3b301ae9}
+\index{Camera@{Camera}!my\+Rotation@{my\+Rotation}}
+\index{my\+Rotation@{my\+Rotation}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{my\+Rotation}{myRotation}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+V\+E\+C\+T\+OR Camera\+::my\+Rotation\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_camera_a922f81f1d51693f48310a49d94c9a66e}{}\label{class_camera_a922f81f1d51693f48310a49d94c9a66e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_camera_8h}{Camera.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_camera_8cpp}{Camera.\+cpp}\end{DoxyCompactItemize}

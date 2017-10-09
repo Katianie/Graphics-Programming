@@ -1,0 +1,328 @@
+\hypertarget{class_basic_v_r}{}\section{Basic\+VR Class Reference}
+\label{class_basic_v_r}\index{Basic\+VR@{Basic\+VR}}
+
+
+{\ttfamily \#include $<$Basic\+V\+R.\+h$>$}
+
+Inheritance diagram for Basic\+VR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_basic_v_r}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_basic_v_r_a229f8e7af10029a22ed4738ba08eafd3}{Main\+Loop} ()=0
+\item 
+\hyperlink{class_basic_v_r_a7ee74cd5d4af3acc033d275c026e05d2}{Basic\+VR} (H\+I\+N\+S\+T\+A\+N\+CE h\+Inst, L\+P\+C\+W\+S\+TR window\+Title=L\char`\"{}Panoramic\+V\+R\textbackslash{}0\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_basic_v_r_a55ffc19ef7b92e30a3b173365a29a2ba}{Init} ()
+\item 
+virtual \hyperlink{class_basic_v_r_ada5417f4e5119c81dd8020c5cd1a0720}{$\sim$\+Basic\+VR} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_basic_v_r_a3c5ef352017729bbd5646fa7a24367e2}{Action\+From\+Input} ()
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+void \hyperlink{class_basic_v_r_aeff1e4ec95030046365b0804379890f7}{Distort\+And\+Present} (int num\+Layers\+To\+Render)
+\item 
+bool \hyperlink{class_basic_v_r_a155d1191d162ac1575ee6eb199ee7781}{Handle\+Messages} ()
+\item 
+void \hyperlink{class_basic_v_r_a0e7d89bc894e137c2bc67ae72ecba8ff}{Release\+Device} ()
+\item 
+int \hyperlink{class_basic_v_r_ab2068ad6695eabb935e83fa1dd4cdc8d}{Run} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+H\+I\+N\+S\+T\+A\+N\+CE \hyperlink{class_basic_v_r_a5742130f7f3380da8e15a5f18b2b9f9b}{my\+H\+Instance}
+\item 
+L\+P\+C\+W\+S\+TR \hyperlink{class_basic_v_r_a3d17ef45cc13b39c7bd7e0106e6701db}{my\+Window\+Title}
+\item 
+ovr\+Hmd \hyperlink{class_basic_v_r_a23836eafb746bb2b92231beff9a9d76f}{my\+H\+MD}
+\item 
+ovr\+Hmd\+Desc \hyperlink{class_basic_v_r_aac00280b306310fd91944252dc422920}{my\+H\+M\+D\+Description}
+\item 
+ovr\+Result \hyperlink{class_basic_v_r_abf70fd52f6d3d9b3e471ce6b901b1a98}{my\+Current\+Result}
+\item 
+ovr\+Texture $\ast$ \hyperlink{class_basic_v_r_a07cc999ed9b14415166f909d0668b541}{my\+Mirror\+Texture}
+\item 
+\hyperlink{class_v_r_layer}{V\+R\+Layer} $\ast$ \hyperlink{class_basic_v_r_a2833a6f257610c214ed056c15a7f7785}{my\+V\+R\+Layers} \mbox{[}M\+A\+X\+\_\+\+L\+A\+Y\+E\+RS\mbox{]}
+\item 
+\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{class_basic_v_r_a6c5320ef1fd4a951275da8d061bf71f8}{my\+Main\+Camera}
+\item 
+\hyperlink{class_scene}{Scene} $\ast$ \hyperlink{class_basic_v_r_a22a227877993e0f8cb1a1c8ed87070da}{my\+Room\+Scene}
+\item 
+Keyboard $\ast$ \hyperlink{class_basic_v_r_a2f9da8e8ccf48ce62e67a5e9e7f1be39}{my\+Keyboard}
+\item 
+Keyboard\+::\+Keyboard\+State\+Tracker $\ast$ \hyperlink{class_basic_v_r_acb6048b16b951dad8ba260453b455696}{my\+Keyboard\+State\+Tracker}
+\item 
+bool \hyperlink{class_basic_v_r_ac473465e66957471452478235fecfbe8}{my\+Is\+Initialized}
+\item 
+bool \hyperlink{class_basic_v_r_af0f6d4d8948900bac113d0eb3e3766ac}{my\+Is\+Windowed}
+\item 
+float \hyperlink{class_basic_v_r_ac6a774a1d2c2a6e49b70920a77363c83}{my\+Window\+Width\+Scale}
+\item 
+float \hyperlink{class_basic_v_r_a920b493bbb4217990d0c36dda41fa606}{my\+Window\+Height\+Scale}
+\item 
+float \hyperlink{class_basic_v_r_a0f45f5c5f10a425de415f40052380ce4}{my\+Mirror\+Width\+Scale}
+\item 
+float \hyperlink{class_basic_v_r_a0bdb21d619d8bf865c6852d62e6f73cb}{my\+Mirror\+Height\+Scale}
+\item 
+char $\ast$ \hyperlink{class_basic_v_r_a2d2fd1c9a0519b66eac327b5904d8122}{my\+Image\+File\+Path}
+\item 
+char $\ast$ \hyperlink{class_basic_v_r_a8b697e10768bada9a41bae38612f664f}{my\+Texture\+Tool\+Path}
+\item 
+char $\ast$ \hyperlink{class_basic_v_r_a3196ad5cd3083f927de0112c50252778}{my\+Texture\+Output\+Path}
+\item 
+char $\ast$ \hyperlink{class_basic_v_r_adc26337acc0de5285c226b5ef78b70d2}{my\+Config\+File\+Path}
+\item 
+char $\ast$ \hyperlink{class_basic_v_r_a74abf1122992a397a3412f4369d5a2e2}{my\+Vertex\+Shader\+Path}
+\item 
+char $\ast$ \hyperlink{class_basic_v_r_adf9127ec187e79b5e8b76f99daaa821a}{my\+Pixel\+Shader\+Path}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Basic\+VR@{Basic\+VR}!Basic\+VR@{Basic\+VR}}
+\index{Basic\+VR@{Basic\+VR}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{Basic\+V\+R(\+H\+I\+N\+S\+T\+A\+N\+C\+E h\+Inst, L\+P\+C\+W\+S\+T\+R window\+Title=L""Panoramic\+V\+R\textbackslash{}0"")}{BasicVR(HINSTANCE hInst, LPCWSTR windowTitle=L"PanoramicVR\textbackslash{}0")}}]{\setlength{\rightskip}{0pt plus 5cm}Basic\+V\+R\+::\+Basic\+VR (
+\begin{DoxyParamCaption}
+\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Inst, }
+\item[{L\+P\+C\+W\+S\+TR}]{window\+Title = {\ttfamily L\char`\"{}PanoramicVR\textbackslash{}0\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_basic_v_r_a7ee74cd5d4af3acc033d275c026e05d2}{}\label{class_basic_v_r_a7ee74cd5d4af3acc033d275c026e05d2}
+
+
+Constructor. 
+
+Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em h\+Inst} & The instance. \\
+\hline
+{\em window\+Title} & The window title. \\
+\hline
+\end{DoxyParams}
+\index{Basic\+VR@{Basic\+VR}!````~Basic\+VR@{$\sim$\+Basic\+VR}}
+\index{````~Basic\+VR@{$\sim$\+Basic\+VR}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{$\sim$\+Basic\+V\+R()}{~BasicVR()}}]{\setlength{\rightskip}{0pt plus 5cm}Basic\+V\+R\+::$\sim$\+Basic\+VR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_basic_v_r_ada5417f4e5119c81dd8020c5cd1a0720}{}\label{class_basic_v_r_ada5417f4e5119c81dd8020c5cd1a0720}
+
+
+Destructor. 
+
+Destructor, Calls \hyperlink{class_basic_v_r_a0e7d89bc894e137c2bc67ae72ecba8ff}{Release\+Device()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Basic\+VR@{Basic\+VR}!Action\+From\+Input@{Action\+From\+Input}}
+\index{Action\+From\+Input@{Action\+From\+Input}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{Action\+From\+Input()}{ActionFromInput()}}]{\setlength{\rightskip}{0pt plus 5cm}void Basic\+V\+R\+::\+Action\+From\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_basic_v_r_a3c5ef352017729bbd5646fa7a24367e2}{}\label{class_basic_v_r_a3c5ef352017729bbd5646fa7a24367e2}
+
+
+Functions. 
+
+Listens for keyboard input and when Right or Left is pressed, the current scene is destroyed and then the next/previous scene is loaded.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Basic\+VR@{Basic\+VR}!Distort\+And\+Present@{Distort\+And\+Present}}
+\index{Distort\+And\+Present@{Distort\+And\+Present}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{Distort\+And\+Present(int num\+Layers\+To\+Render)}{DistortAndPresent(int numLayersToRender)}}]{\setlength{\rightskip}{0pt plus 5cm}void Basic\+V\+R\+::\+Distort\+And\+Present (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Layers\+To\+Render}
+\end{DoxyParamCaption}
+)}\hypertarget{class_basic_v_r_aeff1e4ec95030046365b0804379890f7}{}\label{class_basic_v_r_aeff1e4ec95030046365b0804379890f7}
+Distort and present.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Layers\+To\+Render} & Number of layers to render. \\
+\hline
+\end{DoxyParams}
+\index{Basic\+VR@{Basic\+VR}!Handle\+Messages@{Handle\+Messages}}
+\index{Handle\+Messages@{Handle\+Messages}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{Handle\+Messages()}{HandleMessages()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Basic\+V\+R\+::\+Handle\+Messages (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_basic_v_r_a155d1191d162ac1575ee6eb199ee7781}{}\label{class_basic_v_r_a155d1191d162ac1575ee6eb199ee7781}
+Handles windows messages.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{Basic\+VR@{Basic\+VR}!Init@{Init}}
+\index{Init@{Init}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{Init()}{Init()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Basic\+V\+R\+::\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_basic_v_r_a55ffc19ef7b92e30a3b173365a29a2ba}{}\label{class_basic_v_r_a55ffc19ef7b92e30a3b173365a29a2ba}
+Initializes the \hyperlink{class_scene}{Scene}, \hyperlink{class_camera}{Camera}, Keyboard, and the Mirror window.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+true if initialization was successful, false if it fails. 
+\end{DoxyReturn}
+\index{Basic\+VR@{Basic\+VR}!Main\+Loop@{Main\+Loop}}
+\index{Main\+Loop@{Main\+Loop}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{Main\+Loop()=0}{MainLoop()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Basic\+V\+R\+::\+Main\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_basic_v_r_a229f8e7af10029a22ed4738ba08eafd3}{}\label{class_basic_v_r_a229f8e7af10029a22ed4738ba08eafd3}
+\index{Basic\+VR@{Basic\+VR}!Release\+Device@{Release\+Device}}
+\index{Release\+Device@{Release\+Device}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{Release\+Device()}{ReleaseDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}void Basic\+V\+R\+::\+Release\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_basic_v_r_a0e7d89bc894e137c2bc67ae72ecba8ff}{}\label{class_basic_v_r_a0e7d89bc894e137c2bc67ae72ecba8ff}
+Destroy and delete all objects and release the device. Also shuts down O\+VR and exits the program with exit(0).
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Basic\+VR@{Basic\+VR}!Run@{Run}}
+\index{Run@{Run}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{Run()}{Run()}}]{\setlength{\rightskip}{0pt plus 5cm}int Basic\+V\+R\+::\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_basic_v_r_ab2068ad6695eabb935e83fa1dd4cdc8d}{}\label{class_basic_v_r_ab2068ad6695eabb935e83fa1dd4cdc8d}
+The main loop for the application. This is triggered in the child classes (i.\+e. main.\+cpp).
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+0 on success. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Basic\+VR@{Basic\+VR}!my\+Config\+File\+Path@{my\+Config\+File\+Path}}
+\index{my\+Config\+File\+Path@{my\+Config\+File\+Path}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Config\+File\+Path}{myConfigFilePath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Basic\+V\+R\+::my\+Config\+File\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_adc26337acc0de5285c226b5ef78b70d2}{}\label{class_basic_v_r_adc26337acc0de5285c226b5ef78b70d2}
+\index{Basic\+VR@{Basic\+VR}!my\+Current\+Result@{my\+Current\+Result}}
+\index{my\+Current\+Result@{my\+Current\+Result}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Current\+Result}{myCurrentResult}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Result Basic\+V\+R\+::my\+Current\+Result\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_abf70fd52f6d3d9b3e471ce6b901b1a98}{}\label{class_basic_v_r_abf70fd52f6d3d9b3e471ce6b901b1a98}
+\index{Basic\+VR@{Basic\+VR}!my\+H\+Instance@{my\+H\+Instance}}
+\index{my\+H\+Instance@{my\+H\+Instance}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+H\+Instance}{myHInstance}}]{\setlength{\rightskip}{0pt plus 5cm}H\+I\+N\+S\+T\+A\+N\+CE Basic\+V\+R\+::my\+H\+Instance\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a5742130f7f3380da8e15a5f18b2b9f9b}{}\label{class_basic_v_r_a5742130f7f3380da8e15a5f18b2b9f9b}
+\index{Basic\+VR@{Basic\+VR}!my\+H\+MD@{my\+H\+MD}}
+\index{my\+H\+MD@{my\+H\+MD}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+H\+MD}{myHMD}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Hmd Basic\+V\+R\+::my\+H\+MD\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a23836eafb746bb2b92231beff9a9d76f}{}\label{class_basic_v_r_a23836eafb746bb2b92231beff9a9d76f}
+\index{Basic\+VR@{Basic\+VR}!my\+H\+M\+D\+Description@{my\+H\+M\+D\+Description}}
+\index{my\+H\+M\+D\+Description@{my\+H\+M\+D\+Description}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+H\+M\+D\+Description}{myHMDDescription}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Hmd\+Desc Basic\+V\+R\+::my\+H\+M\+D\+Description\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_aac00280b306310fd91944252dc422920}{}\label{class_basic_v_r_aac00280b306310fd91944252dc422920}
+\index{Basic\+VR@{Basic\+VR}!my\+Image\+File\+Path@{my\+Image\+File\+Path}}
+\index{my\+Image\+File\+Path@{my\+Image\+File\+Path}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Image\+File\+Path}{myImageFilePath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Basic\+V\+R\+::my\+Image\+File\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a2d2fd1c9a0519b66eac327b5904d8122}{}\label{class_basic_v_r_a2d2fd1c9a0519b66eac327b5904d8122}
+\index{Basic\+VR@{Basic\+VR}!my\+Is\+Initialized@{my\+Is\+Initialized}}
+\index{my\+Is\+Initialized@{my\+Is\+Initialized}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Is\+Initialized}{myIsInitialized}}]{\setlength{\rightskip}{0pt plus 5cm}bool Basic\+V\+R\+::my\+Is\+Initialized\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_ac473465e66957471452478235fecfbe8}{}\label{class_basic_v_r_ac473465e66957471452478235fecfbe8}
+\index{Basic\+VR@{Basic\+VR}!my\+Is\+Windowed@{my\+Is\+Windowed}}
+\index{my\+Is\+Windowed@{my\+Is\+Windowed}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Is\+Windowed}{myIsWindowed}}]{\setlength{\rightskip}{0pt plus 5cm}bool Basic\+V\+R\+::my\+Is\+Windowed\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_af0f6d4d8948900bac113d0eb3e3766ac}{}\label{class_basic_v_r_af0f6d4d8948900bac113d0eb3e3766ac}
+\index{Basic\+VR@{Basic\+VR}!my\+Keyboard@{my\+Keyboard}}
+\index{my\+Keyboard@{my\+Keyboard}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Keyboard}{myKeyboard}}]{\setlength{\rightskip}{0pt plus 5cm}Keyboard$\ast$ Basic\+V\+R\+::my\+Keyboard\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a2f9da8e8ccf48ce62e67a5e9e7f1be39}{}\label{class_basic_v_r_a2f9da8e8ccf48ce62e67a5e9e7f1be39}
+\index{Basic\+VR@{Basic\+VR}!my\+Keyboard\+State\+Tracker@{my\+Keyboard\+State\+Tracker}}
+\index{my\+Keyboard\+State\+Tracker@{my\+Keyboard\+State\+Tracker}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Keyboard\+State\+Tracker}{myKeyboardStateTracker}}]{\setlength{\rightskip}{0pt plus 5cm}Keyboard\+::\+Keyboard\+State\+Tracker$\ast$ Basic\+V\+R\+::my\+Keyboard\+State\+Tracker\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_acb6048b16b951dad8ba260453b455696}{}\label{class_basic_v_r_acb6048b16b951dad8ba260453b455696}
+\index{Basic\+VR@{Basic\+VR}!my\+Main\+Camera@{my\+Main\+Camera}}
+\index{my\+Main\+Camera@{my\+Main\+Camera}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Main\+Camera}{myMainCamera}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera}$\ast$ Basic\+V\+R\+::my\+Main\+Camera\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a6c5320ef1fd4a951275da8d061bf71f8}{}\label{class_basic_v_r_a6c5320ef1fd4a951275da8d061bf71f8}
+\index{Basic\+VR@{Basic\+VR}!my\+Mirror\+Height\+Scale@{my\+Mirror\+Height\+Scale}}
+\index{my\+Mirror\+Height\+Scale@{my\+Mirror\+Height\+Scale}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Mirror\+Height\+Scale}{myMirrorHeightScale}}]{\setlength{\rightskip}{0pt plus 5cm}float Basic\+V\+R\+::my\+Mirror\+Height\+Scale\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a0bdb21d619d8bf865c6852d62e6f73cb}{}\label{class_basic_v_r_a0bdb21d619d8bf865c6852d62e6f73cb}
+\index{Basic\+VR@{Basic\+VR}!my\+Mirror\+Texture@{my\+Mirror\+Texture}}
+\index{my\+Mirror\+Texture@{my\+Mirror\+Texture}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Mirror\+Texture}{myMirrorTexture}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Texture$\ast$ Basic\+V\+R\+::my\+Mirror\+Texture\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a07cc999ed9b14415166f909d0668b541}{}\label{class_basic_v_r_a07cc999ed9b14415166f909d0668b541}
+\index{Basic\+VR@{Basic\+VR}!my\+Mirror\+Width\+Scale@{my\+Mirror\+Width\+Scale}}
+\index{my\+Mirror\+Width\+Scale@{my\+Mirror\+Width\+Scale}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Mirror\+Width\+Scale}{myMirrorWidthScale}}]{\setlength{\rightskip}{0pt plus 5cm}float Basic\+V\+R\+::my\+Mirror\+Width\+Scale\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a0f45f5c5f10a425de415f40052380ce4}{}\label{class_basic_v_r_a0f45f5c5f10a425de415f40052380ce4}
+\index{Basic\+VR@{Basic\+VR}!my\+Pixel\+Shader\+Path@{my\+Pixel\+Shader\+Path}}
+\index{my\+Pixel\+Shader\+Path@{my\+Pixel\+Shader\+Path}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Pixel\+Shader\+Path}{myPixelShaderPath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Basic\+V\+R\+::my\+Pixel\+Shader\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_adf9127ec187e79b5e8b76f99daaa821a}{}\label{class_basic_v_r_adf9127ec187e79b5e8b76f99daaa821a}
+\index{Basic\+VR@{Basic\+VR}!my\+Room\+Scene@{my\+Room\+Scene}}
+\index{my\+Room\+Scene@{my\+Room\+Scene}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Room\+Scene}{myRoomScene}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scene}$\ast$ Basic\+V\+R\+::my\+Room\+Scene\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a22a227877993e0f8cb1a1c8ed87070da}{}\label{class_basic_v_r_a22a227877993e0f8cb1a1c8ed87070da}
+\index{Basic\+VR@{Basic\+VR}!my\+Texture\+Output\+Path@{my\+Texture\+Output\+Path}}
+\index{my\+Texture\+Output\+Path@{my\+Texture\+Output\+Path}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Texture\+Output\+Path}{myTextureOutputPath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Basic\+V\+R\+::my\+Texture\+Output\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a3196ad5cd3083f927de0112c50252778}{}\label{class_basic_v_r_a3196ad5cd3083f927de0112c50252778}
+\index{Basic\+VR@{Basic\+VR}!my\+Texture\+Tool\+Path@{my\+Texture\+Tool\+Path}}
+\index{my\+Texture\+Tool\+Path@{my\+Texture\+Tool\+Path}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Texture\+Tool\+Path}{myTextureToolPath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Basic\+V\+R\+::my\+Texture\+Tool\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a8b697e10768bada9a41bae38612f664f}{}\label{class_basic_v_r_a8b697e10768bada9a41bae38612f664f}
+\index{Basic\+VR@{Basic\+VR}!my\+Vertex\+Shader\+Path@{my\+Vertex\+Shader\+Path}}
+\index{my\+Vertex\+Shader\+Path@{my\+Vertex\+Shader\+Path}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Vertex\+Shader\+Path}{myVertexShaderPath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Basic\+V\+R\+::my\+Vertex\+Shader\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a74abf1122992a397a3412f4369d5a2e2}{}\label{class_basic_v_r_a74abf1122992a397a3412f4369d5a2e2}
+\index{Basic\+VR@{Basic\+VR}!my\+V\+R\+Layers@{my\+V\+R\+Layers}}
+\index{my\+V\+R\+Layers@{my\+V\+R\+Layers}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+V\+R\+Layers}{myVRLayers}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\+R\+Layer}$\ast$ Basic\+V\+R\+::my\+V\+R\+Layers\mbox{[}M\+A\+X\+\_\+\+L\+A\+Y\+E\+RS\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a2833a6f257610c214ed056c15a7f7785}{}\label{class_basic_v_r_a2833a6f257610c214ed056c15a7f7785}
+\index{Basic\+VR@{Basic\+VR}!my\+Window\+Height\+Scale@{my\+Window\+Height\+Scale}}
+\index{my\+Window\+Height\+Scale@{my\+Window\+Height\+Scale}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Window\+Height\+Scale}{myWindowHeightScale}}]{\setlength{\rightskip}{0pt plus 5cm}float Basic\+V\+R\+::my\+Window\+Height\+Scale\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a920b493bbb4217990d0c36dda41fa606}{}\label{class_basic_v_r_a920b493bbb4217990d0c36dda41fa606}
+\index{Basic\+VR@{Basic\+VR}!my\+Window\+Title@{my\+Window\+Title}}
+\index{my\+Window\+Title@{my\+Window\+Title}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Window\+Title}{myWindowTitle}}]{\setlength{\rightskip}{0pt plus 5cm}L\+P\+C\+W\+S\+TR Basic\+V\+R\+::my\+Window\+Title\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_a3d17ef45cc13b39c7bd7e0106e6701db}{}\label{class_basic_v_r_a3d17ef45cc13b39c7bd7e0106e6701db}
+\index{Basic\+VR@{Basic\+VR}!my\+Window\+Width\+Scale@{my\+Window\+Width\+Scale}}
+\index{my\+Window\+Width\+Scale@{my\+Window\+Width\+Scale}!Basic\+VR@{Basic\+VR}}
+\subsubsection[{\texorpdfstring{my\+Window\+Width\+Scale}{myWindowWidthScale}}]{\setlength{\rightskip}{0pt plus 5cm}float Basic\+V\+R\+::my\+Window\+Width\+Scale\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_basic_v_r_ac6a774a1d2c2a6e49b70920a77363c83}{}\label{class_basic_v_r_ac6a774a1d2c2a6e49b70920a77363c83}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_basic_v_r_8h}{Basic\+V\+R.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_basic_v_r_8cpp}{Basic\+V\+R.\+cpp}\end{DoxyCompactItemize}

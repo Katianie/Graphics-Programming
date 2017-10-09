@@ -1,0 +1,27 @@
+float4x4 ProjView;
+float4 MasterCol;
+float4x4 ModelMatrix;
+float4 FirstPos;
+void main(in  float4 Position  : POSITION,    in  float4 Color : COLOR0, in  float2 TexCoord  : TEXCOORD0,
+          out float4 oPosition : SV_Position, out float4 oColor: COLOR0, out float2 oTexCoord : TEXCOORD0, out bool oClipBack : PSIZE0)
+{
+	float4 cullBar = FirstPos.x * 0.001f;
+
+	if(Position.x <= cullBar.x)
+	{
+		oClipBack = true;
+	}
+	else
+	{
+		oClipBack = false;
+	}
+	
+	if(FirstPos.z >= 999.9f)
+	{
+		oClipBack = false;
+	}
+
+	oPosition = mul(ProjView, Position);
+	oTexCoord = TexCoord;
+	oColor = MasterCol * Color;
+}

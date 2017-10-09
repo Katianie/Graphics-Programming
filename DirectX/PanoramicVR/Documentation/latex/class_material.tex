@@ -1,0 +1,347 @@
+\hypertarget{class_material}{}\section{Material Class Reference}
+\label{class_material}\index{Material@{Material}}
+
+
+{\ttfamily \#include $<$Material.\+h$>$}
+
+Inheritance diagram for Material\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_material}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{class_material_a714370cb1e994ee8e526c1939530767fa237d6499dca28b1474ce39e09a90d492}{M\+A\+T\+\_\+\+W\+R\+AP} = 1, 
+\hyperlink{class_material_a714370cb1e994ee8e526c1939530767fac6eac59fb07a11b02c2211a500275eec}{M\+A\+T\+\_\+\+W\+I\+RE} = 2, 
+\hyperlink{class_material_a714370cb1e994ee8e526c1939530767fa5fcfa59c022ac6b23fb611ec8977abcf}{M\+A\+T\+\_\+\+Z\+A\+L\+W\+A\+YS} = 4, 
+\hyperlink{class_material_a714370cb1e994ee8e526c1939530767fac095e1e2b52c4a352ece6c2d72f1c9dc}{M\+A\+T\+\_\+\+N\+O\+C\+U\+LL} = 8, 
+\\*
+\hyperlink{class_material_a714370cb1e994ee8e526c1939530767fabc06c866b4977529a1be0f5a01967c86}{M\+A\+T\+\_\+\+T\+R\+A\+NS} = 16
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_material_a5c833e0bef6cb5afe3a697c3d2fd244a}{Material} (\hyperlink{class_texture}{Texture} $\ast$texture, char $\ast$vertex\+Shader\+Path=N\+U\+LL, char $\ast$pixel\+Shader\+Path=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_material_a2c19452d71f54075df8f5405b03129f4}{$\sim$\+Material} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+I\+D3\+D11\+Vertex\+Shader $\ast$ \hyperlink{class_material_ad0a3d883b957980fbc606bbbf9688d29}{Get\+Dx\+Vertex\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+I\+D3\+D11\+Pixel\+Shader $\ast$ \hyperlink{class_material_a326382a866a4ad9f50c9d4a7e7b11f44}{Get\+Dx\+Pixel\+Shader} ()
+\item 
+I\+D3\+D11\+Input\+Layout $\ast$ \hyperlink{class_material_aab51c42d918132d3c50dea702cfb5d70}{Get\+Dx\+Input\+Layout} ()
+\item 
+I\+D3\+D11\+Sampler\+State $\ast$\& \hyperlink{class_material_a62903b3cc7607ee069f01ed31656a04d}{Get\+Dx\+Sampler\+State} ()
+\item 
+I\+D3\+D11\+Rasterizer\+State $\ast$ \hyperlink{class_material_a563a7e7b1561c84bc7e0a5535058d7a8}{Get\+Dx\+Rasterizer\+State} ()
+\item 
+I\+D3\+D11\+Depth\+Stencil\+State $\ast$ \hyperlink{class_material_adfed1977690dc11937f2fc2c181a61aa}{Get\+Dx\+Depth\+State} ()
+\item 
+I\+D3\+D11\+Blend\+State $\ast$ \hyperlink{class_material_a68d133ad75ced62ad4af090bd68bfe22}{Get\+Dx\+Blend\+State} ()
+\item 
+\hyperlink{class_texture}{Texture} $\ast$ \hyperlink{class_material_a84f3558e4be3b8ddc1c4b1e85d39d645}{Get\+Texture} ()
+\item 
+U\+I\+NT \& \hyperlink{class_material_afe7f86b971c00a0daa30839867539fb1}{Get\+Vertex\+Buffer\+Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Vertex\+Shader $\ast$ \hyperlink{class_material_ada4d417d4e11a3151caba23c6d98ef18}{my\+Dx\+Vertex\+Shader}
+\item 
+I\+D3\+D11\+Pixel\+Shader $\ast$ \hyperlink{class_material_ab6f46cf000c8d88a47cf11b27ddaff46}{my\+Dx\+Pixel\+Shader}
+\item 
+I\+D3\+D11\+Input\+Layout $\ast$ \hyperlink{class_material_a72b8f75d4f289a8225c8f924964e4770}{my\+Dx\+Input\+Layout}
+\item 
+I\+D3\+D11\+Sampler\+State $\ast$ \hyperlink{class_material_a9825413b1ae64cbe5968b8678a68d0b9}{my\+Dx\+Sampler\+State}
+\item 
+I\+D3\+D11\+Rasterizer\+State $\ast$ \hyperlink{class_material_aa823a3d052a67d1ac95b54368984331e}{my\+Dx\+Rasterizer\+State}
+\item 
+I\+D3\+D11\+Depth\+Stencil\+State $\ast$ \hyperlink{class_material_a2992d32b4525b2f9e4b0005919ddf76e}{my\+Dx\+Depth\+State}
+\item 
+I\+D3\+D11\+Blend\+State $\ast$ \hyperlink{class_material_a7ca4cd5b86b5bb28a2223beb16927acb}{my\+Dx\+Blend\+State}
+\item 
+\hyperlink{class_texture}{Texture} $\ast$ \hyperlink{class_material_a8ff893b848c3392c63898b2951b6ec78}{my\+Texture}
+\item 
+U\+I\+NT \hyperlink{class_material_af0c062e2928f04c57056fe77f4f47f37}{my\+Vertex\+Buffer\+Size}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{class_material_a714370cb1e994ee8e526c1939530767f}{}\label{class_material_a714370cb1e994ee8e526c1939530767f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+A\+T\+\_\+\+W\+R\+AP@{M\+A\+T\+\_\+\+W\+R\+AP}!Material@{Material}}\index{Material@{Material}!M\+A\+T\+\_\+\+W\+R\+AP@{M\+A\+T\+\_\+\+W\+R\+AP}}\item[{\em 
+M\+A\+T\+\_\+\+W\+R\+AP\hypertarget{class_material_a714370cb1e994ee8e526c1939530767fa237d6499dca28b1474ce39e09a90d492}{}\label{class_material_a714370cb1e994ee8e526c1939530767fa237d6499dca28b1474ce39e09a90d492}
+}]\index{M\+A\+T\+\_\+\+W\+I\+RE@{M\+A\+T\+\_\+\+W\+I\+RE}!Material@{Material}}\index{Material@{Material}!M\+A\+T\+\_\+\+W\+I\+RE@{M\+A\+T\+\_\+\+W\+I\+RE}}\item[{\em 
+M\+A\+T\+\_\+\+W\+I\+RE\hypertarget{class_material_a714370cb1e994ee8e526c1939530767fac6eac59fb07a11b02c2211a500275eec}{}\label{class_material_a714370cb1e994ee8e526c1939530767fac6eac59fb07a11b02c2211a500275eec}
+}]\index{M\+A\+T\+\_\+\+Z\+A\+L\+W\+A\+YS@{M\+A\+T\+\_\+\+Z\+A\+L\+W\+A\+YS}!Material@{Material}}\index{Material@{Material}!M\+A\+T\+\_\+\+Z\+A\+L\+W\+A\+YS@{M\+A\+T\+\_\+\+Z\+A\+L\+W\+A\+YS}}\item[{\em 
+M\+A\+T\+\_\+\+Z\+A\+L\+W\+A\+YS\hypertarget{class_material_a714370cb1e994ee8e526c1939530767fa5fcfa59c022ac6b23fb611ec8977abcf}{}\label{class_material_a714370cb1e994ee8e526c1939530767fa5fcfa59c022ac6b23fb611ec8977abcf}
+}]\index{M\+A\+T\+\_\+\+N\+O\+C\+U\+LL@{M\+A\+T\+\_\+\+N\+O\+C\+U\+LL}!Material@{Material}}\index{Material@{Material}!M\+A\+T\+\_\+\+N\+O\+C\+U\+LL@{M\+A\+T\+\_\+\+N\+O\+C\+U\+LL}}\item[{\em 
+M\+A\+T\+\_\+\+N\+O\+C\+U\+LL\hypertarget{class_material_a714370cb1e994ee8e526c1939530767fac095e1e2b52c4a352ece6c2d72f1c9dc}{}\label{class_material_a714370cb1e994ee8e526c1939530767fac095e1e2b52c4a352ece6c2d72f1c9dc}
+}]\index{M\+A\+T\+\_\+\+T\+R\+A\+NS@{M\+A\+T\+\_\+\+T\+R\+A\+NS}!Material@{Material}}\index{Material@{Material}!M\+A\+T\+\_\+\+T\+R\+A\+NS@{M\+A\+T\+\_\+\+T\+R\+A\+NS}}\item[{\em 
+M\+A\+T\+\_\+\+T\+R\+A\+NS\hypertarget{class_material_a714370cb1e994ee8e526c1939530767fabc06c866b4977529a1be0f5a01967c86}{}\label{class_material_a714370cb1e994ee8e526c1939530767fabc06c866b4977529a1be0f5a01967c86}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Material@{Material}!Material@{Material}}
+\index{Material@{Material}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Material(\+Texture $\ast$texture, char $\ast$vertex\+Shader\+Path=\+N\+U\+L\+L, char $\ast$pixel\+Shader\+Path=\+N\+U\+L\+L)}{Material(Texture *texture, char *vertexShaderPath=NULL, char *pixelShaderPath=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}Material\+::\+Material (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} $\ast$}]{texture, }
+\item[{char $\ast$}]{vertex\+Shader\+Path = {\ttfamily NULL}, }
+\item[{char $\ast$}]{pixel\+Shader\+Path = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a5c833e0bef6cb5afe3a697c3d2fd244a}{}\label{class_material_a5c833e0bef6cb5afe3a697c3d2fd244a}
+
+
+Constructor. 
+
+Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & If non-\/null, the texture. \\
+\hline
+\mbox{\tt in}  & {\em vertex\+Shader\+Path} & If non-\/null, full pathname of the vertex shader file. \\
+\hline
+\mbox{\tt in}  & {\em pixel\+Shader\+Path} & If non-\/null, full pathname of the pixel shader file. \\
+\hline
+\end{DoxyParams}
+\index{Material@{Material}!````~Material@{$\sim$\+Material}}
+\index{````~Material@{$\sim$\+Material}!Material@{Material}}
+\subsubsection[{\texorpdfstring{$\sim$\+Material()}{~Material()}}]{\setlength{\rightskip}{0pt plus 5cm}Material\+::$\sim$\+Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a2c19452d71f54075df8f5405b03129f4}{}\label{class_material_a2c19452d71f54075df8f5405b03129f4}
+
+
+Destructor. 
+
+Destructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Material@{Material}!Get\+Dx\+Blend\+State@{Get\+Dx\+Blend\+State}}
+\index{Get\+Dx\+Blend\+State@{Get\+Dx\+Blend\+State}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Blend\+State()}{GetDxBlendState()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Blend\+State $\ast$ Material\+::\+Get\+Dx\+Blend\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a68d133ad75ced62ad4af090bd68bfe22}{}\label{class_material_a68d133ad75ced62ad4af090bd68bfe22}
+Gets the DX Blend State.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Blend State. 
+\end{DoxyReturn}
+\index{Material@{Material}!Get\+Dx\+Depth\+State@{Get\+Dx\+Depth\+State}}
+\index{Get\+Dx\+Depth\+State@{Get\+Dx\+Depth\+State}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Depth\+State()}{GetDxDepthState()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Depth\+Stencil\+State $\ast$ Material\+::\+Get\+Dx\+Depth\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_adfed1977690dc11937f2fc2c181a61aa}{}\label{class_material_adfed1977690dc11937f2fc2c181a61aa}
+Gets the DX Depth State.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Depth State. 
+\end{DoxyReturn}
+\index{Material@{Material}!Get\+Dx\+Input\+Layout@{Get\+Dx\+Input\+Layout}}
+\index{Get\+Dx\+Input\+Layout@{Get\+Dx\+Input\+Layout}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Input\+Layout()}{GetDxInputLayout()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Input\+Layout $\ast$ Material\+::\+Get\+Dx\+Input\+Layout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_aab51c42d918132d3c50dea702cfb5d70}{}\label{class_material_aab51c42d918132d3c50dea702cfb5d70}
+Gets the DX Input Layout.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Input Layout. 
+\end{DoxyReturn}
+\index{Material@{Material}!Get\+Dx\+Pixel\+Shader@{Get\+Dx\+Pixel\+Shader}}
+\index{Get\+Dx\+Pixel\+Shader@{Get\+Dx\+Pixel\+Shader}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Pixel\+Shader()}{GetDxPixelShader()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Pixel\+Shader $\ast$ Material\+::\+Get\+Dx\+Pixel\+Shader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a326382a866a4ad9f50c9d4a7e7b11f44}{}\label{class_material_a326382a866a4ad9f50c9d4a7e7b11f44}
+Gets DX Pixel Shader.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Pixel Shader. 
+\end{DoxyReturn}
+\index{Material@{Material}!Get\+Dx\+Rasterizer\+State@{Get\+Dx\+Rasterizer\+State}}
+\index{Get\+Dx\+Rasterizer\+State@{Get\+Dx\+Rasterizer\+State}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Rasterizer\+State()}{GetDxRasterizerState()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Rasterizer\+State $\ast$ Material\+::\+Get\+Dx\+Rasterizer\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a563a7e7b1561c84bc7e0a5535058d7a8}{}\label{class_material_a563a7e7b1561c84bc7e0a5535058d7a8}
+Gets the DX Rasterizer State.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Rasterizer State. 
+\end{DoxyReturn}
+\index{Material@{Material}!Get\+Dx\+Sampler\+State@{Get\+Dx\+Sampler\+State}}
+\index{Get\+Dx\+Sampler\+State@{Get\+Dx\+Sampler\+State}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Sampler\+State()}{GetDxSamplerState()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Sampler\+State $\ast$\& Material\+::\+Get\+Dx\+Sampler\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a62903b3cc7607ee069f01ed31656a04d}{}\label{class_material_a62903b3cc7607ee069f01ed31656a04d}
+Gets the DX Sampler State.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Sampler State. 
+\end{DoxyReturn}
+\index{Material@{Material}!Get\+Dx\+Vertex\+Shader@{Get\+Dx\+Vertex\+Shader}}
+\index{Get\+Dx\+Vertex\+Shader@{Get\+Dx\+Vertex\+Shader}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Vertex\+Shader()}{GetDxVertexShader()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Vertex\+Shader $\ast$ Material\+::\+Get\+Dx\+Vertex\+Shader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_ad0a3d883b957980fbc606bbbf9688d29}{}\label{class_material_ad0a3d883b957980fbc606bbbf9688d29}
+
+
+Getters. 
+
+Gets the DX \hyperlink{class_vertex}{Vertex} Shader.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX \hyperlink{class_vertex}{Vertex} Shader. 
+\end{DoxyReturn}
+\index{Material@{Material}!Get\+Texture@{Get\+Texture}}
+\index{Get\+Texture@{Get\+Texture}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Texture()}{GetTexture()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Material\+::\+Get\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a84f3558e4be3b8ddc1c4b1e85d39d645}{}\label{class_material_a84f3558e4be3b8ddc1c4b1e85d39d645}
+Gets the \hyperlink{class_texture}{Texture}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{class_texture}{Texture}. 
+\end{DoxyReturn}
+\index{Material@{Material}!Get\+Vertex\+Buffer\+Size@{Get\+Vertex\+Buffer\+Size}}
+\index{Get\+Vertex\+Buffer\+Size@{Get\+Vertex\+Buffer\+Size}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Get\+Vertex\+Buffer\+Size()}{GetVertexBufferSize()}}]{\setlength{\rightskip}{0pt plus 5cm}U\+I\+NT \& Material\+::\+Get\+Vertex\+Buffer\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_afe7f86b971c00a0daa30839867539fb1}{}\label{class_material_afe7f86b971c00a0daa30839867539fb1}
+Gets the \hyperlink{class_vertex}{Vertex} Buffer size.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{class_vertex}{Vertex} Buffer size. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Material@{Material}!my\+Dx\+Blend\+State@{my\+Dx\+Blend\+State}}
+\index{my\+Dx\+Blend\+State@{my\+Dx\+Blend\+State}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Blend\+State}{myDxBlendState}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Blend\+State$\ast$ Material\+::my\+Dx\+Blend\+State\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_a7ca4cd5b86b5bb28a2223beb16927acb}{}\label{class_material_a7ca4cd5b86b5bb28a2223beb16927acb}
+\index{Material@{Material}!my\+Dx\+Depth\+State@{my\+Dx\+Depth\+State}}
+\index{my\+Dx\+Depth\+State@{my\+Dx\+Depth\+State}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Depth\+State}{myDxDepthState}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Depth\+Stencil\+State$\ast$ Material\+::my\+Dx\+Depth\+State\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_a2992d32b4525b2f9e4b0005919ddf76e}{}\label{class_material_a2992d32b4525b2f9e4b0005919ddf76e}
+\index{Material@{Material}!my\+Dx\+Input\+Layout@{my\+Dx\+Input\+Layout}}
+\index{my\+Dx\+Input\+Layout@{my\+Dx\+Input\+Layout}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Input\+Layout}{myDxInputLayout}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Input\+Layout$\ast$ Material\+::my\+Dx\+Input\+Layout\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_a72b8f75d4f289a8225c8f924964e4770}{}\label{class_material_a72b8f75d4f289a8225c8f924964e4770}
+\index{Material@{Material}!my\+Dx\+Pixel\+Shader@{my\+Dx\+Pixel\+Shader}}
+\index{my\+Dx\+Pixel\+Shader@{my\+Dx\+Pixel\+Shader}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Pixel\+Shader}{myDxPixelShader}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Pixel\+Shader$\ast$ Material\+::my\+Dx\+Pixel\+Shader\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_ab6f46cf000c8d88a47cf11b27ddaff46}{}\label{class_material_ab6f46cf000c8d88a47cf11b27ddaff46}
+\index{Material@{Material}!my\+Dx\+Rasterizer\+State@{my\+Dx\+Rasterizer\+State}}
+\index{my\+Dx\+Rasterizer\+State@{my\+Dx\+Rasterizer\+State}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Rasterizer\+State}{myDxRasterizerState}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Rasterizer\+State$\ast$ Material\+::my\+Dx\+Rasterizer\+State\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_aa823a3d052a67d1ac95b54368984331e}{}\label{class_material_aa823a3d052a67d1ac95b54368984331e}
+\index{Material@{Material}!my\+Dx\+Sampler\+State@{my\+Dx\+Sampler\+State}}
+\index{my\+Dx\+Sampler\+State@{my\+Dx\+Sampler\+State}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Sampler\+State}{myDxSamplerState}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Sampler\+State$\ast$ Material\+::my\+Dx\+Sampler\+State\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_a9825413b1ae64cbe5968b8678a68d0b9}{}\label{class_material_a9825413b1ae64cbe5968b8678a68d0b9}
+\index{Material@{Material}!my\+Dx\+Vertex\+Shader@{my\+Dx\+Vertex\+Shader}}
+\index{my\+Dx\+Vertex\+Shader@{my\+Dx\+Vertex\+Shader}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Vertex\+Shader}{myDxVertexShader}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Vertex\+Shader$\ast$ Material\+::my\+Dx\+Vertex\+Shader\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_ada4d417d4e11a3151caba23c6d98ef18}{}\label{class_material_ada4d417d4e11a3151caba23c6d98ef18}
+\index{Material@{Material}!my\+Texture@{my\+Texture}}
+\index{my\+Texture@{my\+Texture}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Texture}{myTexture}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture}$\ast$ Material\+::my\+Texture\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_a8ff893b848c3392c63898b2951b6ec78}{}\label{class_material_a8ff893b848c3392c63898b2951b6ec78}
+\index{Material@{Material}!my\+Vertex\+Buffer\+Size@{my\+Vertex\+Buffer\+Size}}
+\index{my\+Vertex\+Buffer\+Size@{my\+Vertex\+Buffer\+Size}!Material@{Material}}
+\subsubsection[{\texorpdfstring{my\+Vertex\+Buffer\+Size}{myVertexBufferSize}}]{\setlength{\rightskip}{0pt plus 5cm}U\+I\+NT Material\+::my\+Vertex\+Buffer\+Size\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_material_af0c062e2928f04c57056fe77f4f47f37}{}\label{class_material_af0c062e2928f04c57056fe77f4f47f37}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_material_8h}{Material.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_material_8cpp}{Material.\+cpp}\end{DoxyCompactItemize}

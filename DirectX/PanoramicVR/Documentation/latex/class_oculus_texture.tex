@@ -1,0 +1,262 @@
+\hypertarget{class_oculus_texture}{}\section{Oculus\+Texture Class Reference}
+\label{class_oculus_texture}\index{Oculus\+Texture@{Oculus\+Texture}}
+
+
+{\ttfamily \#include $<$Oculus\+Texture.\+h$>$}
+
+Inheritance diagram for Oculus\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_oculus_texture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_oculus_texture_ad3cc67fb9d31fe41675592f23abc5e47}{Oculus\+Texture} ()
+\begin{DoxyCompactList}\small\item\em Constructors. \end{DoxyCompactList}\item 
+bool \hyperlink{class_oculus_texture_a4c3211813aec38c62d198f5d2f8b5c58}{Init} (ovr\+Hmd hmd, int size\+Width, int size\+Height)
+\item 
+\hyperlink{class_oculus_texture_a6626d481b7b535f8aa49762bf1753071}{$\sim$\+Oculus\+Texture} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_oculus_texture_afff2c510620b5aa2d2413b4fc27ce114}{Increment} ()
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+ovr\+Hmd \hyperlink{class_oculus_texture_a3726005d9453f8616a47e735b677cb5c}{Get\+H\+MD} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+I\+D3\+D11\+Render\+Target\+View $\ast$ \hyperlink{class_oculus_texture_a17d4bcf0866848b28165ac8c0a9d77a2}{Get\+Render\+Target} (int index)
+\item 
+int \hyperlink{class_oculus_texture_af81b3825a506329b8db16071a5483495}{Get\+Size\+Height} ()
+\item 
+int \hyperlink{class_oculus_texture_af73833914f0cc424bc1dea0163ffd385}{Get\+Size\+Width} ()
+\item 
+ovr\+Swap\+Texture\+Set $\ast$ \hyperlink{class_oculus_texture_a826638e17b3c23dc9f9c8076726b73f3}{Get\+Swap\+Texture\+Set} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ovr\+Hmd \hyperlink{class_oculus_texture_a15c4e9c827747a8f864041baab7771ee}{my\+H\+MD}
+\item 
+ovr\+Swap\+Texture\+Set $\ast$ \hyperlink{class_oculus_texture_a04e78e256386bece42e85d2959d2e32f}{my\+Swap\+Texture\+Set}
+\item 
+I\+D3\+D11\+Render\+Target\+View $\ast$ \hyperlink{class_oculus_texture_a5d69afb8a823b45fd936437f2c0d5b87}{my\+Render\+Targets} \mbox{[}T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+O\+U\+NT\mbox{]}
+\item 
+int \hyperlink{class_oculus_texture_afc8b36b0000c604578ad62c8ee736315}{my\+Size\+Width}
+\item 
+int \hyperlink{class_oculus_texture_afddb31ca4baf9069c37be3008edbb1a9}{my\+Size\+Height}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Oculus\+Texture@{Oculus\+Texture}!Oculus\+Texture@{Oculus\+Texture}}
+\index{Oculus\+Texture@{Oculus\+Texture}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{Oculus\+Texture()}{OculusTexture()}}]{\setlength{\rightskip}{0pt plus 5cm}Oculus\+Texture\+::\+Oculus\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_ad3cc67fb9d31fe41675592f23abc5e47}{}\label{class_oculus_texture_ad3cc67fb9d31fe41675592f23abc5e47}
+
+
+Constructors. 
+
+Default Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Oculus\+Texture@{Oculus\+Texture}!````~Oculus\+Texture@{$\sim$\+Oculus\+Texture}}
+\index{````~Oculus\+Texture@{$\sim$\+Oculus\+Texture}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{$\sim$\+Oculus\+Texture()}{~OculusTexture()}}]{\setlength{\rightskip}{0pt plus 5cm}Oculus\+Texture\+::$\sim$\+Oculus\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_a6626d481b7b535f8aa49762bf1753071}{}\label{class_oculus_texture_a6626d481b7b535f8aa49762bf1753071}
+
+
+Destructor. 
+
+Destructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Oculus\+Texture@{Oculus\+Texture}!Get\+H\+MD@{Get\+H\+MD}}
+\index{Get\+H\+MD@{Get\+H\+MD}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{Get\+H\+M\+D()}{GetHMD()}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Hmd Oculus\+Texture\+::\+Get\+H\+MD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_a3726005d9453f8616a47e735b677cb5c}{}\label{class_oculus_texture_a3726005d9453f8616a47e735b677cb5c}
+
+
+Getters. 
+
+Gets the H\+MD
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The H\+MD. 
+\end{DoxyReturn}
+\index{Oculus\+Texture@{Oculus\+Texture}!Get\+Render\+Target@{Get\+Render\+Target}}
+\index{Get\+Render\+Target@{Get\+Render\+Target}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{Get\+Render\+Target(int index)}{GetRenderTarget(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Render\+Target\+View $\ast$ Oculus\+Texture\+::\+Get\+Render\+Target (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_a17d4bcf0866848b28165ac8c0a9d77a2}{}\label{class_oculus_texture_a17d4bcf0866848b28165ac8c0a9d77a2}
+Gets the specified Render Target.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Zero-\/based index of the render target.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Render Target. 
+\end{DoxyReturn}
+\index{Oculus\+Texture@{Oculus\+Texture}!Get\+Size\+Height@{Get\+Size\+Height}}
+\index{Get\+Size\+Height@{Get\+Size\+Height}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{Get\+Size\+Height()}{GetSizeHeight()}}]{\setlength{\rightskip}{0pt plus 5cm}int Oculus\+Texture\+::\+Get\+Size\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_af81b3825a506329b8db16071a5483495}{}\label{class_oculus_texture_af81b3825a506329b8db16071a5483495}
+Gets the \hyperlink{class_texture}{Texture} height.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The size height. 
+\end{DoxyReturn}
+\index{Oculus\+Texture@{Oculus\+Texture}!Get\+Size\+Width@{Get\+Size\+Width}}
+\index{Get\+Size\+Width@{Get\+Size\+Width}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{Get\+Size\+Width()}{GetSizeWidth()}}]{\setlength{\rightskip}{0pt plus 5cm}int Oculus\+Texture\+::\+Get\+Size\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_af73833914f0cc424bc1dea0163ffd385}{}\label{class_oculus_texture_af73833914f0cc424bc1dea0163ffd385}
+Gets the texture width.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{class_texture}{Texture} width. 
+\end{DoxyReturn}
+\index{Oculus\+Texture@{Oculus\+Texture}!Get\+Swap\+Texture\+Set@{Get\+Swap\+Texture\+Set}}
+\index{Get\+Swap\+Texture\+Set@{Get\+Swap\+Texture\+Set}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{Get\+Swap\+Texture\+Set()}{GetSwapTextureSet()}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Swap\+Texture\+Set $\ast$ Oculus\+Texture\+::\+Get\+Swap\+Texture\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_a826638e17b3c23dc9f9c8076726b73f3}{}\label{class_oculus_texture_a826638e17b3c23dc9f9c8076726b73f3}
+Gets the Swap \hyperlink{class_texture}{Texture} Set.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The Swap \hyperlink{class_texture}{Texture} Set. 
+\end{DoxyReturn}
+\index{Oculus\+Texture@{Oculus\+Texture}!Increment@{Increment}}
+\index{Increment@{Increment}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{Increment()}{Increment()}}]{\setlength{\rightskip}{0pt plus 5cm}void Oculus\+Texture\+::\+Increment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_afff2c510620b5aa2d2413b4fc27ce114}{}\label{class_oculus_texture_afff2c510620b5aa2d2413b4fc27ce114}
+
+
+Functions. 
+
+Increment the index of the current swap texture.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Oculus\+Texture@{Oculus\+Texture}!Init@{Init}}
+\index{Init@{Init}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{Init(ovr\+Hmd hmd, int size\+Width, int size\+Height)}{Init(ovrHmd hmd, int sizeWidth, int sizeHeight)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Oculus\+Texture\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{ovr\+Hmd}]{hmd, }
+\item[{int}]{size\+Width, }
+\item[{int}]{size\+Height}
+\end{DoxyParamCaption}
+)}\hypertarget{class_oculus_texture_a4c3211813aec38c62d198f5d2f8b5c58}{}\label{class_oculus_texture_a4c3211813aec38c62d198f5d2f8b5c58}
+Initializes the O\+VR \hyperlink{class_texture}{Texture} and anything related to O\+VR such as my\+Swap\+Texture\+Set.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em hmd} & The H\+MD. \\
+\hline
+{\em size\+Width} & Width of the \hyperlink{class_texture}{Texture}. \\
+\hline
+{\em size\+Height} & Height of the \hyperlink{class_texture}{Texture}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Oculus\+Texture@{Oculus\+Texture}!my\+H\+MD@{my\+H\+MD}}
+\index{my\+H\+MD@{my\+H\+MD}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{my\+H\+MD}{myHMD}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Hmd Oculus\+Texture\+::my\+H\+MD\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_oculus_texture_a15c4e9c827747a8f864041baab7771ee}{}\label{class_oculus_texture_a15c4e9c827747a8f864041baab7771ee}
+\index{Oculus\+Texture@{Oculus\+Texture}!my\+Render\+Targets@{my\+Render\+Targets}}
+\index{my\+Render\+Targets@{my\+Render\+Targets}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{my\+Render\+Targets}{myRenderTargets}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Render\+Target\+View$\ast$ Oculus\+Texture\+::my\+Render\+Targets\mbox{[}T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+O\+U\+NT\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_oculus_texture_a5d69afb8a823b45fd936437f2c0d5b87}{}\label{class_oculus_texture_a5d69afb8a823b45fd936437f2c0d5b87}
+\index{Oculus\+Texture@{Oculus\+Texture}!my\+Size\+Height@{my\+Size\+Height}}
+\index{my\+Size\+Height@{my\+Size\+Height}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{my\+Size\+Height}{mySizeHeight}}]{\setlength{\rightskip}{0pt plus 5cm}int Oculus\+Texture\+::my\+Size\+Height\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_oculus_texture_afddb31ca4baf9069c37be3008edbb1a9}{}\label{class_oculus_texture_afddb31ca4baf9069c37be3008edbb1a9}
+\index{Oculus\+Texture@{Oculus\+Texture}!my\+Size\+Width@{my\+Size\+Width}}
+\index{my\+Size\+Width@{my\+Size\+Width}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{my\+Size\+Width}{mySizeWidth}}]{\setlength{\rightskip}{0pt plus 5cm}int Oculus\+Texture\+::my\+Size\+Width\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_oculus_texture_afc8b36b0000c604578ad62c8ee736315}{}\label{class_oculus_texture_afc8b36b0000c604578ad62c8ee736315}
+\index{Oculus\+Texture@{Oculus\+Texture}!my\+Swap\+Texture\+Set@{my\+Swap\+Texture\+Set}}
+\index{my\+Swap\+Texture\+Set@{my\+Swap\+Texture\+Set}!Oculus\+Texture@{Oculus\+Texture}}
+\subsubsection[{\texorpdfstring{my\+Swap\+Texture\+Set}{mySwapTextureSet}}]{\setlength{\rightskip}{0pt plus 5cm}ovr\+Swap\+Texture\+Set$\ast$ Oculus\+Texture\+::my\+Swap\+Texture\+Set\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_oculus_texture_a04e78e256386bece42e85d2959d2e32f}{}\label{class_oculus_texture_a04e78e256386bece42e85d2959d2e32f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_oculus_texture_8h}{Oculus\+Texture.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_oculus_texture_8cpp}{Oculus\+Texture.\+cpp}\end{DoxyCompactItemize}

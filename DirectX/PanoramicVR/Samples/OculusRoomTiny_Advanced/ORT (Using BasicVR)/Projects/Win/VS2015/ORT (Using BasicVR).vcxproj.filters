@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\main.cpp" />
+    <ClCompile Include="..\..\..\..\Common\Implementations\BasicVR.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\Camera.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\DataBuffer.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\DepthBuffer.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\DirectXManager.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\Material.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\Model.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\Scene.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\Texture.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\TriangleSet.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\Vertex.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\stdafx.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\AceDX.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\Object.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\VRLayer.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Common\Implementations\OculusTexture.cpp">
+      <Filter>Implementations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{1c778c26-f9b4-4cb4-9653-fd550df388b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementations">
+      <UniqueIdentifier>{7ea78469-5555-439e-a2dd-7de66b78b651}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Common\Headers\BasicVR.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\Camera.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\DataBuffer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\DepthBuffer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\DirectXManager.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\Material.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\Model.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\Scene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\Texture.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\TriangleSet.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\Vertex.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\stdafx.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\main.h" />
+    <ClInclude Include="..\..\..\..\Common\Headers\AceDX.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\Object.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\VRLayer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Common\Headers\OculusTexture.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

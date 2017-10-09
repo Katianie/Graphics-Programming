@@ -1,0 +1,690 @@
+\hypertarget{class_direct_x_manager}{}\section{Direct\+X\+Manager Class Reference}
+\label{class_direct_x_manager}\index{Direct\+X\+Manager@{Direct\+X\+Manager}}
+
+
+{\ttfamily \#include $<$Direct\+X\+Manager.\+h$>$}
+
+Inheritance diagram for Direct\+X\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_direct_x_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_direct_x_manager_a5c9ef465fa2eed372c462fe34fa6a0d1}{$\sim$\+Direct\+X\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_direct_x_manager_a50fbe9ef22a71b8d56599735d6b813d9}{Close\+Window} ()
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+bool \hyperlink{class_direct_x_manager_afc1e06766269d5535ba71c542acdc8e8}{Handle\+Messages} ()
+\item 
+bool \hyperlink{class_direct_x_manager_a4314d94fefe4c2eec896c45c8cc5a77e}{Init\+Device} (int viewport\+Width, int viewport\+Height, const L\+U\+ID $\ast$p\+Luid, bool is\+Windowed=true)
+\item 
+void \hyperlink{class_direct_x_manager_a7226059ce9d4970d17cb4924058eb9f2}{Init\+Viewport} (float viewportX, float viewportY, float viewport\+Width, float viewport\+Height)
+\item 
+bool \hyperlink{class_direct_x_manager_ada12791447237c01bd511c3c6bf822e8}{Init\+Window} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, L\+P\+C\+W\+S\+TR title)
+\item 
+void \hyperlink{class_direct_x_manager_a2d8ffc338f3520548e7fc0ea573b686e}{Release\+Device} ()
+\item 
+void \hyperlink{class_direct_x_manager_af2bbed3ede3068ae5679632b1c739165}{Set\+And\+Clear\+Render\+Target} (I\+D3\+D11\+Render\+Target\+View $\ast$rendertarget, \hyperlink{class_depth_buffer}{Depth\+Buffer} $\ast$depthbuffer, float R=0.\+0f, float G=0.\+0f, float B=0.\+0f, float A=0.\+0f)
+\item 
+I\+D3\+D11\+Render\+Target\+View $\ast$ \hyperlink{class_direct_x_manager_a99b3f77cccd824c62979affb01775b68}{Get\+Dx\+Back\+Buffer\+Render\+Target} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+I\+D3\+D11\+Texture2D $\ast$ \hyperlink{class_direct_x_manager_a99ac3db0b44425089a176fc741b4726d}{Get\+Dx\+Back\+Buffer\+Texture} ()
+\item 
+I\+D3\+D11\+Device $\ast$ \hyperlink{class_direct_x_manager_abb96057eb5bf224ef98060bd34b48751}{Get\+Dx\+Device} ()
+\item 
+I\+D3\+D11\+Device\+Context $\ast$ \hyperlink{class_direct_x_manager_ae9c3888bc7917e6ea3259d7816fe108a}{Get\+Dx\+Device\+Context} ()
+\item 
+I\+D\+X\+G\+I\+Swap\+Chain $\ast$ \hyperlink{class_direct_x_manager_a310a11a8113c758033f6b73fdde53030}{Get\+Dx\+Swap\+Chain} ()
+\item 
+H\+I\+N\+S\+T\+A\+N\+CE \hyperlink{class_direct_x_manager_a9cc5d9f93f5c2527db03de9dfe39bddf}{Get\+H\+Instance} ()
+\item 
+bool \hyperlink{class_direct_x_manager_a4270aa51fbde3ca7257e2904972a606b}{Get\+Is\+Running} ()
+\item 
+\hyperlink{class_depth_buffer}{Depth\+Buffer} $\ast$ \hyperlink{class_direct_x_manager_abf6b3476bf3f3e93a15d878d3fb0d96c}{Get\+Main\+Depth\+Buffer} ()
+\item 
+unsigned char $\ast$ \hyperlink{class_direct_x_manager_a3f0de0a051dbb65f80eb1f947d00c4cd}{Get\+Uniform\+Data} ()
+\item 
+\hyperlink{class_data_buffer}{Data\+Buffer} $\ast$ \hyperlink{class_direct_x_manager_a3ecf250110570278558a06be31c98837}{Get\+Uniform\+Data\+Buffer} ()
+\item 
+H\+W\+ND \hyperlink{class_direct_x_manager_a51978215008055fa610f4eafd39fd8f8}{Get\+Window} ()
+\item 
+int \hyperlink{class_direct_x_manager_a49d8a5684c325e88886e5fa5e1d83089}{Get\+Window\+Size\+Height} ()
+\item 
+int \hyperlink{class_direct_x_manager_aebaff0bb77f5b660ec5ea25b7a131229}{Get\+Window\+Size\+Width} ()
+\item 
+void \hyperlink{class_direct_x_manager_aae3c1e2ebb395bfec27e2f15ed6b8c80}{Set\+Uniform\+Data} (int offset, const void $\ast$data, int size)
+\begin{DoxyCompactList}\small\item\em Setters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_direct_x_manager}{Direct\+X\+Manager} \& \hyperlink{class_direct_x_manager_ac785f35f30dd23faa97ec028ff2a4c91}{Retrieve\+Direct\+X\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Singleton Constructor/\+Getter. \end{DoxyCompactList}\item 
+static L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{class_direct_x_manager_ada0e4673d0eb74936a25c1870161e56b}{Window\+Proc} (\+\_\+\+In\+\_\+ H\+W\+ND h\+Wnd, \+\_\+\+In\+\_\+ U\+I\+NT Msg, \+\_\+\+In\+\_\+ W\+P\+A\+R\+AM w\+Param, \+\_\+\+In\+\_\+ L\+P\+A\+R\+AM l\+Param)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_direct_x_manager_a1544b12672e275067e71230c93440261}{Direct\+X\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Private Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{class_direct_x_manager_ae04e85d0a8cc262e45d7af9024fe2051}{my\+Uniform\+Data} \mbox{[}U\+N\+I\+F\+O\+R\+M\+\_\+\+D\+A\+T\+A\+\_\+\+S\+I\+ZE\mbox{]}
+\item 
+H\+W\+ND \hyperlink{class_direct_x_manager_aaa12b1687acb8f70bd1ac7245be80c07}{my\+Window}
+\item 
+H\+I\+N\+S\+T\+A\+N\+CE \hyperlink{class_direct_x_manager_a0b39e8b76d45f918d5b43da5dbfba83f}{my\+H\+Instance}
+\item 
+\hyperlink{class_data_buffer}{Data\+Buffer} $\ast$ \hyperlink{class_direct_x_manager_a739e4f51ccf5cfff52387b4026c57e1d}{my\+Uniform\+Data\+Buffer}
+\item 
+\hyperlink{class_depth_buffer}{Depth\+Buffer} $\ast$ \hyperlink{class_direct_x_manager_a3626b7fb2456f6334b3442a16e4ec6f9}{my\+Main\+Depth\+Buffer}
+\item 
+I\+D3\+D11\+Device $\ast$ \hyperlink{class_direct_x_manager_ad413d8beeaacd31be6a5520afe1b8a50}{my\+Dx\+Device}
+\item 
+I\+D3\+D11\+Device\+Context $\ast$ \hyperlink{class_direct_x_manager_a54d0f3f23f8481ecd38c9593ef5637b9}{my\+Dx\+Device\+Context}
+\item 
+I\+D\+X\+G\+I\+Swap\+Chain $\ast$ \hyperlink{class_direct_x_manager_a2812dd8db44c309cd3b03748112482e3}{my\+Dx\+Swap\+Chain}
+\item 
+I\+D3\+D11\+Texture2D $\ast$ \hyperlink{class_direct_x_manager_ab0ee9dcf63fe7b20478e0e15632f8d5e}{my\+Dx\+Back\+Buffer\+Texture}
+\item 
+I\+D3\+D11\+Render\+Target\+View $\ast$ \hyperlink{class_direct_x_manager_a6a94536e4b95c5847224dc94cd9f5f79}{my\+Dx\+Back\+Buffer\+Render\+Target}
+\item 
+bool \hyperlink{class_direct_x_manager_ab6d80d209ac41961b6913b109ca9a8fe}{my\+Is\+Running}
+\item 
+int \hyperlink{class_direct_x_manager_adc2c37647b0833a08f116c4873f8ab3f}{my\+Window\+Size\+Width}
+\item 
+int \hyperlink{class_direct_x_manager_a489f71bd3dcfdaa3e9f6d6c37daee516}{my\+Window\+Size\+Height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Direct\+X\+Manager()}{DirectXManager()}}]{\setlength{\rightskip}{0pt plus 5cm}Direct\+X\+Manager\+::\+Direct\+X\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_a1544b12672e275067e71230c93440261}{}\label{class_direct_x_manager_a1544b12672e275067e71230c93440261}
+
+
+Private Constructor. 
+
+Private Constructor. This is called only once and is used by \hyperlink{class_direct_x_manager_ac785f35f30dd23faa97ec028ff2a4c91}{Retrieve\+Direct\+X\+Manager()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!````~Direct\+X\+Manager@{$\sim$\+Direct\+X\+Manager}}
+\index{````~Direct\+X\+Manager@{$\sim$\+Direct\+X\+Manager}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{$\sim$\+Direct\+X\+Manager()}{~DirectXManager()}}]{\setlength{\rightskip}{0pt plus 5cm}Direct\+X\+Manager\+::$\sim$\+Direct\+X\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_direct_x_manager_a5c9ef465fa2eed372c462fe34fa6a0d1}{}\label{class_direct_x_manager_a5c9ef465fa2eed372c462fe34fa6a0d1}
+
+
+Destructor. 
+
+Destructor. Calls \hyperlink{class_direct_x_manager_a2d8ffc338f3520548e7fc0ea573b686e}{Release\+Device()} and \hyperlink{class_direct_x_manager_a50fbe9ef22a71b8d56599735d6b813d9}{Close\+Window()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Close\+Window@{Close\+Window}}
+\index{Close\+Window@{Close\+Window}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Close\+Window()}{CloseWindow()}}]{\setlength{\rightskip}{0pt plus 5cm}void Direct\+X\+Manager\+::\+Close\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a50fbe9ef22a71b8d56599735d6b813d9}{}\label{class_direct_x_manager_a50fbe9ef22a71b8d56599735d6b813d9}
+
+
+Functions. 
+
+Destroys the window and unregisters the class.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Dx\+Back\+Buffer\+Render\+Target@{Get\+Dx\+Back\+Buffer\+Render\+Target}}
+\index{Get\+Dx\+Back\+Buffer\+Render\+Target@{Get\+Dx\+Back\+Buffer\+Render\+Target}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Back\+Buffer\+Render\+Target()}{GetDxBackBufferRenderTarget()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Render\+Target\+View $\ast$ Direct\+X\+Manager\+::\+Get\+Dx\+Back\+Buffer\+Render\+Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a99b3f77cccd824c62979affb01775b68}{}\label{class_direct_x_manager_a99b3f77cccd824c62979affb01775b68}
+
+
+Getters. 
+
+Gets the pixel buffer aka Back Buffer Render Target.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+the pixel buffer aka Back Buffer Render Target. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Dx\+Back\+Buffer\+Texture@{Get\+Dx\+Back\+Buffer\+Texture}}
+\index{Get\+Dx\+Back\+Buffer\+Texture@{Get\+Dx\+Back\+Buffer\+Texture}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Back\+Buffer\+Texture()}{GetDxBackBufferTexture()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Texture2D $\ast$ Direct\+X\+Manager\+::\+Get\+Dx\+Back\+Buffer\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a99ac3db0b44425089a176fc741b4726d}{}\label{class_direct_x_manager_a99ac3db0b44425089a176fc741b4726d}
+Gets the DX Back Buffer \hyperlink{class_texture}{Texture}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+the DX Back Buffer \hyperlink{class_texture}{Texture}. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Dx\+Device@{Get\+Dx\+Device}}
+\index{Get\+Dx\+Device@{Get\+Dx\+Device}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Device()}{GetDxDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Device $\ast$ Direct\+X\+Manager\+::\+Get\+Dx\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_abb96057eb5bf224ef98060bd34b48751}{}\label{class_direct_x_manager_abb96057eb5bf224ef98060bd34b48751}
+Gets DX Device.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+the DX Device. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Dx\+Device\+Context@{Get\+Dx\+Device\+Context}}
+\index{Get\+Dx\+Device\+Context@{Get\+Dx\+Device\+Context}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Device\+Context()}{GetDxDeviceContext()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Device\+Context $\ast$ Direct\+X\+Manager\+::\+Get\+Dx\+Device\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_ae9c3888bc7917e6ea3259d7816fe108a}{}\label{class_direct_x_manager_ae9c3888bc7917e6ea3259d7816fe108a}
+Gets the DX Device Context.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+the DX Device Context. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Dx\+Swap\+Chain@{Get\+Dx\+Swap\+Chain}}
+\index{Get\+Dx\+Swap\+Chain@{Get\+Dx\+Swap\+Chain}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Swap\+Chain()}{GetDxSwapChain()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D\+X\+G\+I\+Swap\+Chain $\ast$ Direct\+X\+Manager\+::\+Get\+Dx\+Swap\+Chain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a310a11a8113c758033f6b73fdde53030}{}\label{class_direct_x_manager_a310a11a8113c758033f6b73fdde53030}
+Gets the DX Swap Chain.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+the DX Swap Chain. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+H\+Instance@{Get\+H\+Instance}}
+\index{Get\+H\+Instance@{Get\+H\+Instance}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+H\+Instance()}{GetHInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+I\+N\+S\+T\+A\+N\+CE Direct\+X\+Manager\+::\+Get\+H\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a9cc5d9f93f5c2527db03de9dfe39bddf}{}\label{class_direct_x_manager_a9cc5d9f93f5c2527db03de9dfe39bddf}
+Gets the h\+Instance (handle to the current application).
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The h\+Instance (handle to the current application). 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Is\+Running@{Get\+Is\+Running}}
+\index{Get\+Is\+Running@{Get\+Is\+Running}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Is\+Running()}{GetIsRunning()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Direct\+X\+Manager\+::\+Get\+Is\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a4270aa51fbde3ca7257e2904972a606b}{}\label{class_direct_x_manager_a4270aa51fbde3ca7257e2904972a606b}
+Gets Is\+Running.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Main\+Depth\+Buffer@{Get\+Main\+Depth\+Buffer}}
+\index{Get\+Main\+Depth\+Buffer@{Get\+Main\+Depth\+Buffer}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Main\+Depth\+Buffer()}{GetMainDepthBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Depth\+Buffer} $\ast$ Direct\+X\+Manager\+::\+Get\+Main\+Depth\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_abf6b3476bf3f3e93a15d878d3fb0d96c}{}\label{class_direct_x_manager_abf6b3476bf3f3e93a15d878d3fb0d96c}
+Gets the Depth Buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The Depth Buffer. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Uniform\+Data@{Get\+Uniform\+Data}}
+\index{Get\+Uniform\+Data@{Get\+Uniform\+Data}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Uniform\+Data()}{GetUniformData()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char $\ast$ Direct\+X\+Manager\+::\+Get\+Uniform\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a3f0de0a051dbb65f80eb1f947d00c4cd}{}\label{class_direct_x_manager_a3f0de0a051dbb65f80eb1f947d00c4cd}
+Gets uniform data which is sent to the shader.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+uniform data which is sent to the shader. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Uniform\+Data\+Buffer@{Get\+Uniform\+Data\+Buffer}}
+\index{Get\+Uniform\+Data\+Buffer@{Get\+Uniform\+Data\+Buffer}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Uniform\+Data\+Buffer()}{GetUniformDataBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Buffer} $\ast$ Direct\+X\+Manager\+::\+Get\+Uniform\+Data\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a3ecf250110570278558a06be31c98837}{}\label{class_direct_x_manager_a3ecf250110570278558a06be31c98837}
+Gets uniform data buffer which is sent to the shader.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+the uniform data buffer which is sent to the shader. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Window@{Get\+Window}}
+\index{Get\+Window@{Get\+Window}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Window()}{GetWindow()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+W\+ND Direct\+X\+Manager\+::\+Get\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a51978215008055fa610f4eafd39fd8f8}{}\label{class_direct_x_manager_a51978215008055fa610f4eafd39fd8f8}
+Gets the window.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The window. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Window\+Size\+Height@{Get\+Window\+Size\+Height}}
+\index{Get\+Window\+Size\+Height@{Get\+Window\+Size\+Height}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Window\+Size\+Height()}{GetWindowSizeHeight()}}]{\setlength{\rightskip}{0pt plus 5cm}int Direct\+X\+Manager\+::\+Get\+Window\+Size\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a49d8a5684c325e88886e5fa5e1d83089}{}\label{class_direct_x_manager_a49d8a5684c325e88886e5fa5e1d83089}
+Gets window size height.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The window size height. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Get\+Window\+Size\+Width@{Get\+Window\+Size\+Width}}
+\index{Get\+Window\+Size\+Width@{Get\+Window\+Size\+Width}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Window\+Size\+Width()}{GetWindowSizeWidth()}}]{\setlength{\rightskip}{0pt plus 5cm}int Direct\+X\+Manager\+::\+Get\+Window\+Size\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_aebaff0bb77f5b660ec5ea25b7a131229}{}\label{class_direct_x_manager_aebaff0bb77f5b660ec5ea25b7a131229}
+Gets window size width.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The window size width. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Handle\+Messages@{Handle\+Messages}}
+\index{Handle\+Messages@{Handle\+Messages}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Handle\+Messages()}{HandleMessages()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Direct\+X\+Manager\+::\+Handle\+Messages (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_afc1e06766269d5535ba71c542acdc8e8}{}\label{class_direct_x_manager_afc1e06766269d5535ba71c542acdc8e8}
+Handles the messages/updates to the W\+I\+N32 window.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Init\+Device@{Init\+Device}}
+\index{Init\+Device@{Init\+Device}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Init\+Device(int viewport\+Width, int viewport\+Height, const L\+U\+I\+D $\ast$p\+Luid, bool is\+Windowed=true)}{InitDevice(int viewportWidth, int viewportHeight, const LUID *pLuid, bool isWindowed=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Direct\+X\+Manager\+::\+Init\+Device (
+\begin{DoxyParamCaption}
+\item[{int}]{viewport\+Width, }
+\item[{int}]{viewport\+Height, }
+\item[{const L\+U\+ID $\ast$}]{p\+Luid, }
+\item[{bool}]{is\+Windowed = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a4314d94fefe4c2eec896c45c8cc5a77e}{}\label{class_direct_x_manager_a4314d94fefe4c2eec896c45c8cc5a77e}
+Initializes the everything related to DirectX; Depth buffers, data buffers, and the swap chain.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em viewport\+Width} & Width of the viewport. \\
+\hline
+{\em viewport\+Height} & Height of the viewport. \\
+\hline
+{\em p\+Luid} & The L\+U\+ID that uniquely identifies the Graphics Device. \\
+\hline
+{\em is\+Windowed} & true if this object is windowed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Init\+Viewport@{Init\+Viewport}}
+\index{Init\+Viewport@{Init\+Viewport}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Init\+Viewport(float viewport\+X, float viewport\+Y, float viewport\+Width, float viewport\+Height)}{InitViewport(float viewportX, float viewportY, float viewportWidth, float viewportHeight)}}]{\setlength{\rightskip}{0pt plus 5cm}void Direct\+X\+Manager\+::\+Init\+Viewport (
+\begin{DoxyParamCaption}
+\item[{float}]{viewportX, }
+\item[{float}]{viewportY, }
+\item[{float}]{viewport\+Width, }
+\item[{float}]{viewport\+Height}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a7226059ce9d4970d17cb4924058eb9f2}{}\label{class_direct_x_manager_a7226059ce9d4970d17cb4924058eb9f2}
+Initialize the DirectX viewport.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em viewportX} & The viewport x coordinate. \\
+\hline
+{\em viewportY} & The viewport y coordinate. \\
+\hline
+{\em viewport\+Width} & Width of the viewport. \\
+\hline
+{\em viewport\+Height} & Height of the viewport. \\
+\hline
+\end{DoxyParams}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Init\+Window@{Init\+Window}}
+\index{Init\+Window@{Init\+Window}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Init\+Window(\+H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance, L\+P\+C\+W\+S\+T\+R title)}{InitWindow(HINSTANCE hInstance, LPCWSTR title)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Direct\+X\+Manager\+::\+Init\+Window (
+\begin{DoxyParamCaption}
+\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance, }
+\item[{L\+P\+C\+W\+S\+TR}]{title}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_ada12791447237c01bd511c3c6bf822e8}{}\label{class_direct_x_manager_ada12791447237c01bd511c3c6bf822e8}
+Initialize the Win32 Window.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em h\+Instance} & The handle to the current instance of this application. \\
+\hline
+{\em title} & The title to use in the title bar of the window.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Release\+Device@{Release\+Device}}
+\index{Release\+Device@{Release\+Device}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Release\+Device()}{ReleaseDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}void Direct\+X\+Manager\+::\+Release\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_a2d8ffc338f3520548e7fc0ea573b686e}{}\label{class_direct_x_manager_a2d8ffc338f3520548e7fc0ea573b686e}
+Releases the device. Delete and clean up anything related to DirectX and close the window.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Retrieve\+Direct\+X\+Manager@{Retrieve\+Direct\+X\+Manager}}
+\index{Retrieve\+Direct\+X\+Manager@{Retrieve\+Direct\+X\+Manager}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Retrieve\+Direct\+X\+Manager()}{RetrieveDirectXManager()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direct\+X\+Manager} \& Direct\+X\+Manager\+::\+Retrieve\+Direct\+X\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_direct_x_manager_ac785f35f30dd23faa97ec028ff2a4c91}{}\label{class_direct_x_manager_ac785f35f30dd23faa97ec028ff2a4c91}
+
+
+Singleton Constructor/\+Getter. 
+
+Singleton Constructor/\+Getter. This class is a singleton; in other words, this function will call the constructor only once and then return that reference after.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A reference to a \hyperlink{class_direct_x_manager}{Direct\+X\+Manager}. 
+\end{DoxyReturn}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Set\+And\+Clear\+Render\+Target@{Set\+And\+Clear\+Render\+Target}}
+\index{Set\+And\+Clear\+Render\+Target@{Set\+And\+Clear\+Render\+Target}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Set\+And\+Clear\+Render\+Target(\+I\+D3\+D11\+Render\+Target\+View $\ast$rendertarget, Depth\+Buffer $\ast$depthbuffer, float R=0.\+0f, float G=0.\+0f, float B=0.\+0f, float A=0.\+0f)}{SetAndClearRenderTarget(ID3D11RenderTargetView *rendertarget, DepthBuffer *depthbuffer, float R=0.0f, float G=0.0f, float B=0.0f, float A=0.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}void Direct\+X\+Manager\+::\+Set\+And\+Clear\+Render\+Target (
+\begin{DoxyParamCaption}
+\item[{I\+D3\+D11\+Render\+Target\+View $\ast$}]{rendertarget, }
+\item[{{\bf Depth\+Buffer} $\ast$}]{depthbuffer, }
+\item[{float}]{R = {\ttfamily 0.0f}, }
+\item[{float}]{G = {\ttfamily 0.0f}, }
+\item[{float}]{B = {\ttfamily 0.0f}, }
+\item[{float}]{A = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_af2bbed3ede3068ae5679632b1c739165}{}\label{class_direct_x_manager_af2bbed3ede3068ae5679632b1c739165}
+Sets and clears render target, also sets the color to use to paint the back buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em rendertarget} & If non-\/null, the rendertarget. \\
+\hline
+\mbox{\tt in,out}  & {\em depthbuffer} & If non-\/null, the depthbuffer. \\
+\hline
+ & {\em R} & The red float value to paint the back buffer. \\
+\hline
+ & {\em G} & The green float value to paint the back buffer. \\
+\hline
+ & {\em B} & The blue float value to paint the back buffer. \\
+\hline
+ & {\em A} & The alpha float value to process. \\
+\hline
+\end{DoxyParams}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Set\+Uniform\+Data@{Set\+Uniform\+Data}}
+\index{Set\+Uniform\+Data@{Set\+Uniform\+Data}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Set\+Uniform\+Data(int offset, const void $\ast$data, int size)}{SetUniformData(int offset, const void *data, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Direct\+X\+Manager\+::\+Set\+Uniform\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{offset, }
+\item[{const void $\ast$}]{data, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_direct_x_manager_aae3c1e2ebb395bfec27e2f15ed6b8c80}{}\label{class_direct_x_manager_aae3c1e2ebb395bfec27e2f15ed6b8c80}
+
+
+Setters. 
+
+Set the data we want to send to the shader such as \hyperlink{class_model}{Model}, View, Projection matrices, screen culling and pixel rejection.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & The offset index. \\
+\hline
+{\em data} & The data you want to send. \\
+\hline
+{\em size} & The size in bytes of the data. \\
+\hline
+\end{DoxyParams}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!Window\+Proc@{Window\+Proc}}
+\index{Window\+Proc@{Window\+Proc}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{Window\+Proc(\+\_\+\+In\+\_\+ H\+W\+N\+D h\+Wnd, \+\_\+\+In\+\_\+ U\+I\+N\+T Msg, \+\_\+\+In\+\_\+ W\+P\+A\+R\+A\+M w\+Param, \+\_\+\+In\+\_\+ L\+P\+A\+R\+A\+M l\+Param)}{WindowProc(_In_ HWND hWnd, _In_ UINT Msg, _In_ WPARAM wParam, _In_ LPARAM lParam)}}]{\setlength{\rightskip}{0pt plus 5cm}L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK Direct\+X\+Manager\+::\+Window\+Proc (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+In\+\_\+ H\+W\+ND}]{h\+Wnd, }
+\item[{\+\_\+\+In\+\_\+ U\+I\+NT}]{Msg, }
+\item[{\+\_\+\+In\+\_\+ W\+P\+A\+R\+AM}]{w\+Param, }
+\item[{\+\_\+\+In\+\_\+ L\+P\+A\+R\+AM}]{l\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_direct_x_manager_ada0e4673d0eb74936a25c1870161e56b}{}\label{class_direct_x_manager_ada0e4673d0eb74936a25c1870161e56b}
+Gets called whenever anything happens to the window; from clicking, to key presses, or any message, its basically a handler function. See Win32 A\+PI to learn more about windows messages.
+
+\href{https://msdn.microsoft.com/en-us/library/windows/desktop/ms633573(v=vs.85).aspx}{\tt https\+://msdn.\+microsoft.\+com/en-\/us/library/windows/desktop/ms633573(v=vs.\+85).\+aspx}
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em h\+Wnd} & A handle to the window. \\
+\hline
+{\em Msg} & The message. \\
+\hline
+{\em w\+Param} & Additional message information. The contents of this parameter depend on the value of the u\+Msg parameter. \\
+\hline
+{\em l\+Param} & Additional message information. The contents of this parameter depend on the value of the u\+Msg parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value is the result of the message processing and depends on the message sent. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Dx\+Back\+Buffer\+Render\+Target@{my\+Dx\+Back\+Buffer\+Render\+Target}}
+\index{my\+Dx\+Back\+Buffer\+Render\+Target@{my\+Dx\+Back\+Buffer\+Render\+Target}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Back\+Buffer\+Render\+Target}{myDxBackBufferRenderTarget}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Render\+Target\+View$\ast$ Direct\+X\+Manager\+::my\+Dx\+Back\+Buffer\+Render\+Target\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_a6a94536e4b95c5847224dc94cd9f5f79}{}\label{class_direct_x_manager_a6a94536e4b95c5847224dc94cd9f5f79}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Dx\+Back\+Buffer\+Texture@{my\+Dx\+Back\+Buffer\+Texture}}
+\index{my\+Dx\+Back\+Buffer\+Texture@{my\+Dx\+Back\+Buffer\+Texture}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Back\+Buffer\+Texture}{myDxBackBufferTexture}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Texture2D$\ast$ Direct\+X\+Manager\+::my\+Dx\+Back\+Buffer\+Texture\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_ab0ee9dcf63fe7b20478e0e15632f8d5e}{}\label{class_direct_x_manager_ab0ee9dcf63fe7b20478e0e15632f8d5e}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Dx\+Device@{my\+Dx\+Device}}
+\index{my\+Dx\+Device@{my\+Dx\+Device}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Device}{myDxDevice}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Device$\ast$ Direct\+X\+Manager\+::my\+Dx\+Device\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_ad413d8beeaacd31be6a5520afe1b8a50}{}\label{class_direct_x_manager_ad413d8beeaacd31be6a5520afe1b8a50}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Dx\+Device\+Context@{my\+Dx\+Device\+Context}}
+\index{my\+Dx\+Device\+Context@{my\+Dx\+Device\+Context}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Device\+Context}{myDxDeviceContext}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Device\+Context$\ast$ Direct\+X\+Manager\+::my\+Dx\+Device\+Context\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_a54d0f3f23f8481ecd38c9593ef5637b9}{}\label{class_direct_x_manager_a54d0f3f23f8481ecd38c9593ef5637b9}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Dx\+Swap\+Chain@{my\+Dx\+Swap\+Chain}}
+\index{my\+Dx\+Swap\+Chain@{my\+Dx\+Swap\+Chain}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Swap\+Chain}{myDxSwapChain}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D\+X\+G\+I\+Swap\+Chain$\ast$ Direct\+X\+Manager\+::my\+Dx\+Swap\+Chain\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_a2812dd8db44c309cd3b03748112482e3}{}\label{class_direct_x_manager_a2812dd8db44c309cd3b03748112482e3}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+H\+Instance@{my\+H\+Instance}}
+\index{my\+H\+Instance@{my\+H\+Instance}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+H\+Instance}{myHInstance}}]{\setlength{\rightskip}{0pt plus 5cm}H\+I\+N\+S\+T\+A\+N\+CE Direct\+X\+Manager\+::my\+H\+Instance\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_a0b39e8b76d45f918d5b43da5dbfba83f}{}\label{class_direct_x_manager_a0b39e8b76d45f918d5b43da5dbfba83f}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Is\+Running@{my\+Is\+Running}}
+\index{my\+Is\+Running@{my\+Is\+Running}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Is\+Running}{myIsRunning}}]{\setlength{\rightskip}{0pt plus 5cm}bool Direct\+X\+Manager\+::my\+Is\+Running\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_ab6d80d209ac41961b6913b109ca9a8fe}{}\label{class_direct_x_manager_ab6d80d209ac41961b6913b109ca9a8fe}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Main\+Depth\+Buffer@{my\+Main\+Depth\+Buffer}}
+\index{my\+Main\+Depth\+Buffer@{my\+Main\+Depth\+Buffer}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Main\+Depth\+Buffer}{myMainDepthBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Depth\+Buffer}$\ast$ Direct\+X\+Manager\+::my\+Main\+Depth\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_a3626b7fb2456f6334b3442a16e4ec6f9}{}\label{class_direct_x_manager_a3626b7fb2456f6334b3442a16e4ec6f9}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Uniform\+Data@{my\+Uniform\+Data}}
+\index{my\+Uniform\+Data@{my\+Uniform\+Data}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Uniform\+Data}{myUniformData}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Direct\+X\+Manager\+::my\+Uniform\+Data\mbox{[}U\+N\+I\+F\+O\+R\+M\+\_\+\+D\+A\+T\+A\+\_\+\+S\+I\+ZE\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_ae04e85d0a8cc262e45d7af9024fe2051}{}\label{class_direct_x_manager_ae04e85d0a8cc262e45d7af9024fe2051}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Uniform\+Data\+Buffer@{my\+Uniform\+Data\+Buffer}}
+\index{my\+Uniform\+Data\+Buffer@{my\+Uniform\+Data\+Buffer}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Uniform\+Data\+Buffer}{myUniformDataBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Buffer}$\ast$ Direct\+X\+Manager\+::my\+Uniform\+Data\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_a739e4f51ccf5cfff52387b4026c57e1d}{}\label{class_direct_x_manager_a739e4f51ccf5cfff52387b4026c57e1d}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Window@{my\+Window}}
+\index{my\+Window@{my\+Window}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Window}{myWindow}}]{\setlength{\rightskip}{0pt plus 5cm}H\+W\+ND Direct\+X\+Manager\+::my\+Window\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_aaa12b1687acb8f70bd1ac7245be80c07}{}\label{class_direct_x_manager_aaa12b1687acb8f70bd1ac7245be80c07}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Window\+Size\+Height@{my\+Window\+Size\+Height}}
+\index{my\+Window\+Size\+Height@{my\+Window\+Size\+Height}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Window\+Size\+Height}{myWindowSizeHeight}}]{\setlength{\rightskip}{0pt plus 5cm}int Direct\+X\+Manager\+::my\+Window\+Size\+Height\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_a489f71bd3dcfdaa3e9f6d6c37daee516}{}\label{class_direct_x_manager_a489f71bd3dcfdaa3e9f6d6c37daee516}
+\index{Direct\+X\+Manager@{Direct\+X\+Manager}!my\+Window\+Size\+Width@{my\+Window\+Size\+Width}}
+\index{my\+Window\+Size\+Width@{my\+Window\+Size\+Width}!Direct\+X\+Manager@{Direct\+X\+Manager}}
+\subsubsection[{\texorpdfstring{my\+Window\+Size\+Width}{myWindowSizeWidth}}]{\setlength{\rightskip}{0pt plus 5cm}int Direct\+X\+Manager\+::my\+Window\+Size\+Width\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_direct_x_manager_adc2c37647b0833a08f116c4873f8ab3f}{}\label{class_direct_x_manager_adc2c37647b0833a08f116c4873f8ab3f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_direct_x_manager_8h}{Direct\+X\+Manager.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_direct_x_manager_8cpp}{Direct\+X\+Manager.\+cpp}\end{DoxyCompactItemize}

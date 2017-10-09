@@ -1,0 +1,358 @@
+\hypertarget{class_model}{}\section{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+Inheritance diagram for Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model} ()
+\begin{DoxyCompactList}\small\item\em Constructors. \end{DoxyCompactList}\item 
+\hyperlink{class_model_a5b3fa50a40180b5ef48ba593f9b39b9e}{Model} (int panoramic\+Type, \hyperlink{class_triangle_set}{Triangle\+Set} $\ast$triangle\+Set, X\+M\+F\+L\+O\+A\+T3 model\+Position, X\+M\+F\+L\+O\+A\+T4 model\+Rotation, \hyperlink{class_material}{Material} $\ast$model\+Material)
+\item 
+void \hyperlink{class_model_ade8ba725d673d2ff8f375e86201253cc}{Init} (int panoramic\+Type, \hyperlink{class_triangle_set}{Triangle\+Set} $\ast$triangle\+Set)
+\item 
+\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_model_a10bcb6448b90831453b9069f3979ed45}{Render} (X\+M\+M\+A\+T\+R\+IX $\ast$proj\+View, float red, float green, float blue, float alpha)
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+\hyperlink{class_data_buffer}{Data\+Buffer} $\ast$ \hyperlink{class_model_acfc34c5ad56cb176e29e65d32312379c}{Get\+Index\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+\hyperlink{class_material}{Material} $\ast$ \hyperlink{class_model_a0294c00f16232d82105e362dab9ef1c0}{Get\+Material} ()
+\item 
+int \hyperlink{class_model_a57f8b0739bc9e9b1792daedb28ebb51d}{Get\+Num\+Indices} ()
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{class_model_a6b7189ab637042cb8d316d8f6bf87ad3}{Get\+Position} ()
+\item 
+X\+M\+F\+L\+O\+A\+T4 \hyperlink{class_model_ae7118e3d1858d7a0e70a3556d7f5193a}{Get\+Rotation} ()
+\item 
+\hyperlink{class_data_buffer}{Data\+Buffer} $\ast$ \hyperlink{class_model_af036bab5ce7d59f78b421b499fbd7504}{Get\+Vertex\+Buffer} ()
+\item 
+void \hyperlink{class_model_adc03916b48d42a1321510687e0b5d934}{Set\+Position} (X\+M\+F\+L\+O\+A\+T3 pos)
+\begin{DoxyCompactList}\small\item\em Setters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{class_model_a5fb219d082bc479627d5e1e66b33fe63}{my\+Position}
+\item 
+X\+M\+F\+L\+O\+A\+T4 \hyperlink{class_model_a4a374cf09dc49e48dfa106f60bcb3d97}{my\+First\+Position}
+\item 
+X\+M\+F\+L\+O\+A\+T4 \hyperlink{class_model_abd379baa73dacba16b7ed238982c1a06}{my\+Rotation}
+\item 
+\hyperlink{class_material}{Material} $\ast$ \hyperlink{class_model_a6b749b5e9c3eb936b380a85b6800cce6}{my\+Material}
+\item 
+\hyperlink{class_data_buffer}{Data\+Buffer} $\ast$ \hyperlink{class_model_a64e673cb0b3c36e014606c73138486de}{my\+Vertex\+Buffer}
+\item 
+\hyperlink{class_data_buffer}{Data\+Buffer} $\ast$ \hyperlink{class_model_a920be5d05f546b78e696adfd481da15c}{my\+Index\+Buffer}
+\item 
+int \hyperlink{class_model_ab0a5ce9fd0d759718453417e8c31b902}{my\+Num\+Indices}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Model()}{Model()}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}{}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}
+
+
+Constructors. 
+
+Default Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Model(int panoramic\+Type, Triangle\+Set $\ast$triangle\+Set, X\+M\+F\+L\+O\+A\+T3 model\+Position, X\+M\+F\+L\+O\+A\+T4 model\+Rotation, Material $\ast$model\+Material)}{Model(int panoramicType, TriangleSet *triangleSet, XMFLOAT3 modelPosition, XMFLOAT4 modelRotation, Material *modelMaterial)}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::\+Model (
+\begin{DoxyParamCaption}
+\item[{int}]{panoramic\+Type, }
+\item[{{\bf Triangle\+Set} $\ast$}]{triangle\+Set, }
+\item[{X\+M\+F\+L\+O\+A\+T3}]{model\+Position, }
+\item[{X\+M\+F\+L\+O\+A\+T4}]{model\+Rotation, }
+\item[{{\bf Material} $\ast$}]{model\+Material}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a5b3fa50a40180b5ef48ba593f9b39b9e}{}\label{class_model_a5b3fa50a40180b5ef48ba593f9b39b9e}
+Parameterized Constructor, also calls \hyperlink{class_model_ade8ba725d673d2ff8f375e86201253cc}{Init()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em panoramic\+Type} & Type of the panoramic (180, 270, 360, or 999 for photosphere). \\
+\hline
+\mbox{\tt in,out}  & {\em triangle\+Set} & If non-\/null, set the triangle belongs to. \\
+\hline
+ & {\em model\+Position} & The model position. \\
+\hline
+ & {\em model\+Rotation} & The model rotation. \\
+\hline
+\mbox{\tt in,out}  & {\em model\+Material} & If non-\/null, the model material. \\
+\hline
+\end{DoxyParams}
+\index{Model@{Model}!````~Model@{$\sim$\+Model}}
+\index{````~Model@{$\sim$\+Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{$\sim$\+Model()}{~Model()}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::$\sim$\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}
+
+
+Destructor. 
+
+Destructor, Deletes the model and cleans up.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Model@{Model}!Get\+Index\+Buffer@{Get\+Index\+Buffer}}
+\index{Get\+Index\+Buffer@{Get\+Index\+Buffer}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Get\+Index\+Buffer()}{GetIndexBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Buffer} $\ast$ Model\+::\+Get\+Index\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_acfc34c5ad56cb176e29e65d32312379c}{}\label{class_model_acfc34c5ad56cb176e29e65d32312379c}
+
+
+Getters. 
+
+Gets the index buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The index buffer. 
+\end{DoxyReturn}
+\index{Model@{Model}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Get\+Material()}{GetMaterial()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} $\ast$ Model\+::\+Get\+Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a0294c00f16232d82105e362dab9ef1c0}{}\label{class_model_a0294c00f16232d82105e362dab9ef1c0}
+Gets the material.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The material. 
+\end{DoxyReturn}
+\index{Model@{Model}!Get\+Num\+Indices@{Get\+Num\+Indices}}
+\index{Get\+Num\+Indices@{Get\+Num\+Indices}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Get\+Num\+Indices()}{GetNumIndices()}}]{\setlength{\rightskip}{0pt plus 5cm}int Model\+::\+Get\+Num\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a57f8b0739bc9e9b1792daedb28ebb51d}{}\label{class_model_a57f8b0739bc9e9b1792daedb28ebb51d}
+Gets the number indices.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The number indices. 
+\end{DoxyReturn}
+\index{Model@{Model}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Get\+Position()}{GetPosition()}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+F\+L\+O\+A\+T3 Model\+::\+Get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a6b7189ab637042cb8d316d8f6bf87ad3}{}\label{class_model_a6b7189ab637042cb8d316d8f6bf87ad3}
+Gets the position of the \hyperlink{class_model}{Model}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The position. 
+\end{DoxyReturn}
+\index{Model@{Model}!Get\+Rotation@{Get\+Rotation}}
+\index{Get\+Rotation@{Get\+Rotation}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Get\+Rotation()}{GetRotation()}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+F\+L\+O\+A\+T4 Model\+::\+Get\+Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_ae7118e3d1858d7a0e70a3556d7f5193a}{}\label{class_model_ae7118e3d1858d7a0e70a3556d7f5193a}
+Gets the rotation vector of the model. The x,y,z components are the axis and the w component is the angle of rotation in degrees.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The rotation vector and angle. 
+\end{DoxyReturn}
+\index{Model@{Model}!Get\+Vertex\+Buffer@{Get\+Vertex\+Buffer}}
+\index{Get\+Vertex\+Buffer@{Get\+Vertex\+Buffer}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Get\+Vertex\+Buffer()}{GetVertexBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Buffer} $\ast$ Model\+::\+Get\+Vertex\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_af036bab5ce7d59f78b421b499fbd7504}{}\label{class_model_af036bab5ce7d59f78b421b499fbd7504}
+Gets the vertex buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The vertex buffer. 
+\end{DoxyReturn}
+\index{Model@{Model}!Init@{Init}}
+\index{Init@{Init}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Init(int panoramic\+Type, Triangle\+Set $\ast$triangle\+Set)}{Init(int panoramicType, TriangleSet *triangleSet)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{int}]{panoramic\+Type, }
+\item[{{\bf Triangle\+Set} $\ast$}]{triangle\+Set}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_ade8ba725d673d2ff8f375e86201253cc}{}\label{class_model_ade8ba725d673d2ff8f375e86201253cc}
+Initializes the model by taking in the geometry and the type of panoramic (180, 270, 360, and 999 for photosphere).
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em panoramic\+Type} & Type of the panoramic. \\
+\hline
+\mbox{\tt in,out}  & {\em triangle\+Set} & If non-\/null, set the triangle belongs to. \\
+\hline
+\end{DoxyParams}
+\index{Model@{Model}!Render@{Render}}
+\index{Render@{Render}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Render(\+X\+M\+M\+A\+T\+R\+I\+X $\ast$proj\+View, float red, float green, float blue, float alpha)}{Render(XMMATRIX *projView, float red, float green, float blue, float alpha)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{X\+M\+M\+A\+T\+R\+IX $\ast$}]{proj\+View, }
+\item[{float}]{red, }
+\item[{float}]{green, }
+\item[{float}]{blue, }
+\item[{float}]{alpha}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a10bcb6448b90831453b9069f3979ed45}{}\label{class_model_a10bcb6448b90831453b9069f3979ed45}
+
+
+Functions. 
+
+Primary render function, renders the model (geometry, material, and shader data).
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em proj\+View} & The \hyperlink{class_model}{Model} View Projection matrix. \\
+\hline
+ & {\em red} & The red color value for the current pixel. \\
+\hline
+ & {\em green} & The green color value for the current pixel. \\
+\hline
+ & {\em blue} & The blue color value for the current pixel. \\
+\hline
+ & {\em alpha} & The alpha color value for the current pixel. \\
+\hline
+\end{DoxyParams}
+\index{Model@{Model}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Set\+Position(\+X\+M\+F\+L\+O\+A\+T3 pos)}{SetPosition(XMFLOAT3 pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::\+Set\+Position (
+\begin{DoxyParamCaption}
+\item[{X\+M\+F\+L\+O\+A\+T3}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_adc03916b48d42a1321510687e0b5d934}{}\label{class_model_adc03916b48d42a1321510687e0b5d934}
+
+
+Setters. 
+
+Sets the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The new position. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Model@{Model}!my\+First\+Position@{my\+First\+Position}}
+\index{my\+First\+Position@{my\+First\+Position}!Model@{Model}}
+\subsubsection[{\texorpdfstring{my\+First\+Position}{myFirstPosition}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+F\+L\+O\+A\+T4 Model\+::my\+First\+Position\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_model_a4a374cf09dc49e48dfa106f60bcb3d97}{}\label{class_model_a4a374cf09dc49e48dfa106f60bcb3d97}
+\index{Model@{Model}!my\+Index\+Buffer@{my\+Index\+Buffer}}
+\index{my\+Index\+Buffer@{my\+Index\+Buffer}!Model@{Model}}
+\subsubsection[{\texorpdfstring{my\+Index\+Buffer}{myIndexBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Buffer}$\ast$ Model\+::my\+Index\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_model_a920be5d05f546b78e696adfd481da15c}{}\label{class_model_a920be5d05f546b78e696adfd481da15c}
+\index{Model@{Model}!my\+Material@{my\+Material}}
+\index{my\+Material@{my\+Material}!Model@{Model}}
+\subsubsection[{\texorpdfstring{my\+Material}{myMaterial}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material}$\ast$ Model\+::my\+Material\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_model_a6b749b5e9c3eb936b380a85b6800cce6}{}\label{class_model_a6b749b5e9c3eb936b380a85b6800cce6}
+\index{Model@{Model}!my\+Num\+Indices@{my\+Num\+Indices}}
+\index{my\+Num\+Indices@{my\+Num\+Indices}!Model@{Model}}
+\subsubsection[{\texorpdfstring{my\+Num\+Indices}{myNumIndices}}]{\setlength{\rightskip}{0pt plus 5cm}int Model\+::my\+Num\+Indices\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_model_ab0a5ce9fd0d759718453417e8c31b902}{}\label{class_model_ab0a5ce9fd0d759718453417e8c31b902}
+\index{Model@{Model}!my\+Position@{my\+Position}}
+\index{my\+Position@{my\+Position}!Model@{Model}}
+\subsubsection[{\texorpdfstring{my\+Position}{myPosition}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+F\+L\+O\+A\+T3 Model\+::my\+Position\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_model_a5fb219d082bc479627d5e1e66b33fe63}{}\label{class_model_a5fb219d082bc479627d5e1e66b33fe63}
+\index{Model@{Model}!my\+Rotation@{my\+Rotation}}
+\index{my\+Rotation@{my\+Rotation}!Model@{Model}}
+\subsubsection[{\texorpdfstring{my\+Rotation}{myRotation}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+F\+L\+O\+A\+T4 Model\+::my\+Rotation\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_model_abd379baa73dacba16b7ed238982c1a06}{}\label{class_model_abd379baa73dacba16b7ed238982c1a06}
+\index{Model@{Model}!my\+Vertex\+Buffer@{my\+Vertex\+Buffer}}
+\index{my\+Vertex\+Buffer@{my\+Vertex\+Buffer}!Model@{Model}}
+\subsubsection[{\texorpdfstring{my\+Vertex\+Buffer}{myVertexBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Buffer}$\ast$ Model\+::my\+Vertex\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_model_a64e673cb0b3c36e014606c73138486de}{}\label{class_model_a64e673cb0b3c36e014606c73138486de}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_model_8h}{Model.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_model_8cpp}{Model.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,343 @@
+\hypertarget{class_texture}{}\section{Texture Class Reference}
+\label{class_texture}\index{Texture@{Texture}}
+
+
+{\ttfamily \#include $<$Texture.\+h$>$}
+
+Inheritance diagram for Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_texture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_texture_af2a4c84d1c98677ce680586bc0fb4bb3}{Texture} (char $\ast$texture\+File\+Name=\char`\"{}\textbackslash{}0\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructors. \end{DoxyCompactList}\item 
+void \hyperlink{class_texture_ae4c6a5ee970eb169801555a2a0ca304c}{Init} (char $\ast$texture\+File\+Name)
+\item 
+virtual \hyperlink{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a}{$\sim$\+Texture} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_texture_ae89d96eb1e3d905d37e64694628ec75a}{Fill\+Texture} (unsigned char $\ast$pix)
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+void \hyperlink{class_texture_a7197223117d32c918ddfcd59d803a92e}{Load\+Texture} (char $\ast$texture\+File\+Name)
+\item 
+unsigned char $\ast$ \hyperlink{class_texture_a000d60714e60b703dd3f189e515c89a5}{Load\+Texture\+D\+DS} (O\+V\+R\+::\+File $\ast$file, int \&buff\+Size)
+\item 
+I\+D3\+D11\+Shader\+Resource\+View $\ast$\& \hyperlink{class_texture_a15710fdbf218bc437795d82b7d43d895}{Get\+Dx\+Shader\+Resource\+View} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+I\+D3\+D11\+Texture2D $\ast$ \hyperlink{class_texture_a2f7fb3841e9dcbbf8caf9ef3517b8c02}{Get\+Dx\+Texture} ()
+\item 
+I\+D3\+D11\+Render\+Target\+View $\ast$ \hyperlink{class_texture_ae9ff50740ff4ab8f9d4c19fd147d3bd2}{Get\+Dx\+Texture\+Render\+Target\+View} ()
+\item 
+int \hyperlink{class_texture_acc9f29e15f13b697f91779e2f87597b5}{Get\+Mipmap\+Levels} ()
+\item 
+int \hyperlink{class_texture_aa77eaaed00df44c7d9786d9a84e6a8c2}{Get\+Size\+Height} ()
+\item 
+int \hyperlink{class_texture_a1549f86a0410d3ea207fd991224eb45c}{Get\+Size\+Width} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+O\+V\+R\+::\+Sys\+File $\ast$ \hyperlink{class_texture_aad71ad1112c80f067b0655c30cfa6e31}{my\+Texture\+File}
+\item 
+I\+D3\+D11\+Texture2D $\ast$ \hyperlink{class_texture_a162499ea3d2ad2f86fb94d0cc73b643c}{my\+Dx\+Texture}
+\item 
+I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{class_texture_ad6652783cd9346e82bd8159bfcad0d14}{my\+Dx\+Shader\+Resource\+View}
+\item 
+I\+D3\+D11\+Render\+Target\+View $\ast$ \hyperlink{class_texture_aafe1ab7239473c5acffbc14a5043ba3a}{my\+Dx\+Texture\+Render\+Target\+View}
+\item 
+unsigned char $\ast$ \hyperlink{class_texture_a0a158fa0c123a4ee1ac762a9708142f3}{my\+Pixel\+Buffer}
+\item 
+int \hyperlink{class_texture_abfb0ad95408fbefd68bafbaada18483c}{my\+Size\+Width}
+\item 
+int \hyperlink{class_texture_a83942c4f554c8af7884c31baf3a81b6e}{my\+Size\+Height}
+\item 
+int \hyperlink{class_texture_a350a5ae95df396fb43a75f023ff81e6e}{my\+Mipmap\+Levels}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Texture(char $\ast$texture\+File\+Name=""\textbackslash{}0"")}{Texture(char *textureFileName="\textbackslash{}0")}}]{\setlength{\rightskip}{0pt plus 5cm}Texture\+::\+Texture (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{texture\+File\+Name = {\ttfamily \char`\"{}\textbackslash{}0\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_af2a4c84d1c98677ce680586bc0fb4bb3}{}\label{class_texture_af2a4c84d1c98677ce680586bc0fb4bb3}
+
+
+Constructors. 
+
+Constructor, calls \hyperlink{class_texture_a7197223117d32c918ddfcd59d803a92e}{Load\+Texture()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture\+File\+Name} & The file name of the texture to load. \\
+\hline
+\end{DoxyParams}
+\index{Texture@{Texture}!````~Texture@{$\sim$\+Texture}}
+\index{````~Texture@{$\sim$\+Texture}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{$\sim$\+Texture()}{~Texture()}}]{\setlength{\rightskip}{0pt plus 5cm}Texture\+::$\sim$\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a}{}\label{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a}
+
+
+Destructor. 
+
+Destructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Texture@{Texture}!Fill\+Texture@{Fill\+Texture}}
+\index{Fill\+Texture@{Fill\+Texture}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Fill\+Texture(unsigned char $\ast$pix)}{FillTexture(unsigned char *pix)}}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::\+Fill\+Texture (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{pix}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_ae89d96eb1e3d905d37e64694628ec75a}{}\label{class_texture_ae89d96eb1e3d905d37e64694628ec75a}
+
+
+Functions. 
+
+Updates texture with the specified pixel buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em The} & pixel buffer. \\
+\hline
+\end{DoxyParams}
+\index{Texture@{Texture}!Get\+Dx\+Shader\+Resource\+View@{Get\+Dx\+Shader\+Resource\+View}}
+\index{Get\+Dx\+Shader\+Resource\+View@{Get\+Dx\+Shader\+Resource\+View}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Shader\+Resource\+View()}{GetDxShaderResourceView()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Shader\+Resource\+View $\ast$\& Texture\+::\+Get\+Dx\+Shader\+Resource\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_a15710fdbf218bc437795d82b7d43d895}{}\label{class_texture_a15710fdbf218bc437795d82b7d43d895}
+
+
+Getters. 
+
+Gets the DX Shader Resource View.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Shader Resource View. 
+\end{DoxyReturn}
+\index{Texture@{Texture}!Get\+Dx\+Texture@{Get\+Dx\+Texture}}
+\index{Get\+Dx\+Texture@{Get\+Dx\+Texture}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Texture()}{GetDxTexture()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Texture2D $\ast$ Texture\+::\+Get\+Dx\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_a2f7fb3841e9dcbbf8caf9ef3517b8c02}{}\label{class_texture_a2f7fb3841e9dcbbf8caf9ef3517b8c02}
+Gets the DX \hyperlink{class_texture}{Texture}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX \hyperlink{class_texture}{Texture}. 
+\end{DoxyReturn}
+\index{Texture@{Texture}!Get\+Dx\+Texture\+Render\+Target\+View@{Get\+Dx\+Texture\+Render\+Target\+View}}
+\index{Get\+Dx\+Texture\+Render\+Target\+View@{Get\+Dx\+Texture\+Render\+Target\+View}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Texture\+Render\+Target\+View()}{GetDxTextureRenderTargetView()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Render\+Target\+View $\ast$ Texture\+::\+Get\+Dx\+Texture\+Render\+Target\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_ae9ff50740ff4ab8f9d4c19fd147d3bd2}{}\label{class_texture_ae9ff50740ff4ab8f9d4c19fd147d3bd2}
+Gets the DX \hyperlink{class_texture}{Texture} Render Target View.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX \hyperlink{class_texture}{Texture} Render Target View. 
+\end{DoxyReturn}
+\index{Texture@{Texture}!Get\+Mipmap\+Levels@{Get\+Mipmap\+Levels}}
+\index{Get\+Mipmap\+Levels@{Get\+Mipmap\+Levels}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Get\+Mipmap\+Levels()}{GetMipmapLevels()}}]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::\+Get\+Mipmap\+Levels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_acc9f29e15f13b697f91779e2f87597b5}{}\label{class_texture_acc9f29e15f13b697f91779e2f87597b5}
+Gets the Mipmap levels of the texture.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The Mipmap levels of the texture. 
+\end{DoxyReturn}
+\index{Texture@{Texture}!Get\+Size\+Height@{Get\+Size\+Height}}
+\index{Get\+Size\+Height@{Get\+Size\+Height}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Get\+Size\+Height()}{GetSizeHeight()}}]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::\+Get\+Size\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_aa77eaaed00df44c7d9786d9a84e6a8c2}{}\label{class_texture_aa77eaaed00df44c7d9786d9a84e6a8c2}
+Gets the height of the \hyperlink{class_texture}{Texture}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The size height. 
+\end{DoxyReturn}
+\index{Texture@{Texture}!Get\+Size\+Width@{Get\+Size\+Width}}
+\index{Get\+Size\+Width@{Get\+Size\+Width}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Get\+Size\+Width()}{GetSizeWidth()}}]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::\+Get\+Size\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_a1549f86a0410d3ea207fd991224eb45c}{}\label{class_texture_a1549f86a0410d3ea207fd991224eb45c}
+Gets the width of the \hyperlink{class_texture}{Texture}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The width of the \hyperlink{class_texture}{Texture}. 
+\end{DoxyReturn}
+\index{Texture@{Texture}!Init@{Init}}
+\index{Init@{Init}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Init(char $\ast$texture\+File\+Name)}{Init(char *textureFileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{texture\+File\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_ae4c6a5ee970eb169801555a2a0ca304c}{}\label{class_texture_ae4c6a5ee970eb169801555a2a0ca304c}
+Call \hyperlink{class_texture_ae4c6a5ee970eb169801555a2a0ca304c}{Init()} after we load the texture so we know the width, height, etc. See \hyperlink{class_texture_a7197223117d32c918ddfcd59d803a92e}{Load\+Texture()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em texture\+File\+Name} & If non-\/null, filename of the texture file. \\
+\hline
+\end{DoxyParams}
+\index{Texture@{Texture}!Load\+Texture@{Load\+Texture}}
+\index{Load\+Texture@{Load\+Texture}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Load\+Texture(char $\ast$texture\+File\+Name)}{LoadTexture(char *textureFileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::\+Load\+Texture (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{texture\+File\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_a7197223117d32c918ddfcd59d803a92e}{}\label{class_texture_a7197223117d32c918ddfcd59d803a92e}
+Loads a texture from the specified file name.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture\+File\+Name} & The filename of the texture file. \\
+\hline
+\end{DoxyParams}
+\index{Texture@{Texture}!Load\+Texture\+D\+DS@{Load\+Texture\+D\+DS}}
+\index{Load\+Texture\+D\+DS@{Load\+Texture\+D\+DS}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{Load\+Texture\+D\+D\+S(\+O\+V\+R\+::\+File $\ast$file, int \&buff\+Size)}{LoadTextureDDS(OVR::File *file, int &buffSize)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char $\ast$ Texture\+::\+Load\+Texture\+D\+DS (
+\begin{DoxyParamCaption}
+\item[{O\+V\+R\+::\+File $\ast$}]{file, }
+\item[{int \&}]{buff\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_a000d60714e60b703dd3f189e515c89a5}{}\label{class_texture_a000d60714e60b703dd3f189e515c89a5}
+Loads the file and allocates the texture pixel buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em file} & The file to load. \\
+\hline
+\mbox{\tt in}  & {\em buff\+Size} & Size of the buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture pixel buffer. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Texture@{Texture}!my\+Dx\+Shader\+Resource\+View@{my\+Dx\+Shader\+Resource\+View}}
+\index{my\+Dx\+Shader\+Resource\+View@{my\+Dx\+Shader\+Resource\+View}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Shader\+Resource\+View}{myDxShaderResourceView}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Shader\+Resource\+View$\ast$ Texture\+::my\+Dx\+Shader\+Resource\+View\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_texture_ad6652783cd9346e82bd8159bfcad0d14}{}\label{class_texture_ad6652783cd9346e82bd8159bfcad0d14}
+\index{Texture@{Texture}!my\+Dx\+Texture@{my\+Dx\+Texture}}
+\index{my\+Dx\+Texture@{my\+Dx\+Texture}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Texture}{myDxTexture}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Texture2D$\ast$ Texture\+::my\+Dx\+Texture\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_texture_a162499ea3d2ad2f86fb94d0cc73b643c}{}\label{class_texture_a162499ea3d2ad2f86fb94d0cc73b643c}
+\index{Texture@{Texture}!my\+Dx\+Texture\+Render\+Target\+View@{my\+Dx\+Texture\+Render\+Target\+View}}
+\index{my\+Dx\+Texture\+Render\+Target\+View@{my\+Dx\+Texture\+Render\+Target\+View}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Texture\+Render\+Target\+View}{myDxTextureRenderTargetView}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Render\+Target\+View$\ast$ Texture\+::my\+Dx\+Texture\+Render\+Target\+View\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_texture_aafe1ab7239473c5acffbc14a5043ba3a}{}\label{class_texture_aafe1ab7239473c5acffbc14a5043ba3a}
+\index{Texture@{Texture}!my\+Mipmap\+Levels@{my\+Mipmap\+Levels}}
+\index{my\+Mipmap\+Levels@{my\+Mipmap\+Levels}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{my\+Mipmap\+Levels}{myMipmapLevels}}]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::my\+Mipmap\+Levels\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_texture_a350a5ae95df396fb43a75f023ff81e6e}{}\label{class_texture_a350a5ae95df396fb43a75f023ff81e6e}
+\index{Texture@{Texture}!my\+Pixel\+Buffer@{my\+Pixel\+Buffer}}
+\index{my\+Pixel\+Buffer@{my\+Pixel\+Buffer}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{my\+Pixel\+Buffer}{myPixelBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ Texture\+::my\+Pixel\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_texture_a0a158fa0c123a4ee1ac762a9708142f3}{}\label{class_texture_a0a158fa0c123a4ee1ac762a9708142f3}
+\index{Texture@{Texture}!my\+Size\+Height@{my\+Size\+Height}}
+\index{my\+Size\+Height@{my\+Size\+Height}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{my\+Size\+Height}{mySizeHeight}}]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::my\+Size\+Height\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_texture_a83942c4f554c8af7884c31baf3a81b6e}{}\label{class_texture_a83942c4f554c8af7884c31baf3a81b6e}
+\index{Texture@{Texture}!my\+Size\+Width@{my\+Size\+Width}}
+\index{my\+Size\+Width@{my\+Size\+Width}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{my\+Size\+Width}{mySizeWidth}}]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::my\+Size\+Width\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_texture_abfb0ad95408fbefd68bafbaada18483c}{}\label{class_texture_abfb0ad95408fbefd68bafbaada18483c}
+\index{Texture@{Texture}!my\+Texture\+File@{my\+Texture\+File}}
+\index{my\+Texture\+File@{my\+Texture\+File}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{my\+Texture\+File}{myTextureFile}}]{\setlength{\rightskip}{0pt plus 5cm}O\+V\+R\+::\+Sys\+File$\ast$ Texture\+::my\+Texture\+File\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_texture_aad71ad1112c80f067b0655c30cfa6e31}{}\label{class_texture_aad71ad1112c80f067b0655c30cfa6e31}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_texture_8h}{Texture.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_texture_8cpp}{Texture.\+cpp}\end{DoxyCompactItemize}

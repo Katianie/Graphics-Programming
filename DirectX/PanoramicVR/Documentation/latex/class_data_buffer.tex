@@ -1,0 +1,194 @@
+\hypertarget{class_data_buffer}{}\section{Data\+Buffer Class Reference}
+\label{class_data_buffer}\index{Data\+Buffer@{Data\+Buffer}}
+
+
+{\ttfamily \#include $<$Data\+Buffer.\+h$>$}
+
+Inheritance diagram for Data\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_data_buffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_data_buffer_ad12238b0a14ce03f1f2812fd8ce9adf4}{Data\+Buffer} (I\+D3\+D11\+Device $\ast$dx\+Device, D3\+D11\+\_\+\+B\+I\+N\+D\+\_\+\+F\+L\+AG bind\+Flags, const void $\ast$buffer, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_data_buffer_ac374f86810cc019a248be28d1babecdb}{$\sim$\+Data\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+I\+D3\+D11\+Buffer $\ast$\& \hyperlink{class_data_buffer_a282a755677be1eac733f3e1e090e6069}{Get\+Dx\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+D3\+D11\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+D\+E\+SC \hyperlink{class_data_buffer_a1012af5db0fb0dbc042a4d7ddc3d8249}{Get\+Dx\+Buffer\+Description} ()
+\item 
+D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA \hyperlink{class_data_buffer_a385e821a26a26326d22d92f7e9268469}{Get\+Dx\+Sub\+Resource\+Data} ()
+\item 
+size\+\_\+t \hyperlink{class_data_buffer_aaa2b70d7c6cc014e9ccd7e949ecbbf38}{Get\+Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+D3\+D11\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+D\+E\+SC \hyperlink{class_data_buffer_aca633d446c9c237966a06baca5df245d}{my\+Dx\+Buffer\+Description}
+\item 
+D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA \hyperlink{class_data_buffer_a20ae63eb53988ea2963b45a307615d39}{my\+Dx\+Sub\+Resource\+Data}
+\item 
+I\+D3\+D11\+Buffer $\ast$ \hyperlink{class_data_buffer_a3bea6da94472c8b55032713ec8463853}{my\+Dx\+Buffer}
+\item 
+size\+\_\+t \hyperlink{class_data_buffer_a31bb760d7d272d637e387b37d7caecfe}{my\+Size}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Data\+Buffer@{Data\+Buffer}!Data\+Buffer@{Data\+Buffer}}
+\index{Data\+Buffer@{Data\+Buffer}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{Data\+Buffer(\+I\+D3\+D11\+Device $\ast$dx\+Device, D3\+D11\+\_\+\+B\+I\+N\+D\+\_\+\+F\+L\+A\+G bind\+Flags, const void $\ast$buffer, size\+\_\+t size)}{DataBuffer(ID3D11Device *dxDevice, D3D11_BIND_FLAG bindFlags, const void *buffer, size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}Data\+Buffer\+::\+Data\+Buffer (
+\begin{DoxyParamCaption}
+\item[{I\+D3\+D11\+Device $\ast$}]{dx\+Device, }
+\item[{D3\+D11\+\_\+\+B\+I\+N\+D\+\_\+\+F\+L\+AG}]{bind\+Flags, }
+\item[{const void $\ast$}]{buffer, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_data_buffer_ad12238b0a14ce03f1f2812fd8ce9adf4}{}\label{class_data_buffer_ad12238b0a14ce03f1f2812fd8ce9adf4}
+
+
+Constructor. 
+
+Constructor, Creates a DirextX Buffer -\/ used for passing data to the shader among other things.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dx\+Device} & The DX Device. \\
+\hline
+ & {\em bind\+Flags} & The bind flags. \\
+\hline
+ & {\em buffer} & The data for the buffer. \\
+\hline
+ & {\em size} & The byte width. \\
+\hline
+\end{DoxyParams}
+\index{Data\+Buffer@{Data\+Buffer}!````~Data\+Buffer@{$\sim$\+Data\+Buffer}}
+\index{````~Data\+Buffer@{$\sim$\+Data\+Buffer}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{$\sim$\+Data\+Buffer()}{~DataBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}Data\+Buffer\+::$\sim$\+Data\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_data_buffer_ac374f86810cc019a248be28d1babecdb}{}\label{class_data_buffer_ac374f86810cc019a248be28d1babecdb}
+
+
+Destructor. 
+
+Destructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Data\+Buffer@{Data\+Buffer}!Get\+Dx\+Buffer@{Get\+Dx\+Buffer}}
+\index{Get\+Dx\+Buffer@{Get\+Dx\+Buffer}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Buffer()}{GetDxBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Buffer $\ast$\& Data\+Buffer\+::\+Get\+Dx\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_data_buffer_a282a755677be1eac733f3e1e090e6069}{}\label{class_data_buffer_a282a755677be1eac733f3e1e090e6069}
+
+
+Getters. 
+
+Gets the DX Buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Buffer. 
+\end{DoxyReturn}
+\index{Data\+Buffer@{Data\+Buffer}!Get\+Dx\+Buffer\+Description@{Get\+Dx\+Buffer\+Description}}
+\index{Get\+Dx\+Buffer\+Description@{Get\+Dx\+Buffer\+Description}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Buffer\+Description()}{GetDxBufferDescription()}}]{\setlength{\rightskip}{0pt plus 5cm}D3\+D11\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+D\+E\+SC Data\+Buffer\+::\+Get\+Dx\+Buffer\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_data_buffer_a1012af5db0fb0dbc042a4d7ddc3d8249}{}\label{class_data_buffer_a1012af5db0fb0dbc042a4d7ddc3d8249}
+Gets the DX Buffer Description.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Buffer Description. 
+\end{DoxyReturn}
+\index{Data\+Buffer@{Data\+Buffer}!Get\+Dx\+Sub\+Resource\+Data@{Get\+Dx\+Sub\+Resource\+Data}}
+\index{Get\+Dx\+Sub\+Resource\+Data@{Get\+Dx\+Sub\+Resource\+Data}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Sub\+Resource\+Data()}{GetDxSubResourceData()}}]{\setlength{\rightskip}{0pt plus 5cm}D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA Data\+Buffer\+::\+Get\+Dx\+Sub\+Resource\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_data_buffer_a385e821a26a26326d22d92f7e9268469}{}\label{class_data_buffer_a385e821a26a26326d22d92f7e9268469}
+Gets the DX Sub Resource Data.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Sub Resource Data. 
+\end{DoxyReturn}
+\index{Data\+Buffer@{Data\+Buffer}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{Get\+Size()}{GetSize()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Data\+Buffer\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_data_buffer_aaa2b70d7c6cc014e9ccd7e949ecbbf38}{}\label{class_data_buffer_aaa2b70d7c6cc014e9ccd7e949ecbbf38}
+Gets the size of the Buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The size of the Buffer. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Data\+Buffer@{Data\+Buffer}!my\+Dx\+Buffer@{my\+Dx\+Buffer}}
+\index{my\+Dx\+Buffer@{my\+Dx\+Buffer}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Buffer}{myDxBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Buffer$\ast$ Data\+Buffer\+::my\+Dx\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_data_buffer_a3bea6da94472c8b55032713ec8463853}{}\label{class_data_buffer_a3bea6da94472c8b55032713ec8463853}
+\index{Data\+Buffer@{Data\+Buffer}!my\+Dx\+Buffer\+Description@{my\+Dx\+Buffer\+Description}}
+\index{my\+Dx\+Buffer\+Description@{my\+Dx\+Buffer\+Description}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Buffer\+Description}{myDxBufferDescription}}]{\setlength{\rightskip}{0pt plus 5cm}D3\+D11\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+D\+E\+SC Data\+Buffer\+::my\+Dx\+Buffer\+Description\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_data_buffer_aca633d446c9c237966a06baca5df245d}{}\label{class_data_buffer_aca633d446c9c237966a06baca5df245d}
+\index{Data\+Buffer@{Data\+Buffer}!my\+Dx\+Sub\+Resource\+Data@{my\+Dx\+Sub\+Resource\+Data}}
+\index{my\+Dx\+Sub\+Resource\+Data@{my\+Dx\+Sub\+Resource\+Data}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Sub\+Resource\+Data}{myDxSubResourceData}}]{\setlength{\rightskip}{0pt plus 5cm}D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA Data\+Buffer\+::my\+Dx\+Sub\+Resource\+Data\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_data_buffer_a20ae63eb53988ea2963b45a307615d39}{}\label{class_data_buffer_a20ae63eb53988ea2963b45a307615d39}
+\index{Data\+Buffer@{Data\+Buffer}!my\+Size@{my\+Size}}
+\index{my\+Size@{my\+Size}!Data\+Buffer@{Data\+Buffer}}
+\subsubsection[{\texorpdfstring{my\+Size}{mySize}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Data\+Buffer\+::my\+Size\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_data_buffer_a31bb760d7d272d637e387b37d7caecfe}{}\label{class_data_buffer_a31bb760d7d272d637e387b37d7caecfe}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_data_buffer_8h}{Data\+Buffer.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_data_buffer_8cpp}{Data\+Buffer.\+cpp}\end{DoxyCompactItemize}

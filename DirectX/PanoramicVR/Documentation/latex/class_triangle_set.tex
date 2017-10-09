@@ -1,0 +1,357 @@
+\hypertarget{class_triangle_set}{}\section{Triangle\+Set Class Reference}
+\label{class_triangle_set}\index{Triangle\+Set@{Triangle\+Set}}
+
+
+{\ttfamily \#include $<$Triangle\+Set.\+h$>$}
+
+Inheritance diagram for Triangle\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_triangle_set}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_triangle_set_af476769901923751b75c28b3fb405287}{Triangle\+Set} (int max\+Triangles=M\+A\+X\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES, short $\ast$indices=N\+U\+LL, \hyperlink{class_vertex}{Vertex} $\ast$vertices=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_triangle_set_a04eaa39a57ece1a96c853eed01d54b88}{$\sim$\+Triangle\+Set} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_triangle_set_a272ae3bd26d941b6e1a902ef7333bbb1}{Add\+Quad} (\hyperlink{class_vertex}{Vertex} v0, \hyperlink{class_vertex}{Vertex} v1, \hyperlink{class_vertex}{Vertex} v2, \hyperlink{class_vertex}{Vertex} v3)
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+void \hyperlink{class_triangle_set_a2207831afe53a8bb3298d661391a1418}{Add\+Triangle} (\hyperlink{class_vertex}{Vertex} v0, \hyperlink{class_vertex}{Vertex} v1, \hyperlink{class_vertex}{Vertex} v2, bool generate\+Indices=true)
+\item 
+void \hyperlink{class_triangle_set_a3482e212da7004ff55c6d087047904db}{Create\+Panoramic} (int angle\+Of\+Panoramic\+Image, float radius, float height)
+\item 
+void \hyperlink{class_triangle_set_ac5bc6b68fa1118e12900f0d2638e2b5a}{Create\+Sphere} (float radius)
+\item 
+void \hyperlink{class_triangle_set_a95c9d8f500a7facd53d2af30cd7104be}{Load\+Geomerty} (vector$<$ Vertex\+Position\+Normal\+Texture $>$ vertices, vector$<$ uint16\+\_\+t $>$ indices)
+\item 
+short $\ast$ \hyperlink{class_triangle_set_af7318e823cda708835e3b47ce83bae23}{Get\+Indices} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+int \hyperlink{class_triangle_set_a23da7e4699bc2e22664c000fac27a962}{Get\+Max\+Buffer\+Size} ()
+\item 
+int \hyperlink{class_triangle_set_a8cda203213cce0f4edb87226daf1ef1e}{Get\+Num\+Indices} ()
+\item 
+int \hyperlink{class_triangle_set_ae4999e314948b3fe30ade2299a5b815d}{Get\+Num\+Vertices} ()
+\item 
+\hyperlink{class_vertex}{Vertex} $\ast$ \hyperlink{class_triangle_set_affe9e0e2d4f07f6b728e9d51e21a6087}{Get\+Vertices} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_triangle_set_a0c4ae28e04e40ca53e37ef2579069f92}{my\+Num\+Indices}
+\item 
+int \hyperlink{class_triangle_set_aaa4eb472d41e4d1a3c0e4ef7524cacfa}{my\+Num\+Vertices}
+\item 
+int \hyperlink{class_triangle_set_a5438cf58a0180a411634bba22d0bc829}{my\+Max\+Buffer\+Size}
+\item 
+short $\ast$ \hyperlink{class_triangle_set_a3685b9957ee6383120d5b38407cb731d}{my\+Indices}
+\item 
+\hyperlink{class_vertex}{Vertex} $\ast$ \hyperlink{class_triangle_set_ae05f53594858e811f4aa0d866b9e9665}{my\+Vertices}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Triangle\+Set@{Triangle\+Set}!Triangle\+Set@{Triangle\+Set}}
+\index{Triangle\+Set@{Triangle\+Set}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Triangle\+Set(int max\+Triangles=\+M\+A\+X\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+S, short $\ast$indices=\+N\+U\+L\+L, Vertex $\ast$vertices=\+N\+U\+L\+L)}{TriangleSet(int maxTriangles=MAX_TRIANGLES, short *indices=NULL, Vertex *vertices=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}Triangle\+Set\+::\+Triangle\+Set (
+\begin{DoxyParamCaption}
+\item[{int}]{max\+Triangles = {\ttfamily MAX\+\_\+TRIANGLES}, }
+\item[{short $\ast$}]{indices = {\ttfamily NULL}, }
+\item[{{\bf Vertex} $\ast$}]{vertices = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_af476769901923751b75c28b3fb405287}{}\label{class_triangle_set_af476769901923751b75c28b3fb405287}
+
+
+Constructor. 
+
+Constructor, allocates a vertex and index buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em max\+Triangles} & The maximum number of triangles to allow. \\
+\hline
+\mbox{\tt in,out}  & {\em indices} & An index buffer, if null, its created here. \\
+\hline
+\mbox{\tt in,out}  & {\em vertices} & A vertex buffer, if null, its created here. \\
+\hline
+\end{DoxyParams}
+\index{Triangle\+Set@{Triangle\+Set}!````~Triangle\+Set@{$\sim$\+Triangle\+Set}}
+\index{````~Triangle\+Set@{$\sim$\+Triangle\+Set}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{$\sim$\+Triangle\+Set()}{~TriangleSet()}}]{\setlength{\rightskip}{0pt plus 5cm}Triangle\+Set\+::$\sim$\+Triangle\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_a04eaa39a57ece1a96c853eed01d54b88}{}\label{class_triangle_set_a04eaa39a57ece1a96c853eed01d54b88}
+
+
+Destructor. 
+
+Destructor, deletes and cleans up index and vertex buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Triangle\+Set@{Triangle\+Set}!Add\+Quad@{Add\+Quad}}
+\index{Add\+Quad@{Add\+Quad}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Add\+Quad(\+Vertex v0, Vertex v1, Vertex v2, Vertex v3)}{AddQuad(Vertex v0, Vertex v1, Vertex v2, Vertex v3)}}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+Set\+::\+Add\+Quad (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex}}]{v0, }
+\item[{{\bf Vertex}}]{v1, }
+\item[{{\bf Vertex}}]{v2, }
+\item[{{\bf Vertex}}]{v3}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_a272ae3bd26d941b6e1a902ef7333bbb1}{}\label{class_triangle_set_a272ae3bd26d941b6e1a902ef7333bbb1}
+
+
+Functions. 
+
+Creates a square using triangles.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em v0} & The first vertex of the square. \\
+\hline
+{\em v1} & The second vertex of the square. \\
+\hline
+{\em v2} & The third vertex of the square. \\
+\hline
+{\em v3} & The fourth vertex of the square. \\
+\hline
+\end{DoxyParams}
+\index{Triangle\+Set@{Triangle\+Set}!Add\+Triangle@{Add\+Triangle}}
+\index{Add\+Triangle@{Add\+Triangle}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Add\+Triangle(\+Vertex v0, Vertex v1, Vertex v2, bool generate\+Indices=true)}{AddTriangle(Vertex v0, Vertex v1, Vertex v2, bool generateIndices=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+Set\+::\+Add\+Triangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex}}]{v0, }
+\item[{{\bf Vertex}}]{v1, }
+\item[{{\bf Vertex}}]{v2, }
+\item[{bool}]{generate\+Indices = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_a2207831afe53a8bb3298d661391a1418}{}\label{class_triangle_set_a2207831afe53a8bb3298d661391a1418}
+Adds a single triangle to the vertex and index buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em v0} & The first vertex. \\
+\hline
+{\em v1} & The second \hyperlink{class_vertex}{Vertex}. \\
+\hline
+{\em v2} & The third \hyperlink{class_vertex}{Vertex}. \\
+\hline
+{\em generate\+Indices} & true to generate indices. \\
+\hline
+\end{DoxyParams}
+\index{Triangle\+Set@{Triangle\+Set}!Create\+Panoramic@{Create\+Panoramic}}
+\index{Create\+Panoramic@{Create\+Panoramic}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Create\+Panoramic(int angle\+Of\+Panoramic\+Image, float radius, float height)}{CreatePanoramic(int angleOfPanoramicImage, float radius, float height)}}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+Set\+::\+Create\+Panoramic (
+\begin{DoxyParamCaption}
+\item[{int}]{angle\+Of\+Panoramic\+Image, }
+\item[{float}]{radius, }
+\item[{float}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_a3482e212da7004ff55c6d087047904db}{}\label{class_triangle_set_a3482e212da7004ff55c6d087047904db}
+Creates the partial cylinder geometry used for 180, 270, and 360 views.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angle\+Of\+Panoramic\+Image} & The angle of panoramic image (180, 270, or 360). \\
+\hline
+{\em radius} & The radius of the partial cylinder. \\
+\hline
+{\em height} & The height of the partial cylinder. \\
+\hline
+\end{DoxyParams}
+\index{Triangle\+Set@{Triangle\+Set}!Create\+Sphere@{Create\+Sphere}}
+\index{Create\+Sphere@{Create\+Sphere}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Create\+Sphere(float radius)}{CreateSphere(float radius)}}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+Set\+::\+Create\+Sphere (
+\begin{DoxyParamCaption}
+\item[{float}]{radius}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_ac5bc6b68fa1118e12900f0d2638e2b5a}{}\label{class_triangle_set_ac5bc6b68fa1118e12900f0d2638e2b5a}
+Creates the sphere used for photosphere views.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & The radius of the sphere. \\
+\hline
+\end{DoxyParams}
+\index{Triangle\+Set@{Triangle\+Set}!Get\+Indices@{Get\+Indices}}
+\index{Get\+Indices@{Get\+Indices}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Get\+Indices()}{GetIndices()}}]{\setlength{\rightskip}{0pt plus 5cm}short $\ast$ Triangle\+Set\+::\+Get\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_af7318e823cda708835e3b47ce83bae23}{}\label{class_triangle_set_af7318e823cda708835e3b47ce83bae23}
+
+
+Getters. 
+
+Gets the index buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The index buffer. 
+\end{DoxyReturn}
+\index{Triangle\+Set@{Triangle\+Set}!Get\+Max\+Buffer\+Size@{Get\+Max\+Buffer\+Size}}
+\index{Get\+Max\+Buffer\+Size@{Get\+Max\+Buffer\+Size}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Get\+Max\+Buffer\+Size()}{GetMaxBufferSize()}}]{\setlength{\rightskip}{0pt plus 5cm}int Triangle\+Set\+::\+Get\+Max\+Buffer\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_a23da7e4699bc2e22664c000fac27a962}{}\label{class_triangle_set_a23da7e4699bc2e22664c000fac27a962}
+Gets maximum buffer size.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The maximum buffer size. 
+\end{DoxyReturn}
+\index{Triangle\+Set@{Triangle\+Set}!Get\+Num\+Indices@{Get\+Num\+Indices}}
+\index{Get\+Num\+Indices@{Get\+Num\+Indices}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Get\+Num\+Indices()}{GetNumIndices()}}]{\setlength{\rightskip}{0pt plus 5cm}int Triangle\+Set\+::\+Get\+Num\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_a8cda203213cce0f4edb87226daf1ef1e}{}\label{class_triangle_set_a8cda203213cce0f4edb87226daf1ef1e}
+Gets number indices.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The number indices. 
+\end{DoxyReturn}
+\index{Triangle\+Set@{Triangle\+Set}!Get\+Num\+Vertices@{Get\+Num\+Vertices}}
+\index{Get\+Num\+Vertices@{Get\+Num\+Vertices}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Get\+Num\+Vertices()}{GetNumVertices()}}]{\setlength{\rightskip}{0pt plus 5cm}int Triangle\+Set\+::\+Get\+Num\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_ae4999e314948b3fe30ade2299a5b815d}{}\label{class_triangle_set_ae4999e314948b3fe30ade2299a5b815d}
+Gets number vertices.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The number vertices. 
+\end{DoxyReturn}
+\index{Triangle\+Set@{Triangle\+Set}!Get\+Vertices@{Get\+Vertices}}
+\index{Get\+Vertices@{Get\+Vertices}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Get\+Vertices()}{GetVertices()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertex} $\ast$ Triangle\+Set\+::\+Get\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_affe9e0e2d4f07f6b728e9d51e21a6087}{}\label{class_triangle_set_affe9e0e2d4f07f6b728e9d51e21a6087}
+Gets the vertex buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The vertex buffer. 
+\end{DoxyReturn}
+\index{Triangle\+Set@{Triangle\+Set}!Load\+Geomerty@{Load\+Geomerty}}
+\index{Load\+Geomerty@{Load\+Geomerty}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{Load\+Geomerty(vector$<$ Vertex\+Position\+Normal\+Texture $>$ vertices, vector$<$ uint16\+\_\+t $>$ indices)}{LoadGeomerty(vector< VertexPositionNormalTexture > vertices, vector< uint16_t > indices)}}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+Set\+::\+Load\+Geomerty (
+\begin{DoxyParamCaption}
+\item[{vector$<$ Vertex\+Position\+Normal\+Texture $>$}]{vertices, }
+\item[{vector$<$ uint16\+\_\+t $>$}]{indices}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangle_set_a95c9d8f500a7facd53d2af30cd7104be}{}\label{class_triangle_set_a95c9d8f500a7facd53d2af30cd7104be}
+Takes in raw vertex and index buffers and creates the triangles of the model and assembles them.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & The vertices to load. \\
+\hline
+{\em indices} & The indices to load. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Triangle\+Set@{Triangle\+Set}!my\+Indices@{my\+Indices}}
+\index{my\+Indices@{my\+Indices}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{my\+Indices}{myIndices}}]{\setlength{\rightskip}{0pt plus 5cm}short$\ast$ Triangle\+Set\+::my\+Indices\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_triangle_set_a3685b9957ee6383120d5b38407cb731d}{}\label{class_triangle_set_a3685b9957ee6383120d5b38407cb731d}
+\index{Triangle\+Set@{Triangle\+Set}!my\+Max\+Buffer\+Size@{my\+Max\+Buffer\+Size}}
+\index{my\+Max\+Buffer\+Size@{my\+Max\+Buffer\+Size}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{my\+Max\+Buffer\+Size}{myMaxBufferSize}}]{\setlength{\rightskip}{0pt plus 5cm}int Triangle\+Set\+::my\+Max\+Buffer\+Size\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_triangle_set_a5438cf58a0180a411634bba22d0bc829}{}\label{class_triangle_set_a5438cf58a0180a411634bba22d0bc829}
+\index{Triangle\+Set@{Triangle\+Set}!my\+Num\+Indices@{my\+Num\+Indices}}
+\index{my\+Num\+Indices@{my\+Num\+Indices}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{my\+Num\+Indices}{myNumIndices}}]{\setlength{\rightskip}{0pt plus 5cm}int Triangle\+Set\+::my\+Num\+Indices\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_triangle_set_a0c4ae28e04e40ca53e37ef2579069f92}{}\label{class_triangle_set_a0c4ae28e04e40ca53e37ef2579069f92}
+\index{Triangle\+Set@{Triangle\+Set}!my\+Num\+Vertices@{my\+Num\+Vertices}}
+\index{my\+Num\+Vertices@{my\+Num\+Vertices}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{my\+Num\+Vertices}{myNumVertices}}]{\setlength{\rightskip}{0pt plus 5cm}int Triangle\+Set\+::my\+Num\+Vertices\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_triangle_set_aaa4eb472d41e4d1a3c0e4ef7524cacfa}{}\label{class_triangle_set_aaa4eb472d41e4d1a3c0e4ef7524cacfa}
+\index{Triangle\+Set@{Triangle\+Set}!my\+Vertices@{my\+Vertices}}
+\index{my\+Vertices@{my\+Vertices}!Triangle\+Set@{Triangle\+Set}}
+\subsubsection[{\texorpdfstring{my\+Vertices}{myVertices}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertex}$\ast$ Triangle\+Set\+::my\+Vertices\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_triangle_set_ae05f53594858e811f4aa0d866b9e9665}{}\label{class_triangle_set_ae05f53594858e811f4aa0d866b9e9665}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_triangle_set_8h}{Triangle\+Set.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_triangle_set_8cpp}{Triangle\+Set.\+cpp}\end{DoxyCompactItemize}

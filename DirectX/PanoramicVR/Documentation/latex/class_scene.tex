@@ -1,0 +1,450 @@
+\hypertarget{class_scene}{}\section{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+Inheritance diagram for Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scene_afba62439dfcdf3b5bcbce46635ea0dd8}{Scene} (char $\ast$image\+File\+Path, char $\ast$txt\+Tool\+Path, char $\ast$output\+Path, char $\ast$config\+File\+Path, char $\ast$vertex\+Shader\+Path, char $\ast$pixel\+Shader\+Path)
+\begin{DoxyCompactList}\small\item\em Constructors. \end{DoxyCompactList}\item 
+void \hyperlink{class_scene_a1f36ab9f3f9c1286e79e63c37ca0580f}{Init} (char $\ast$image\+File\+Path, char $\ast$txt\+Tool\+Path, char $\ast$output\+Path, char $\ast$config\+File\+Path, char $\ast$vertex\+Shader\+Path, char $\ast$pixel\+Shader\+Path)
+\item 
+virtual \hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+float \hyperlink{class_scene_abf429ee85b796b169893ffaf06175135}{Calculate\+Ideal\+Panoramic\+Height} (int panoramic\+Type, float texture\+Height)
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+float \hyperlink{class_scene_af396d1333d3b5962f9f8e35bf9d32a6e}{Calculate\+Ideal\+Panoramic\+Radius} (int panoramic\+Type, float texture\+Width)
+\item 
+float \hyperlink{class_scene_a809f95f87e8f216c33e27fcd267c97f0}{Calculate\+Ideal\+Photosphere\+Radius} (float texture\+Width, float texture\+Height)
+\item 
+void \hyperlink{class_scene_a4ebb93f83b5bb2fc07212f50073553e0}{Load\+Next\+Image} ()
+\item 
+void \hyperlink{class_scene_a6797c971d3538791e54e7ab4ff3fb62a}{Load\+Previous\+Image} ()
+\item 
+void \hyperlink{class_scene_ac838f4934de41a367c54c15a30e2b08d}{Load\+Scene} (char $\ast$texture\+Name)
+\item 
+void \hyperlink{class_scene_ae8e1162a6435f77bbe81715c2fe76962}{Render} (X\+M\+M\+A\+T\+R\+IX $\ast$proj\+View, float red, float green, float blue, float alpha)
+\item 
+char $\ast$ \hyperlink{class_scene_a7c7f4f0d11651cb5f9fcb9ce69971707}{Retrieve\+Config\+Data} (int panoramic\+Type, char $\ast$tag\+Name)
+\item 
+int \hyperlink{class_scene_a934acc3f9bc85a2a236f92203c1f8481}{Get\+Current\+Image\+Index} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+\hyperlink{class_model}{Model} $\ast$ \hyperlink{class_scene_a21e0ad605a5e7b62a2990c6b61b8cb64}{Get\+Scene\+Model} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \+\_\+\+\_\+stdcall \hyperlink{class_scene_aee04ba430169390a86bf0b90412a2ade}{Execute\+Command} (void $\ast$command)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model}{Model} $\ast$ \hyperlink{class_scene_aee4ac4b42d77693f9ca0afc37171edb2}{my\+Scene\+Model}
+\item 
+vector$<$ char $\ast$ $>$ \hyperlink{class_scene_a632ef8efd7a07a1567c9b98113560259}{my\+File\+Names}
+\item 
+vector$<$ char $\ast$ $>$ \hyperlink{class_scene_afe6069fd8add9681a02f69dc83c21e2c}{my\+Folder\+Names}
+\item 
+vector$<$ char $\ast$ $>$ \hyperlink{class_scene_a37cfe0951a860c0fdff5fdc1f01eacc5}{my\+Image\+Names}
+\item 
+char $\ast$ \hyperlink{class_scene_a81d6f3523e23e6c9b74b6c8f8c5964d9}{my\+Config\+File\+Path}
+\item 
+char $\ast$ \hyperlink{class_scene_afca007585a1c32c674fa29dc0376f234}{my\+Vertex\+Shader\+Path}
+\item 
+char $\ast$ \hyperlink{class_scene_a733ea785e1da8455d1213172fff512a7}{my\+Pixel\+Shader\+Path}
+\item 
+size\+\_\+t \hyperlink{class_scene_a42e8eb55edbe8eb64a5395bb99ad17e3}{my\+Current\+Image\+Index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Scene(char $\ast$image\+File\+Path, char $\ast$txt\+Tool\+Path, char $\ast$output\+Path, char $\ast$config\+File\+Path, char $\ast$vertex\+Shader\+Path, char $\ast$pixel\+Shader\+Path)}{Scene(char *imageFilePath, char *txtToolPath, char *outputPath, char *configFilePath, char *vertexShaderPath, char *pixelShaderPath)}}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{image\+File\+Path, }
+\item[{char $\ast$}]{txt\+Tool\+Path, }
+\item[{char $\ast$}]{output\+Path, }
+\item[{char $\ast$}]{config\+File\+Path, }
+\item[{char $\ast$}]{vertex\+Shader\+Path, }
+\item[{char $\ast$}]{pixel\+Shader\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_afba62439dfcdf3b5bcbce46635ea0dd8}{}\label{class_scene_afba62439dfcdf3b5bcbce46635ea0dd8}
+
+
+Constructors. 
+
+Constructor, takes in all the file paths and passes them to \hyperlink{class_scene_a1f36ab9f3f9c1286e79e63c37ca0580f}{Init()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em image\+File\+Path} & If non-\/null, full pathname of the image file. \\
+\hline
+\mbox{\tt in,out}  & {\em txt\+Tool\+Path} & If non-\/null, full pathname of the text tool file. \\
+\hline
+\mbox{\tt in,out}  & {\em output\+Path} & If non-\/null, full pathname of the output file. \\
+\hline
+\mbox{\tt in,out}  & {\em config\+File\+Path} & If non-\/null, full pathname of the configuration file. \\
+\hline
+\mbox{\tt in,out}  & {\em vertex\+Shader\+Path} & If non-\/null, full pathname of the vertex shader file. \\
+\hline
+\mbox{\tt in,out}  & {\em pixel\+Shader\+Path} & If non-\/null, full pathname of the pixel shader file. \\
+\hline
+\end{DoxyParams}
+\index{Scene@{Scene}!````~Scene@{$\sim$\+Scene}}
+\index{````~Scene@{$\sim$\+Scene}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{$\sim$\+Scene()}{~Scene()}}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::$\sim$\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}{}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}
+
+
+Destructor. 
+
+Destructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Scene@{Scene}!Calculate\+Ideal\+Panoramic\+Height@{Calculate\+Ideal\+Panoramic\+Height}}
+\index{Calculate\+Ideal\+Panoramic\+Height@{Calculate\+Ideal\+Panoramic\+Height}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Calculate\+Ideal\+Panoramic\+Height(int panoramic\+Type, float texture\+Height)}{CalculateIdealPanoramicHeight(int panoramicType, float textureHeight)}}]{\setlength{\rightskip}{0pt plus 5cm}float Scene\+::\+Calculate\+Ideal\+Panoramic\+Height (
+\begin{DoxyParamCaption}
+\item[{int}]{panoramic\+Type, }
+\item[{float}]{texture\+Height}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_abf429ee85b796b169893ffaf06175135}{}\label{class_scene_abf429ee85b796b169893ffaf06175135}
+
+
+Functions. 
+
+I attempt to calculate the ideal height for the model based on the texture dimensions. These percentage(s) are based on experimenting with the given images and determining what looked best.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em panoramic\+Type} & Type of the panoramic such as 180, 270, 360. \\
+\hline
+{\em texture\+Height} & Height of the texture.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated ideal panoramic height of the partial cylinder. 
+\end{DoxyReturn}
+\index{Scene@{Scene}!Calculate\+Ideal\+Panoramic\+Radius@{Calculate\+Ideal\+Panoramic\+Radius}}
+\index{Calculate\+Ideal\+Panoramic\+Radius@{Calculate\+Ideal\+Panoramic\+Radius}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Calculate\+Ideal\+Panoramic\+Radius(int panoramic\+Type, float texture\+Width)}{CalculateIdealPanoramicRadius(int panoramicType, float textureWidth)}}]{\setlength{\rightskip}{0pt plus 5cm}float Scene\+::\+Calculate\+Ideal\+Panoramic\+Radius (
+\begin{DoxyParamCaption}
+\item[{int}]{panoramic\+Type, }
+\item[{float}]{texture\+Width}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_af396d1333d3b5962f9f8e35bf9d32a6e}{}\label{class_scene_af396d1333d3b5962f9f8e35bf9d32a6e}
+I attempt to calculate the ideal radius for the model based on the texture dimensions. These percentage(s) are based on experimenting with the given images and determining what looked best.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em panoramic\+Type} & Type of the panoramic such as 180, 270, 360. \\
+\hline
+{\em texture\+Width} & Width of the texture.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated ideal panoramic radius of the partial cylinder. 
+\end{DoxyReturn}
+\index{Scene@{Scene}!Calculate\+Ideal\+Photosphere\+Radius@{Calculate\+Ideal\+Photosphere\+Radius}}
+\index{Calculate\+Ideal\+Photosphere\+Radius@{Calculate\+Ideal\+Photosphere\+Radius}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Calculate\+Ideal\+Photosphere\+Radius(float texture\+Width, float texture\+Height)}{CalculateIdealPhotosphereRadius(float textureWidth, float textureHeight)}}]{\setlength{\rightskip}{0pt plus 5cm}float Scene\+::\+Calculate\+Ideal\+Photosphere\+Radius (
+\begin{DoxyParamCaption}
+\item[{float}]{texture\+Width, }
+\item[{float}]{texture\+Height}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_a809f95f87e8f216c33e27fcd267c97f0}{}\label{class_scene_a809f95f87e8f216c33e27fcd267c97f0}
+I attempt to calculate the ideal radius for the model based on the texture dimensions. These percentages are based on experimenting with the given images and determining what looked best.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Width} & Width of the texture. \\
+\hline
+{\em texture\+Height} & Height of the texture.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated ideal photosphere radius. 
+\end{DoxyReturn}
+\index{Scene@{Scene}!Execute\+Command@{Execute\+Command}}
+\index{Execute\+Command@{Execute\+Command}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Execute\+Command(void $\ast$command)}{ExecuteCommand(void *command)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int \+\_\+\+\_\+stdcall Scene\+::\+Execute\+Command (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{command}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_scene_aee04ba430169390a86bf0b90412a2ade}{}\label{class_scene_aee04ba430169390a86bf0b90412a2ade}
+A function must have \char`\"{}\+\_\+\+\_\+stdcall\char`\"{} if they are using Windows Multi-\/\+Threading. This function is called by multiple threads to launch the .D\+DS converter tool.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em command} & If non-\/null, the command.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success. 
+\end{DoxyReturn}
+\index{Scene@{Scene}!Get\+Current\+Image\+Index@{Get\+Current\+Image\+Index}}
+\index{Get\+Current\+Image\+Index@{Get\+Current\+Image\+Index}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Get\+Current\+Image\+Index()}{GetCurrentImageIndex()}}]{\setlength{\rightskip}{0pt plus 5cm}int Scene\+::\+Get\+Current\+Image\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_a934acc3f9bc85a2a236f92203c1f8481}{}\label{class_scene_a934acc3f9bc85a2a236f92203c1f8481}
+
+
+Getters. 
+
+Gets the current image index, used for the array of images.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The current image index. 
+\end{DoxyReturn}
+\index{Scene@{Scene}!Get\+Scene\+Model@{Get\+Scene\+Model}}
+\index{Get\+Scene\+Model@{Get\+Scene\+Model}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Get\+Scene\+Model()}{GetSceneModel()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model} $\ast$ Scene\+::\+Get\+Scene\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_a21e0ad605a5e7b62a2990c6b61b8cb64}{}\label{class_scene_a21e0ad605a5e7b62a2990c6b61b8cb64}
+Gets the scene model.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+the scene model. 
+\end{DoxyReturn}
+\index{Scene@{Scene}!Init@{Init}}
+\index{Init@{Init}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Init(char $\ast$image\+File\+Path, char $\ast$txt\+Tool\+Path, char $\ast$output\+Path, char $\ast$config\+File\+Path, char $\ast$vertex\+Shader\+Path, char $\ast$pixel\+Shader\+Path)}{Init(char *imageFilePath, char *txtToolPath, char *outputPath, char *configFilePath, char *vertexShaderPath, char *pixelShaderPath)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{image\+File\+Path, }
+\item[{char $\ast$}]{txt\+Tool\+Path, }
+\item[{char $\ast$}]{output\+Path, }
+\item[{char $\ast$}]{config\+File\+Path, }
+\item[{char $\ast$}]{vertex\+Shader\+Path, }
+\item[{char $\ast$}]{pixel\+Shader\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_a1f36ab9f3f9c1286e79e63c37ca0580f}{}\label{class_scene_a1f36ab9f3f9c1286e79e63c37ca0580f}
+Initializes a scene, any images in the images directory (image\+File\+Path) will be converted to D\+DS format using the tool located in txt\+Tool\+Path. Then the converted images (textures) are put into the output\+Path folder. The other paths are self explanatory. After that, \hyperlink{class_scene_ac838f4934de41a367c54c15a30e2b08d}{Load\+Scene()} is called.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em image\+File\+Path} & Directory where images to use are located \\
+\hline
+\mbox{\tt in,out}  & {\em txt\+Tool\+Path} & Directory where the D\+DS conversion tool is located. \\
+\hline
+\mbox{\tt in,out}  & {\em output\+Path} & Directory where the converted images (textures) are located. \\
+\hline
+\mbox{\tt in,out}  & {\em config\+File\+Path} & Path where configuration file is located. \\
+\hline
+\mbox{\tt in,out}  & {\em vertex\+Shader\+Path} & Path where vertex shader file is located. \\
+\hline
+\mbox{\tt in,out}  & {\em pixel\+Shader\+Path} & Path where pixel shader file is located. \\
+\hline
+\end{DoxyParams}
+\index{Scene@{Scene}!Load\+Next\+Image@{Load\+Next\+Image}}
+\index{Load\+Next\+Image@{Load\+Next\+Image}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Load\+Next\+Image()}{LoadNextImage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::\+Load\+Next\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_a4ebb93f83b5bb2fc07212f50073553e0}{}\label{class_scene_a4ebb93f83b5bb2fc07212f50073553e0}
+Loads next image by calling \hyperlink{class_scene_ac838f4934de41a367c54c15a30e2b08d}{Load\+Scene()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Scene@{Scene}!Load\+Previous\+Image@{Load\+Previous\+Image}}
+\index{Load\+Previous\+Image@{Load\+Previous\+Image}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Load\+Previous\+Image()}{LoadPreviousImage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::\+Load\+Previous\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_a6797c971d3538791e54e7ab4ff3fb62a}{}\label{class_scene_a6797c971d3538791e54e7ab4ff3fb62a}
+Loads previous image by calling \hyperlink{class_scene_ac838f4934de41a367c54c15a30e2b08d}{Load\+Scene()}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Scene@{Scene}!Load\+Scene@{Load\+Scene}}
+\index{Load\+Scene@{Load\+Scene}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Load\+Scene(char $\ast$texture\+Name)}{LoadScene(char *textureName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::\+Load\+Scene (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{texture\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_ac838f4934de41a367c54c15a30e2b08d}{}\label{class_scene_ac838f4934de41a367c54c15a30e2b08d}
+Loads a scene; this is the \char`\"{}\+Meat and Potatoes\char`\"{} of the application. We use the configuration file along with the texture path to load the textures and attach them to the correct model. The models used are either a partial cylinder depending on 180, 270 and 360, or they are a sphere for Photosphere. The configuration file is used to determine the ideal size and position of the camera and the model(s) based on size of the texture being loaded in. This allows for the user to use any image instead of just a select few.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em texture\+Name} & If non-\/null, name of the texture. \\
+\hline
+\end{DoxyParams}
+\index{Scene@{Scene}!Render@{Render}}
+\index{Render@{Render}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Render(\+X\+M\+M\+A\+T\+R\+I\+X $\ast$proj\+View, float red, float green, float blue, float alpha)}{Render(XMMATRIX *projView, float red, float green, float blue, float alpha)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{X\+M\+M\+A\+T\+R\+IX $\ast$}]{proj\+View, }
+\item[{float}]{red, }
+\item[{float}]{green, }
+\item[{float}]{blue, }
+\item[{float}]{alpha}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_ae8e1162a6435f77bbe81715c2fe76962}{}\label{class_scene_ae8e1162a6435f77bbe81715c2fe76962}
+Renders the current scene.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em proj\+View} & M\+VP matrix. \\
+\hline
+ & {\em red} & The red value of the back buffer. \\
+\hline
+ & {\em green} & The green value of the back buffer. \\
+\hline
+ & {\em blue} & The blue value of the back buffer. \\
+\hline
+ & {\em alpha} & The alpha value of the back buffer. \\
+\hline
+\end{DoxyParams}
+\index{Scene@{Scene}!Retrieve\+Config\+Data@{Retrieve\+Config\+Data}}
+\index{Retrieve\+Config\+Data@{Retrieve\+Config\+Data}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Retrieve\+Config\+Data(int panoramic\+Type, char $\ast$tag\+Name)}{RetrieveConfigData(int panoramicType, char *tagName)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Scene\+::\+Retrieve\+Config\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{panoramic\+Type, }
+\item[{char $\ast$}]{tag\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scene_a7c7f4f0d11651cb5f9fcb9ce69971707}{}\label{class_scene_a7c7f4f0d11651cb5f9fcb9ce69971707}
+Retrieves configuration data based on the panoramic\+Type (180, 270, 360) and the tag name (position, rotation).
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em panoramic\+Type} & Type of the panoramic (180, 270, 360). \\
+\hline
+\mbox{\tt in,out}  & {\em tag\+Name} & The name of the tag (position, rotation) without the brackets.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null if it fails, else a pointer to a char. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Scene@{Scene}!my\+Config\+File\+Path@{my\+Config\+File\+Path}}
+\index{my\+Config\+File\+Path@{my\+Config\+File\+Path}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{my\+Config\+File\+Path}{myConfigFilePath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Scene\+::my\+Config\+File\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_a81d6f3523e23e6c9b74b6c8f8c5964d9}{}\label{class_scene_a81d6f3523e23e6c9b74b6c8f8c5964d9}
+\index{Scene@{Scene}!my\+Current\+Image\+Index@{my\+Current\+Image\+Index}}
+\index{my\+Current\+Image\+Index@{my\+Current\+Image\+Index}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{my\+Current\+Image\+Index}{myCurrentImageIndex}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Scene\+::my\+Current\+Image\+Index\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_a42e8eb55edbe8eb64a5395bb99ad17e3}{}\label{class_scene_a42e8eb55edbe8eb64a5395bb99ad17e3}
+\index{Scene@{Scene}!my\+File\+Names@{my\+File\+Names}}
+\index{my\+File\+Names@{my\+File\+Names}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{my\+File\+Names}{myFileNames}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$char$\ast$$>$ Scene\+::my\+File\+Names\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_a632ef8efd7a07a1567c9b98113560259}{}\label{class_scene_a632ef8efd7a07a1567c9b98113560259}
+\index{Scene@{Scene}!my\+Folder\+Names@{my\+Folder\+Names}}
+\index{my\+Folder\+Names@{my\+Folder\+Names}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{my\+Folder\+Names}{myFolderNames}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$char$\ast$$>$ Scene\+::my\+Folder\+Names\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_afe6069fd8add9681a02f69dc83c21e2c}{}\label{class_scene_afe6069fd8add9681a02f69dc83c21e2c}
+\index{Scene@{Scene}!my\+Image\+Names@{my\+Image\+Names}}
+\index{my\+Image\+Names@{my\+Image\+Names}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{my\+Image\+Names}{myImageNames}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$char$\ast$$>$ Scene\+::my\+Image\+Names\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_a37cfe0951a860c0fdff5fdc1f01eacc5}{}\label{class_scene_a37cfe0951a860c0fdff5fdc1f01eacc5}
+\index{Scene@{Scene}!my\+Pixel\+Shader\+Path@{my\+Pixel\+Shader\+Path}}
+\index{my\+Pixel\+Shader\+Path@{my\+Pixel\+Shader\+Path}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{my\+Pixel\+Shader\+Path}{myPixelShaderPath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Scene\+::my\+Pixel\+Shader\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_a733ea785e1da8455d1213172fff512a7}{}\label{class_scene_a733ea785e1da8455d1213172fff512a7}
+\index{Scene@{Scene}!my\+Scene\+Model@{my\+Scene\+Model}}
+\index{my\+Scene\+Model@{my\+Scene\+Model}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{my\+Scene\+Model}{mySceneModel}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model}$\ast$ Scene\+::my\+Scene\+Model\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_aee4ac4b42d77693f9ca0afc37171edb2}{}\label{class_scene_aee4ac4b42d77693f9ca0afc37171edb2}
+\index{Scene@{Scene}!my\+Vertex\+Shader\+Path@{my\+Vertex\+Shader\+Path}}
+\index{my\+Vertex\+Shader\+Path@{my\+Vertex\+Shader\+Path}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{my\+Vertex\+Shader\+Path}{myVertexShaderPath}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Scene\+::my\+Vertex\+Shader\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_afca007585a1c32c674fa29dc0376f234}{}\label{class_scene_afca007585a1c32c674fa29dc0376f234}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_scene_8h}{Scene.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_scene_8cpp}{Scene.\+cpp}\end{DoxyCompactItemize}

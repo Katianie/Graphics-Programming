@@ -1,0 +1,194 @@
+\hypertarget{class_depth_buffer}{}\section{Depth\+Buffer Class Reference}
+\label{class_depth_buffer}\index{Depth\+Buffer@{Depth\+Buffer}}
+
+
+{\ttfamily \#include $<$Depth\+Buffer.\+h$>$}
+
+Inheritance diagram for Depth\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_depth_buffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_depth_buffer_aa5c885f142495745de6e4d4595987dc4}{Depth\+Buffer} (I\+D3\+D11\+Device $\ast$dx\+Device, int window\+Width, int window\+Height, int sample\+Count=1)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_depth_buffer_a9d04ef2a88a2414d476f4fc27a25a7a8}{$\sim$\+Depth\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{class_depth_buffer_aa72fe3a246f368d405ff2666c4e150fa}{Get\+Dx\+Format} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+I\+D3\+D11\+Texture2D $\ast$ \hyperlink{class_depth_buffer_ad3b4f85ced7bb00beea9ac63b0b34774}{Get\+Dx\+Texture} ()
+\item 
+I\+D3\+D11\+Depth\+Stencil\+View $\ast$ \hyperlink{class_depth_buffer_ad5ff6602f8b18faf2010297e677815ec}{Get\+Dx\+Texture\+Depth\+Stencil\+View} ()
+\item 
+D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC \hyperlink{class_depth_buffer_aedd68b34c8aedb0f8826a89a0b3f19a8}{Get\+Dx\+Texture\+Description} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Depth\+Stencil\+View $\ast$ \hyperlink{class_depth_buffer_a6f9f968908fcf216ea38e9b8618853ef}{my\+Dx\+Texture\+Depth\+Stencil\+View}
+\item 
+I\+D3\+D11\+Texture2D $\ast$ \hyperlink{class_depth_buffer_a2ba736f2db94d8491cce355635051d51}{my\+Dx\+Texture}
+\item 
+D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{class_depth_buffer_a6ec2773387e954b6db05500b2247d5c2}{my\+Dx\+Format} = D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+D32\+\_\+\+F\+L\+O\+AT
+\item 
+D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC \hyperlink{class_depth_buffer_a217ff5c9e8c6c7609626a81cf704dd1d}{my\+Dx\+Texture\+Description}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Depth\+Buffer@{Depth\+Buffer}!Depth\+Buffer@{Depth\+Buffer}}
+\index{Depth\+Buffer@{Depth\+Buffer}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{Depth\+Buffer(\+I\+D3\+D11\+Device $\ast$dx\+Device, int window\+Width, int window\+Height, int sample\+Count=1)}{DepthBuffer(ID3D11Device *dxDevice, int windowWidth, int windowHeight, int sampleCount=1)}}]{\setlength{\rightskip}{0pt plus 5cm}Depth\+Buffer\+::\+Depth\+Buffer (
+\begin{DoxyParamCaption}
+\item[{I\+D3\+D11\+Device $\ast$}]{dx\+Device, }
+\item[{int}]{window\+Width, }
+\item[{int}]{window\+Height, }
+\item[{int}]{sample\+Count = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_depth_buffer_aa5c885f142495745de6e4d4595987dc4}{}\label{class_depth_buffer_aa5c885f142495745de6e4d4595987dc4}
+
+
+Constructor. 
+
+Constructor, initializes buffer to store Z order data aka Z-\/\+Buffer.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em dx\+Device} & The DX Device. \\
+\hline
+ & {\em window\+Width} & The width of the window. \\
+\hline
+ & {\em window\+Height} & The height of the window. \\
+\hline
+ & {\em sample\+Count} & Number of samples. \\
+\hline
+\end{DoxyParams}
+\index{Depth\+Buffer@{Depth\+Buffer}!````~Depth\+Buffer@{$\sim$\+Depth\+Buffer}}
+\index{````~Depth\+Buffer@{$\sim$\+Depth\+Buffer}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{$\sim$\+Depth\+Buffer()}{~DepthBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}Depth\+Buffer\+::$\sim$\+Depth\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_depth_buffer_a9d04ef2a88a2414d476f4fc27a25a7a8}{}\label{class_depth_buffer_a9d04ef2a88a2414d476f4fc27a25a7a8}
+
+
+Destructor. 
+
+Destructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Depth\+Buffer@{Depth\+Buffer}!Get\+Dx\+Format@{Get\+Dx\+Format}}
+\index{Get\+Dx\+Format@{Get\+Dx\+Format}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Format()}{GetDxFormat()}}]{\setlength{\rightskip}{0pt plus 5cm}D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT Depth\+Buffer\+::\+Get\+Dx\+Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_depth_buffer_aa72fe3a246f368d405ff2666c4e150fa}{}\label{class_depth_buffer_aa72fe3a246f368d405ff2666c4e150fa}
+
+
+Getters. 
+
+Gets the DX Format.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX Format. 
+\end{DoxyReturn}
+\index{Depth\+Buffer@{Depth\+Buffer}!Get\+Dx\+Texture@{Get\+Dx\+Texture}}
+\index{Get\+Dx\+Texture@{Get\+Dx\+Texture}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Texture()}{GetDxTexture()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Texture2D $\ast$ Depth\+Buffer\+::\+Get\+Dx\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_depth_buffer_ad3b4f85ced7bb00beea9ac63b0b34774}{}\label{class_depth_buffer_ad3b4f85ced7bb00beea9ac63b0b34774}
+Gets the DX \hyperlink{class_texture}{Texture}.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+the DX \hyperlink{class_texture}{Texture}. 
+\end{DoxyReturn}
+\index{Depth\+Buffer@{Depth\+Buffer}!Get\+Dx\+Texture\+Depth\+Stencil\+View@{Get\+Dx\+Texture\+Depth\+Stencil\+View}}
+\index{Get\+Dx\+Texture\+Depth\+Stencil\+View@{Get\+Dx\+Texture\+Depth\+Stencil\+View}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Texture\+Depth\+Stencil\+View()}{GetDxTextureDepthStencilView()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Depth\+Stencil\+View $\ast$ Depth\+Buffer\+::\+Get\+Dx\+Texture\+Depth\+Stencil\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_depth_buffer_ad5ff6602f8b18faf2010297e677815ec}{}\label{class_depth_buffer_ad5ff6602f8b18faf2010297e677815ec}
+Gets the DX \hyperlink{class_texture}{Texture} Depth Stencil View.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX \hyperlink{class_texture}{Texture} Depth Stencil View. 
+\end{DoxyReturn}
+\index{Depth\+Buffer@{Depth\+Buffer}!Get\+Dx\+Texture\+Description@{Get\+Dx\+Texture\+Description}}
+\index{Get\+Dx\+Texture\+Description@{Get\+Dx\+Texture\+Description}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{Get\+Dx\+Texture\+Description()}{GetDxTextureDescription()}}]{\setlength{\rightskip}{0pt plus 5cm}D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC Depth\+Buffer\+::\+Get\+Dx\+Texture\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_depth_buffer_aedd68b34c8aedb0f8826a89a0b3f19a8}{}\label{class_depth_buffer_aedd68b34c8aedb0f8826a89a0b3f19a8}
+Gets the DX \hyperlink{class_texture}{Texture} Description.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The DX \hyperlink{class_texture}{Texture} Description. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Depth\+Buffer@{Depth\+Buffer}!my\+Dx\+Format@{my\+Dx\+Format}}
+\index{my\+Dx\+Format@{my\+Dx\+Format}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Format}{myDxFormat}}]{\setlength{\rightskip}{0pt plus 5cm}D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT Depth\+Buffer\+::my\+Dx\+Format = D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+D32\+\_\+\+F\+L\+O\+AT\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_depth_buffer_a6ec2773387e954b6db05500b2247d5c2}{}\label{class_depth_buffer_a6ec2773387e954b6db05500b2247d5c2}
+\index{Depth\+Buffer@{Depth\+Buffer}!my\+Dx\+Texture@{my\+Dx\+Texture}}
+\index{my\+Dx\+Texture@{my\+Dx\+Texture}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Texture}{myDxTexture}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Texture2D$\ast$ Depth\+Buffer\+::my\+Dx\+Texture\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_depth_buffer_a2ba736f2db94d8491cce355635051d51}{}\label{class_depth_buffer_a2ba736f2db94d8491cce355635051d51}
+\index{Depth\+Buffer@{Depth\+Buffer}!my\+Dx\+Texture\+Depth\+Stencil\+View@{my\+Dx\+Texture\+Depth\+Stencil\+View}}
+\index{my\+Dx\+Texture\+Depth\+Stencil\+View@{my\+Dx\+Texture\+Depth\+Stencil\+View}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Texture\+Depth\+Stencil\+View}{myDxTextureDepthStencilView}}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D11\+Depth\+Stencil\+View$\ast$ Depth\+Buffer\+::my\+Dx\+Texture\+Depth\+Stencil\+View\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_depth_buffer_a6f9f968908fcf216ea38e9b8618853ef}{}\label{class_depth_buffer_a6f9f968908fcf216ea38e9b8618853ef}
+\index{Depth\+Buffer@{Depth\+Buffer}!my\+Dx\+Texture\+Description@{my\+Dx\+Texture\+Description}}
+\index{my\+Dx\+Texture\+Description@{my\+Dx\+Texture\+Description}!Depth\+Buffer@{Depth\+Buffer}}
+\subsubsection[{\texorpdfstring{my\+Dx\+Texture\+Description}{myDxTextureDescription}}]{\setlength{\rightskip}{0pt plus 5cm}D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC Depth\+Buffer\+::my\+Dx\+Texture\+Description\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_depth_buffer_a217ff5c9e8c6c7609626a81cf704dd1d}{}\label{class_depth_buffer_a217ff5c9e8c6c7609626a81cf704dd1d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_depth_buffer_8h}{Depth\+Buffer.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_depth_buffer_8cpp}{Depth\+Buffer.\+cpp}\end{DoxyCompactItemize}

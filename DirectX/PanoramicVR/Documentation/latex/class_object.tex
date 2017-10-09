@@ -1,0 +1,75 @@
+\hypertarget{class_object}{}\section{Object Class Reference}
+\label{class_object}\index{Object@{Object}}
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_object}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_object_a8a622c1336cadf4c396a75f0cabad49c}{operator delete} (void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Overloaded Operators. \end{DoxyCompactList}\item 
+static void $\ast$ \hyperlink{class_object_a0369def539497b56d0b1abd4aa9f029d}{operator new} (size\+\_\+t size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Object@{Object}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!Object@{Object}}
+\subsubsection[{\texorpdfstring{operator delete(void $\ast$ptr)}{operator delete(void *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Object\+::operator delete (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_a8a622c1336cadf4c396a75f0cabad49c}{}\label{class_object_a8a622c1336cadf4c396a75f0cabad49c}
+
+
+Overloaded Operators. 
+
+Uses \+\_\+aligned\+\_\+free to remove memory. All classes that inherit from \hyperlink{class_object}{Object} will use these functions when new or delete is used.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em ptr} & If non-\/null, the pointer to delete. \\
+\hline
+\end{DoxyParams}
+\index{Object@{Object}!operator new@{operator new}}
+\index{operator new@{operator new}!Object@{Object}}
+\subsubsection[{\texorpdfstring{operator new(size\+\_\+t size)}{operator new(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Object\+::operator new (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_a0369def539497b56d0b1abd4aa9f029d}{}\label{class_object_a0369def539497b56d0b1abd4aa9f029d}
+Uses \+\_\+aligned\+\_\+malloc to remove memory. All classes that inherit from \hyperlink{class_object}{Object} will use these functions when new or delete is used.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An aligned piece of memory. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_object_8h}{Object.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_object_8cpp}{Object.\+cpp}\end{DoxyCompactItemize}

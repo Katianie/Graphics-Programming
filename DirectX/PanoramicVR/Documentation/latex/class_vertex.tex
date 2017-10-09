@@ -1,0 +1,691 @@
+\hypertarget{class_vertex}{}\section{Vertex Class Reference}
+\label{class_vertex}\index{Vertex@{Vertex}}
+
+
+{\ttfamily \#include $<$Vertex.\+h$>$}
+
+Inheritance diagram for Vertex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vertex}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vertex_a97488994a2482d70da74e1b91d40e169}{Vertex} ()
+\begin{DoxyCompactList}\small\item\em Constructors. \end{DoxyCompactList}\item 
+\hyperlink{class_vertex_a86a01a9679eed567448b8165ba335ddf}{Vertex} (const \hyperlink{class_vertex}{Vertex} \&vertex)
+\item 
+\hyperlink{class_vertex_ab3aaaa3fea9602eaf3d80c42702a6d5f}{Vertex} (X\+M\+F\+L\+O\+A\+T3 position)
+\item 
+\hyperlink{class_vertex_a2c558c054a0a2c970588c063073803a0}{Vertex} (float x, float y, float z)
+\item 
+\hyperlink{class_vertex_a9be3dce54b0ff2b0338ba00ba4307cab}{Vertex} (X\+M\+F\+L\+O\+A\+T3 position, D\+W\+O\+RD color, float u, float v)
+\item 
+\hyperlink{class_vertex_a00ab3eccce14fd1aa56662437977f40a}{Vertex} (float x, float y, float z, D\+W\+O\+RD color, float u, float v)
+\item 
+float \hyperlink{class_vertex_a8c00f077ae72434ebba3687b03135105}{Calculate\+Vector\+Length} ()
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+void \hyperlink{class_vertex_a8094b5faac3ce2dd40a4d112133ffc73}{Normalize} ()
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{class_vertex_a96920908f0adadf6d6fef447013a32fc}{Get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+float \hyperlink{class_vertex_a92792a1608974b53e87f7cba979cf97c}{GetX} ()
+\item 
+float \hyperlink{class_vertex_a89139909c6a69257d7d3b2234a01c304}{GetY} ()
+\item 
+float \hyperlink{class_vertex_afea768f12fdbb44ee051414fea2d44d0}{GetZ} ()
+\item 
+D\+W\+O\+RD \hyperlink{class_vertex_a636bda7b90b61dd6e23cc84c3781e5a5}{Get\+Color} ()
+\item 
+float \hyperlink{class_vertex_ada06e4d8d0f06652cb3b6a06776e1069}{GetU} ()
+\item 
+float \hyperlink{class_vertex_a05e50625839f1ce7b35574cdf443d64e}{GetV} ()
+\item 
+void \hyperlink{class_vertex_aa4c230ebaa8a0c0a8ca6a1e29d5ae93e}{Set\+Position} (X\+M\+F\+L\+O\+A\+T3 position)
+\begin{DoxyCompactList}\small\item\em Setters. \end{DoxyCompactList}\item 
+void \hyperlink{class_vertex_a05956877b676ad982b5e706ce726e44a}{SetX} (float x)
+\item 
+void \hyperlink{class_vertex_ad8b8b10e8e2f617c61be74aa50464293}{SetY} (float y)
+\item 
+void \hyperlink{class_vertex_ab488ce5e53970ae1172ba49417d85b07}{SetZ} (float z)
+\item 
+void \hyperlink{class_vertex_a5febdb33567ab2a7f06fc85a2614d526}{Set\+Color} (D\+W\+O\+RD color)
+\item 
+void \hyperlink{class_vertex_aebfd289c47c2c19c5655e0ccf1dac72f}{SetU} (float u)
+\item 
+void \hyperlink{class_vertex_a429f3b9b25ba1f58e09bfcf12c1029b6}{SetV} (float v)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \hyperlink{class_vertex_a6d31c2682560aaf39b12be7085f8a15d}{Calculate\+Vector\+Length} (\hyperlink{class_vertex}{Vertex} vector)
+\item 
+static float \hyperlink{class_vertex_a9aa994d5edcc65c5114142a818559098}{Calculate\+Vector\+Length} (X\+M\+F\+L\+O\+A\+T3 vector)
+\item 
+static float \hyperlink{class_vertex_a1f78e29eef1efb38d9bf6234e6d51a82}{Calculate\+Vector\+Length} (float x, float y, float z)
+\item 
+static \hyperlink{class_vertex}{Vertex} \hyperlink{class_vertex_a8ddc8aebbcc4226698bd2c85730f7748}{Normalize} (\hyperlink{class_vertex}{Vertex} vector\+To\+Normalize)
+\item 
+static X\+M\+F\+L\+O\+A\+T3 \hyperlink{class_vertex_a8080cc17ccbad289de853b6c8d53d416}{Normalize} (X\+M\+F\+L\+O\+A\+T3 vector\+To\+Normalize)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{class_vertex_a476a5301ed5a6dfa7d7c9c52de29406d}{my\+Position}
+\item 
+D\+W\+O\+RD \hyperlink{class_vertex_a1d2fa85b4b70f8a850ad72cfb77086b5}{my\+Color}
+\item 
+float \hyperlink{class_vertex_af2e791591e89e6f39ad37329708f7470}{myU}
+\item 
+float \hyperlink{class_vertex_a4b26884b35841183664354eba0287aac}{myV}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Vertex()}{Vertex()}}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+::\+Vertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a97488994a2482d70da74e1b91d40e169}{}\label{class_vertex_a97488994a2482d70da74e1b91d40e169}
+
+
+Constructors. 
+
+Default Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Vertex(const Vertex \&vertex)}{Vertex(const Vertex &vertex)}}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+::\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vertex} \&}]{vertex}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a86a01a9679eed567448b8165ba335ddf}{}\label{class_vertex_a86a01a9679eed567448b8165ba335ddf}
+Copy constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & The vertex. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Vertex(\+X\+M\+F\+L\+O\+A\+T3 position)}{Vertex(XMFLOAT3 position)}}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+::\+Vertex (
+\begin{DoxyParamCaption}
+\item[{X\+M\+F\+L\+O\+A\+T3}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_ab3aaaa3fea9602eaf3d80c42702a6d5f}{}\label{class_vertex_ab3aaaa3fea9602eaf3d80c42702a6d5f}
+Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Vertex(float x, float y, float z)}{Vertex(float x, float y, float z)}}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+::\+Vertex (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a2c558c054a0a2c970588c063073803a0}{}\label{class_vertex_a2c558c054a0a2c970588c063073803a0}
+Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position coordinate. \\
+\hline
+{\em y} & The y position coordinate. \\
+\hline
+{\em z} & The z position coordinate. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Vertex(\+X\+M\+F\+L\+O\+A\+T3 position, D\+W\+O\+R\+D color, float u, float v)}{Vertex(XMFLOAT3 position, DWORD color, float u, float v)}}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+::\+Vertex (
+\begin{DoxyParamCaption}
+\item[{X\+M\+F\+L\+O\+A\+T3}]{position, }
+\item[{D\+W\+O\+RD}]{color, }
+\item[{float}]{u, }
+\item[{float}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a9be3dce54b0ff2b0338ba00ba4307cab}{}\label{class_vertex_a9be3dce54b0ff2b0338ba00ba4307cab}
+Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position. \\
+\hline
+{\em color} & The color. \\
+\hline
+{\em u} & The u texture coordinate. \\
+\hline
+{\em v} & The v texture coordinate. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Vertex(float x, float y, float z, D\+W\+O\+R\+D color, float u, float v)}{Vertex(float x, float y, float z, DWORD color, float u, float v)}}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+::\+Vertex (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{D\+W\+O\+RD}]{color, }
+\item[{float}]{u, }
+\item[{float}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a00ab3eccce14fd1aa56662437977f40a}{}\label{class_vertex_a00ab3eccce14fd1aa56662437977f40a}
+Constructor.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+{\em z} & The z coordinate. \\
+\hline
+{\em color} & The color. \\
+\hline
+{\em u} & The u texture coordinate. \\
+\hline
+{\em v} & The v texture coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Vertex@{Vertex}!Calculate\+Vector\+Length@{Calculate\+Vector\+Length}}
+\index{Calculate\+Vector\+Length@{Calculate\+Vector\+Length}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Calculate\+Vector\+Length()}{CalculateVectorLength()}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+Calculate\+Vector\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a8c00f077ae72434ebba3687b03135105}{}\label{class_vertex_a8c00f077ae72434ebba3687b03135105}
+
+
+Functions. 
+
+Calculate the length of the vector.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The calculated vector length. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!Calculate\+Vector\+Length@{Calculate\+Vector\+Length}}
+\index{Calculate\+Vector\+Length@{Calculate\+Vector\+Length}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Calculate\+Vector\+Length(\+Vertex vector)}{CalculateVectorLength(Vertex vector)}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+Calculate\+Vector\+Length (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex}}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_vertex_a6d31c2682560aaf39b12be7085f8a15d}{}\label{class_vertex_a6d31c2682560aaf39b12be7085f8a15d}
+Calculates the length of the vector.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated vector length. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!Calculate\+Vector\+Length@{Calculate\+Vector\+Length}}
+\index{Calculate\+Vector\+Length@{Calculate\+Vector\+Length}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Calculate\+Vector\+Length(\+X\+M\+F\+L\+O\+A\+T3 vector)}{CalculateVectorLength(XMFLOAT3 vector)}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+Calculate\+Vector\+Length (
+\begin{DoxyParamCaption}
+\item[{X\+M\+F\+L\+O\+A\+T3}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_vertex_a9aa994d5edcc65c5114142a818559098}{}\label{class_vertex_a9aa994d5edcc65c5114142a818559098}
+Calculates the length of the vector.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated vector length. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!Calculate\+Vector\+Length@{Calculate\+Vector\+Length}}
+\index{Calculate\+Vector\+Length@{Calculate\+Vector\+Length}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Calculate\+Vector\+Length(float x, float y, float z)}{CalculateVectorLength(float x, float y, float z)}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+Calculate\+Vector\+Length (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_vertex_a1f78e29eef1efb38d9bf6234e6d51a82}{}\label{class_vertex_a1f78e29eef1efb38d9bf6234e6d51a82}
+Calculates the length of the vector.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+{\em z} & The z coordinate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated vector length. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!Get\+Color@{Get\+Color}}
+\index{Get\+Color@{Get\+Color}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Get\+Color()}{GetColor()}}]{\setlength{\rightskip}{0pt plus 5cm}D\+W\+O\+RD Vertex\+::\+Get\+Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a636bda7b90b61dd6e23cc84c3781e5a5}{}\label{class_vertex_a636bda7b90b61dd6e23cc84c3781e5a5}
+Gets the color.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The color. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Get\+Position()}{GetPosition()}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+F\+L\+O\+A\+T3 Vertex\+::\+Get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a96920908f0adadf6d6fef447013a32fc}{}\label{class_vertex_a96920908f0adadf6d6fef447013a32fc}
+
+
+Getters. 
+
+Gets the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The position. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!GetU@{GetU}}
+\index{GetU@{GetU}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Get\+U()}{GetU()}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+GetU (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_ada06e4d8d0f06652cb3b6a06776e1069}{}\label{class_vertex_ada06e4d8d0f06652cb3b6a06776e1069}
+Gets the u \hyperlink{class_texture}{Texture} coordinate.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The u \hyperlink{class_texture}{Texture} coordinate. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!GetV@{GetV}}
+\index{GetV@{GetV}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Get\+V()}{GetV()}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+GetV (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a05e50625839f1ce7b35574cdf443d64e}{}\label{class_vertex_a05e50625839f1ce7b35574cdf443d64e}
+Gets the v \hyperlink{class_texture}{Texture} coordinate.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The v \hyperlink{class_texture}{Texture} coordinate. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!GetX@{GetX}}
+\index{GetX@{GetX}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Get\+X()}{GetX()}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+GetX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a92792a1608974b53e87f7cba979cf97c}{}\label{class_vertex_a92792a1608974b53e87f7cba979cf97c}
+Get x coordinate of the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The x coordinate of the position. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!GetY@{GetY}}
+\index{GetY@{GetY}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Get\+Y()}{GetY()}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+GetY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a89139909c6a69257d7d3b2234a01c304}{}\label{class_vertex_a89139909c6a69257d7d3b2234a01c304}
+Get y coordinate of the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The y coordinate of the position. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!GetZ@{GetZ}}
+\index{GetZ@{GetZ}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Get\+Z()}{GetZ()}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::\+GetZ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_afea768f12fdbb44ee051414fea2d44d0}{}\label{class_vertex_afea768f12fdbb44ee051414fea2d44d0}
+Get z coordinate of the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The z coordinate of the position. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Normalize()}{Normalize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::\+Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a8094b5faac3ce2dd40a4d112133ffc73}{}\label{class_vertex_a8094b5faac3ce2dd40a4d112133ffc73}
+Normalizes my\+Position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016 
+\end{DoxyDate}
+\index{Vertex@{Vertex}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Normalize(\+Vertex vector\+To\+Normalize)}{Normalize(Vertex vectorToNormalize)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertex} Vertex\+::\+Normalize (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex}}]{vector\+To\+Normalize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_vertex_a8ddc8aebbcc4226698bd2c85730f7748}{}\label{class_vertex_a8ddc8aebbcc4226698bd2c85730f7748}
+Normalizes the given vector.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vector\+To\+Normalize} & The vector to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vertex containing a normalized position. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Normalize(\+X\+M\+F\+L\+O\+A\+T3 vector\+To\+Normalize)}{Normalize(XMFLOAT3 vectorToNormalize)}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+F\+L\+O\+A\+T3 Vertex\+::\+Normalize (
+\begin{DoxyParamCaption}
+\item[{X\+M\+F\+L\+O\+A\+T3}]{vector\+To\+Normalize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_vertex_a8080cc17ccbad289de853b6c8d53d416}{}\label{class_vertex_a8080cc17ccbad289de853b6c8d53d416}
+Normalizes the given vector.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vector\+To\+Normalize} & The vector to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An X\+M\+F\+L\+O\+A\+T3. 
+\end{DoxyReturn}
+\index{Vertex@{Vertex}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Set\+Color(\+D\+W\+O\+R\+D color)}{SetColor(DWORD color)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::\+Set\+Color (
+\begin{DoxyParamCaption}
+\item[{D\+W\+O\+RD}]{color}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a5febdb33567ab2a7f06fc85a2614d526}{}\label{class_vertex_a5febdb33567ab2a7f06fc85a2614d526}
+Sets a color.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Set\+Position(\+X\+M\+F\+L\+O\+A\+T3 position)}{SetPosition(XMFLOAT3 position)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::\+Set\+Position (
+\begin{DoxyParamCaption}
+\item[{X\+M\+F\+L\+O\+A\+T3}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_aa4c230ebaa8a0c0a8ca6a1e29d5ae93e}{}\label{class_vertex_aa4c230ebaa8a0c0a8ca6a1e29d5ae93e}
+
+
+Setters. 
+
+Sets the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!SetU@{SetU}}
+\index{SetU@{SetU}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Set\+U(float u)}{SetU(float u)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::\+SetU (
+\begin{DoxyParamCaption}
+\item[{float}]{u}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_aebfd289c47c2c19c5655e0ccf1dac72f}{}\label{class_vertex_aebfd289c47c2c19c5655e0ccf1dac72f}
+Sets a u \hyperlink{class_texture}{Texture} coordinate.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em u} & The u \hyperlink{class_texture}{Texture} coordinate. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!SetV@{SetV}}
+\index{SetV@{SetV}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Set\+V(float v)}{SetV(float v)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::\+SetV (
+\begin{DoxyParamCaption}
+\item[{float}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a429f3b9b25ba1f58e09bfcf12c1029b6}{}\label{class_vertex_a429f3b9b25ba1f58e09bfcf12c1029b6}
+Sets a v \hyperlink{class_texture}{Texture} coordinate.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The v \hyperlink{class_texture}{Texture} coordinate. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!SetX@{SetX}}
+\index{SetX@{SetX}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Set\+X(float x)}{SetX(float x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::\+SetX (
+\begin{DoxyParamCaption}
+\item[{float}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a05956877b676ad982b5e706ce726e44a}{}\label{class_vertex_a05956877b676ad982b5e706ce726e44a}
+Sets the x coordinate of the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the position. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!SetY@{SetY}}
+\index{SetY@{SetY}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Set\+Y(float y)}{SetY(float y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::\+SetY (
+\begin{DoxyParamCaption}
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_ad8b8b10e8e2f617c61be74aa50464293}{}\label{class_vertex_ad8b8b10e8e2f617c61be74aa50464293}
+Sets a y coordinate of the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The y coordinate of the position. \\
+\hline
+\end{DoxyParams}
+\index{Vertex@{Vertex}!SetZ@{SetZ}}
+\index{SetZ@{SetZ}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Set\+Z(float z)}{SetZ(float z)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::\+SetZ (
+\begin{DoxyParamCaption}
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_ab488ce5e53970ae1172ba49417d85b07}{}\label{class_vertex_ab488ce5e53970ae1172ba49417d85b07}
+Sets a z coordinate of the position.
+
+\begin{DoxyAuthor}{Author}
+Katianie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/4/2016
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & The z coordinate of the position. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Vertex@{Vertex}!my\+Color@{my\+Color}}
+\index{my\+Color@{my\+Color}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{my\+Color}{myColor}}]{\setlength{\rightskip}{0pt plus 5cm}D\+W\+O\+RD Vertex\+::my\+Color\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_vertex_a1d2fa85b4b70f8a850ad72cfb77086b5}{}\label{class_vertex_a1d2fa85b4b70f8a850ad72cfb77086b5}
+\index{Vertex@{Vertex}!my\+Position@{my\+Position}}
+\index{my\+Position@{my\+Position}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{my\+Position}{myPosition}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+F\+L\+O\+A\+T3 Vertex\+::my\+Position\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_vertex_a476a5301ed5a6dfa7d7c9c52de29406d}{}\label{class_vertex_a476a5301ed5a6dfa7d7c9c52de29406d}
+\index{Vertex@{Vertex}!myU@{myU}}
+\index{myU@{myU}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{myU}{myU}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::myU\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_vertex_af2e791591e89e6f39ad37329708f7470}{}\label{class_vertex_af2e791591e89e6f39ad37329708f7470}
+\index{Vertex@{Vertex}!myV@{myV}}
+\index{myV@{myV}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{myV}{myV}}]{\setlength{\rightskip}{0pt plus 5cm}float Vertex\+::myV\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_vertex_a4b26884b35841183664354eba0287aac}{}\label{class_vertex_a4b26884b35841183664354eba0287aac}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Headers/\hyperlink{_vertex_8h}{Vertex.\+h}\item 
+Samples/\+Oculus\+Room\+Tiny\+\_\+\+Advanced/\+Common/\+Implementations/\hyperlink{_vertex_8cpp}{Vertex.\+cpp}\end{DoxyCompactItemize}
